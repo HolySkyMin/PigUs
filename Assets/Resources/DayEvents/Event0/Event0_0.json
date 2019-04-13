@@ -1,0 +1,24 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"나", "Context":"오늘 밥은... 우웩 내가 젤 싫어하는 꿀꿀사료잖아!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"에이 그래도 먹을건 먹어야지", "VariableType":[1, 0, 0], "VariableDelta":[20, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"배부르지만 기분은 좀 안좋다.. "}
+                    ]
+                },
+                {
+                    "Context":"싫어어어 안먹어어", "VariableType":[1, 0, 0], "VariableDelta":[-20, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"먹기 싫은걸 안먹는 나는야 주체적인 돼지!! 하지만 배고파..."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

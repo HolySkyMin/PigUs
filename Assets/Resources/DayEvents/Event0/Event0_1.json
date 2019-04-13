@@ -1,0 +1,23 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"나", "Context":"오? 저기 못 보던 톱밥 덩어리가 있네!\n푹신해보이는데 오늘은 저기서 잘까?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"난 자던 곳 아니면 못 자!", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[]
+                },
+                {
+                    "Context":"흔들리지 않는 편안함~\n톱밥스 침대~", "VariableType":[0, 1, 0], "VariableDelta":[0, -20, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"컹컹..! 이게 무슨 냄새야?!"},
+                        {"Type":0, "Talker":"", "Context":"이런! 퇴비를 만들던 오물덩어리 톱밥이었네요! 역시 침대는 가구가 아니라 과학입니다ㅠㅠ"}
+                    ]
+                }
+            ]
+        }
+    ]
+}
