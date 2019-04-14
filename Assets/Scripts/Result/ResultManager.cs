@@ -24,7 +24,12 @@ namespace Result
             LayoutRebuilder.MarkLayoutForRebuild(LogParent);
             LayoutRebuilder.ForceRebuildLayoutImmediate(LogParent);
         }
-        
+
+        private void Start()
+        {
+            SoundManager.Instance.PlayBgm("Ending");
+        }
+
         public void GoToTitle()
         {
             SceneChanger.Instance.ChangeScene("TitleScene");

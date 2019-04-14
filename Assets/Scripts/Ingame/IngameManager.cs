@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 using LitJson;
+using ScriptedAnimation;
 
 namespace Ingame
 {
@@ -20,6 +21,7 @@ namespace Ingame
         public int[] Variables; // 0: 포만감, 1: 건강, 2: 친밀도
         public Text DayText;
         public Slider FoodSlider, HealthSlider, FavoritySlider;
+        public ScriptAnimation DialogAnimation;
 
         private DialogueGroup eventDialog;
         private List<SelectionLog> dayLog;
@@ -56,6 +58,7 @@ namespace Ingame
         }
         private void Start()
         {
+            SoundManager.Instance.PlayBgm("Choice");
             UpdateRoutine();
         }
 
@@ -113,6 +116,7 @@ namespace Ingame
 
         public async Task RunDayDialogue()
         {
+            await DialogAnimation.Appear();
             for(int i = 0; i < eventDialog.Length; i++)
             {
                 var dialog = eventDialog[i];
@@ -145,6 +149,8 @@ namespace Ingame
                 else if (dialog.Type == 2)
                     DialogueManager.Instance.ShowImage(dialog.ImageKey);
             }
+            DialogueManager.Instance.CleanDialogue();
+            await DialogAnimation.Disappear();
         }
     }
 }

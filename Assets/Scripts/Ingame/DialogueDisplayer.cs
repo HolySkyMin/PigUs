@@ -44,7 +44,7 @@ namespace Ingame
                     else
                     {
                         rtCount++;
-                        yield return new WaitForSeconds(1f / 50);
+                        yield return new WaitForSeconds(1f / 70);
                     }
                 }
             }

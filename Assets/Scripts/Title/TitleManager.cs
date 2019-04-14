@@ -15,6 +15,8 @@ namespace Title
                 LoadGameBtn.interactable = true;
             else
                 LoadGameBtn.interactable = false;
+
+            SoundManager.Instance.PlayBgm("Title");
         }
 
         public void StartGame()

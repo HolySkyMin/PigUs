@@ -17,6 +17,7 @@ namespace Ingame
 
         public void Clicked()
         {
+            //SoundManager.Instance.PlaySe("Choice");
             DialogueManager.Instance.Interactor.SetResult(Index);
         }
     }

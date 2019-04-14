@@ -39,5 +39,11 @@ namespace Ingame
             Interactor.gameObject.SetActive(false);
             return Interactor.Result;
         }
+
+        public void CleanDialogue()
+        {
+            Displayer.Talker.text = "";
+            Displayer.Context.text = "";
+        }
     }
 }
