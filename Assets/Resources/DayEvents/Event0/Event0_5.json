@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"킁킁! 킁킁! 음? 땅속에서 무슨 냄새가 나는데요?"},
+        {"Type":0, "Talker":"나", "Context":"오! 파보니 무슨 먹을 수 있는 것 같은 게 나왔어요! 어떻게 하죠?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"혹시 모르니까 물어보자", "VariableType":[0, 0, 1], "VariableDelta":[0, 0, 10],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"주인님", "Context":"어?! 이거 <i>트러플</i> 아니야?!"},
+                        {"Type":0, "Talker":"주인님", "Context":"아이구~ 우리 복덩이~ 어떻게 이런 귀한 걸 구했대~ 또 찾으면 꼭 알려줘야해~"},
+                        {"Type":0, "Talker":"", "Context":"흥칫! 맨입으로요? 그래도 칭찬을 받으니 기분은 좋습니다."}
+                    ]
+                },
+                {
+                    "Context":"맛있게 먹으면 0칼로리~", "VariableType":[1, 0, 0], "VariableDelta":[10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"오..? 아닛...? 이 향과 풍미는..?"},
+                        {"Type":0, "Talker":"", "Context":"딴딴 딴 딴 딴 딴 딴~ 왠지 요리왕 B-Dragon 노래가 들리는 것 같습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

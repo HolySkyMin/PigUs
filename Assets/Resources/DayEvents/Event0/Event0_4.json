@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"햇볕은 쨍쨍~ 쇠창살은 반짝!"},
+        {"Type":0, "Talker":"나", "Context":"좀 후끈하긴 하지만 날씨도 좋은데 일광욕이나 해볼까?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"태닝하고 흑돼지로 레벨업!", "VariableType":[0, 1, 0], "VariableDelta":[0, -10, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"앗 뜨거!"},
+                        {"Type":0, "Talker":"", "Context":"온몸이 후끈후끈 달아올랐는데 식지를 않네요. 너무 어지러워요~ 헤롱헤롱..."}
+                    ]
+                },
+                {
+                    "Context":"태양을 피하고 싶어서~", "VariableType":[0, 1, 0], "VariableDelta":[0, 10, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"환하게 비추는 태양이 싫어, 태양이 싫어~"},
+                        {"Type":0, "Talker":"", "Context":"역시 더운 날에는 방콕이 최고입니다~"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

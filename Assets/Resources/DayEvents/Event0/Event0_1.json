@@ -11,7 +11,7 @@
                     "AfterDialogues":[]
                 },
                 {
-                    "Context":"흔들리지 않는 편안함~\n톱밥스 침대~", "VariableType":[0, 1, 0], "VariableDelta":[0, -20, 0],
+                    "Context":"흔들리지 않는 편안함~\n톱밥스 침대~", "VariableType":[0, 1, 0], "VariableDelta":[0, -10, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"나", "Context":"컹컹..! 이게 무슨 냄새야?!"},
                         {"Type":0, "Talker":"", "Context":"이런! 퇴비를 만들던 오물덩어리 톱밥이었네요! 역시 침대는 가구가 아니라 과학입니다ㅠㅠ"}

@@ -124,7 +124,13 @@ namespace Ingame
                     for(int j = 0; j < Variables.Length; j++)
                     {
                         if (dialog.Selects[res].VariableType[j] > 0)
+                        {
                             Variables[j] += dialog.Selects[res].VariableDelta[j];
+                            if (Variables[j] > 100)
+                                Variables[j] = 100;
+                            if (Variables[j] < 0)
+                                Variables[j] = 0;
+                        }
                     }
                     dayLog.Add(new SelectionLog() { Day = DayCount, SelectedContext = dialog.Selects[res].Context, DeltaValue = dialog.Selects[res].VariableDelta.Clone() as int[] });
                     for(int j = 0; j < dialog.Selects[res].Length; j++)

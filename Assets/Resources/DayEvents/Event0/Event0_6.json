@@ -1,0 +1,24 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"근육돼지", "Context":"이봐 애송이, 내가 오늘 좀 배가 고픈데 사료 좀 빌려줄 수 있을까? 쓰고 바로 줄게."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"때리지만 마..(사료를 건넨다)", "VariableType":[1, 0, 0], "VariableDelta":[-10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"근육돼지는 사료를 들고 떠났다. 물론 돌려주진 않았다."}
+                    ]
+                },
+                {
+                    "Context":"옥상으로 올라와", "VariableType":[1, 1, 0], "VariableDelta":[10, -10, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"그의 강한 뒷다리에 맞자마자 기절해버렸다. 그래도 밥은 지켰어..."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

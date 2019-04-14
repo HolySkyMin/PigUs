@@ -1,0 +1,24 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"내가 자던 바로 그 자리에 화려한 버섯이 자라기 시작했다. 먹어도 되는걸까?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"일단 먹는다", "VariableType":[1, 0, 0], "VariableDelta":[10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"기분이 몽롱해지는 요상한 버섯이다. 하나만 더..."}
+                    ]
+                },
+                {
+                    "Context":"짓뭉갠다", "VariableType":[0, 1, 0], "VariableDelta":[0, 10, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"덕분에 오늘은 잠을 푹 잘 수 있었다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}
