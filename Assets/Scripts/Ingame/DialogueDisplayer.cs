@@ -13,6 +13,7 @@ namespace Ingame
 
         public Image CaseImage;
         public Text Talker, Context;
+        public GameObject EndIndicator;
 
         public async Task DisplayContext(string talker, string context)
         {
@@ -47,8 +48,10 @@ namespace Ingame
                     }
                 }
             }
+            EndIndicator.SetActive(true);
             yield return new WaitUntil(() => DialogueManager.Instance.Receiver.ReceivedClick);
             DialogueManager.Instance.Receiver.ReceivedClick = false;
+            EndIndicator.SetActive(false);
         }
     }
 }
