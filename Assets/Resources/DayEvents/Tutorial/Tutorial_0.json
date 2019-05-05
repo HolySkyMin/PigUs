@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"나", "Context":"으... 여긴... 어디지? 엄마 젖을 먹다가 어딘가로 끌려왔는데..."},
+        {"Type":0, "Talker":"나", "Context":"이 쇠창살은 뭐야? 어떻게 해야 하지?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"있는 힘껏 부딪힌다", "VariableType":[0, 1, 0], "VariableDelta":[0, -5, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"<i>꽝!</i>...... 광!.... <i>광</i>..."},
+                        {"Type":0, "Talker":"", "Context":"소리가 축사 안에 메아리쳐 울립니다. 부딪힌 머리가 지끈거립니다."}
+                    ]
+                },
+                {
+                    "Context":"누가 좀 도와주세요!", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"있는 힘껏 소리를 지르고 나니 비로소 주변의 다른 돼지들이 눈에 들어옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

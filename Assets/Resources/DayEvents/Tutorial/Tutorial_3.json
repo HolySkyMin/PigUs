@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"이모", "Context":"혹시 더 궁금한 게 있니?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"여긴 어디?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"여기는 '우리' 란다.\n우리가 뭐냐고?"},
+                        {"Type":0, "Talker":"이모", "Context":"우리는 지옥이란다. 매 순간 최선의 <color=cyan>선택</color>을 내려야만 살아남을 수 있는 곳이지."},
+                        {"Type":0, "Talker":"이모", "Context":"그래도 함께 버텨 나간다는 게 위안이 될 수 있을 거야."}
+                    ]
+                },
+                {
+                    "Context":"이 쇠창살은 다 뭐죠?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"여기는 '우리' 란다.\n우리가 뭐냐고?"},
+                        {"Type":0, "Talker":"이모", "Context":"우리는 지옥이란다. 매 순간 최선의 <color=cyan>선택</color>을 내려야만 살아남을 수 있는 곳이지."},
+                        {"Type":0, "Talker":"이모", "Context":"그래도 함께 버텨 나간다는 게 위안이 될 수 있을 거야."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"???", "Context":"얘야, 진정하렴. 그렇게 큰 소리를 내면 다른 돼지들이 동요한단다."},
+        {"Type":0, "Talker":"???", "Context":"그러면 우리는 더 이상 여기 있을 수 없을 지도 몰라."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"누... 누구세요?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                    ]
+                },
+                {
+                    "Context":"다... 다가오지 마!", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                    ]
+                }
+            ]
+        }
+    ]
+}

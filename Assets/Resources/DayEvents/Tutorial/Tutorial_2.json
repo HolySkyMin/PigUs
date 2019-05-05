@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"이모", "Context":"긴장하지 마렴. 여기 모두 너와 같은 처지야."},
+        {"Type":0, "Talker":"이모", "Context":"엄마와의 이별은 슬프겠지만, 이제 여기서 살아야만 한단다."},
+        {"Type":0, "Talker":"이모", "Context":"엄마를 대신할 수는 없겠지만... 너의 이모가 되어 줄 수는 있을 거야."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"이모?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"호호호, 편한 대로 불러도 된단다."},
+                        {"Type":0, "Talker":"이모", "Context":"내가 누구인지는 네가 <color=cyan>선택</color>하는 거니까."}
+                    ]
+                },
+                {
+                    "Context":"울 엄마는 외동인데...", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"호호호, 편한 대로 불러도 된단다."},
+                        {"Type":0, "Talker":"이모", "Context":"내가 누구인지는 네가 <color=cyan>선택</color>하는 거니까."}
+                    ]
+                }
+            ]
+        }
+    ]
+}
