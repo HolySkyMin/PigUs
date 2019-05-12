@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":0, "Talker":"", "Context":"오웰은 내 말에 조금은 마음이 풀린 듯 합니다."},
+        {"Type":0, "Talker":"오웰", "Context":"격리라... 진심인진 모르겠지만 걱정해줘서 고맙구나."},
+        {"Type":0, "Talker":"오웰", "Context":"너는 이해하지 못하겠지만, 괜히 부리는 난동은 아니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"정당한 난동도 있나요(의심)?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"오웰의 조금 풀린 눈빛이 다시 굳습니다."}
+                    ]
+                },
+                {
+                    "Context":"정말요?!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"초롱초롱한 나의 눈빛에 오웰이 살짝 헛웃음을 짓습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

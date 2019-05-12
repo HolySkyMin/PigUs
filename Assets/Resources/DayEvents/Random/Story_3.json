@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"A38", "Context":"농장 혁명... 탈출.. 내 뛰어난 추리로도 그게 더 좋은 건지는 모르겠네."},
+        {"Type":0, "Talker":"A38", "Context":"이봐 칭구 네 생각은 어때??"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"당연히 자유가 최고지~ 동의?", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"어~ 보감~ 근데 Freedom is not free.. <i>알지..?</i>"},
+                        {"Type":0, "Talker":"", "Context":"그 정도는 각오하고 있다구요! 그래도 걱정해주니 고마운 마음이 듭니다."}
+                    ]
+                },
+                {
+                    "Context":"모든 인간이 나쁜 것도 아니고..", "VariableType":[0, 0, 1, 0], "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"해피의 영향을 받은 게 분명하군! 그런 개 같은 친구 말고 나랑도 좀 놀아줘~ 섭섭해~ 섭섭해~"},
+                        {"Type":0, "Talker":"", "Context":"허헛, 너무 요새 해피랑만 놀았나보네요. 근데 개 같은 게 아니라 개 맞는데.."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

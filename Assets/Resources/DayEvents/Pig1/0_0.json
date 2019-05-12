@@ -1,0 +1,31 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_0_1"},
+        {"Type":0, "Talker":"", "Context":"어라, 갑자기 우리에 처음 보는 돼지가 들어옵니다."},
+        {"Type":0, "Talker":"", "Context":"그 돼지는 약간 희끗희끗한 털에 다리도 조금 저는 것 같아요. 하지만 엄청난 덩치에 눈빛만큼은 아주 매섭습니다."},
+        {"Type":0, "Talker":"", "Context":"그의 다른 돼지들과는 확연히 차이나는 모습이 궁금증을 자극합니다. 이때..."},
+        {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":0, "Talker":"???", "Context":"... 처음 보는 돼지군. 자네 이름은 뭔가? 물론 금방 못 볼 사이가 될지도 모르지만 말이지."},
+        {"Type":0, "Talker":"", "Context":"처음 보는 돼지가 낮고 굵은 목소리로 물어봅니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"(황당) 아니 처음 오신건 아저씨 아니신가요? 아저씨 이름부터 먼저 밝히시죠!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"???", "Context":"허허 요즘것들은 예의 차릴 줄 모르는군..."},
+                        {"Type":0, "Talker":"", "Context":"아저씨가 혀를 끌끌 찹니다."}
+                    ]
+                },
+                {
+                    "Context":"아 네넵..! 제 이름은 ##라고 합니다..! ..아저씨는요?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"그의 포스에 눌려 쭈그리가 되고 말았습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"근육돼지", "Context":"닭장 속에는 암탉이~ 문간 옆에는?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"거위가~", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"근육돼지", "Context":"오우 놀 줄 아는 놈인가?"},
+                        {"Type":0, "Talker":"", "Context":"근육돼지가 간식을 나눠줬다."}
+                    ]
+                },
+                {
+                    "Context":"염소가~", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"근육돼지", "Context":"우리 농장에 염소는 없어(퍽)"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

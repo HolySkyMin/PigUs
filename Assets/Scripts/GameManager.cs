@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public void CreateData()
     {
         Save = new SaveData();
+        Save.Phase1StoryDay = Random.Range(3, 5);
         SaveToFile();
     }
 

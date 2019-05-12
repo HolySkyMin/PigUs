@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":0, "Talker":"오웰", "Context":"이 우리 밖으로 인간이 우리를 뺄 때는 딱 3가지 경우가 있지."},
+        {"Type":0, "Talker":"오웰", "Context":"나처럼 난동을 부리는 돼지를 다른 돼지의'상품가치가 떨어질까봐' 잠깐 격리 시키기 위해 빼거나, 아니면..."},
+        {"Type":0, "Talker":"오웰", "Context":"정말... '상품가치를 인정받아' 트럭을 타고 영영 농장을 떠나거나."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"잠깐, 난동을 부리셨다구요? 왜죠???", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그런것까진 딱히 말하고 싶지 않군."},
+                        {"Type":0, "Talker":"", "Context":"하긴, 처음 만난 사이니까요."}
+                    ]
+                },
+                {
+                    "Context":"앗, 나머지 3번째는 어떤 경우죠?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그거야 죽었을 때지. 멍청아."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 그것까지 말하고 싶진 않았나 봅니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

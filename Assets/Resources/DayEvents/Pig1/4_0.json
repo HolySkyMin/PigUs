@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_4_1"},
+        {"Type":0, "Talker":"", "Context":"꽃돼지가 평소보다 크고 하얀 꽃을 꽂고 나타났습니다."},
+        {"Type":0, "Talker":"꽃돼지", "Context":"얘 이것봐! ^.^ 무려 국화라구! 역시 들꽃들하고는 차원이 다르다니까~^.^"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"너도 한번 꽂아볼래?? 너두 정말 잘 어울릴 것 같아 ^.^"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"꽃을 꽂는다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"히히 역시 예쁘다 ^.^"},
+                        {"Type":0, "Talker":"", "Context":"머리에 꽃을 꽂으니 기분이 조금 이상하지만 좋습니다."},
+                        {"Type":0, "Talker":"", "Context":"잠시 후에 꽃돼지에게 다시 국화를 돌려줬습니다."},
+                        {"Type":0, "Talker":"", "Context":"그런데 문득 궁금해집니다. 어디에서 저렇게 예쁜 꼿이 난걸까요?"}
+                    ]
+                },
+                {
+                    "Context":"거절한다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"히잉 왜 ㅠㅠ ...알았어 ㅠㅠ"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지가 조금 실망한 것 같았지만, 거절은 잘 한 것 같습니다."},
+                        {"Type":0, "Talker":"", "Context":"그런데 문득 궁금해집니다. 어디에서 저렇게 예쁜 꼿이 난걸까요?"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

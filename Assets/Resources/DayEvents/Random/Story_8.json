@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"A38", "Context":"지금 칭구들이 앓고 있는 거 같은데 내 추리에 따르면 이건 전염병이야."},
+        {"Type":0, "Talker":"A38", "Context":"우리 다른 돼지들을 좀 도와주러 다니자. 어..? 근데 너도 안색이 좀 창백해 보이는데?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"쿨럭..! 아니야.. 칭구들을 도우러 가자", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"다행히 큰 병은 아니어서 모두 건강해졌네요! 칭구들이 고맙다고 하니 기분이 좋습니다!"}
+                    ]
+                },
+                {
+                    "Context":"쿨럭..! 나도 좀 안좋네.. 쉬어야겠어", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"다행히 조금 쉬니 기운을 차릴 수 있었어요! 몇몇 간호를 해준 칭구들에게 고맙다고 인사해야겠어요!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

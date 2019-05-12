@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_3_1"},
+        {"Type":0, "Talker":"오웰", "Context":"<i>놔라!!!</i> 놓으란 말이다 <i>이 개같은 인간!!</i>"},
+        {"Type":0, "Talker":"", "Context":"또 난동을 부려서 격리되었던 오웰을 다시 주인이 끌고 우리로 돌아오고 있습니다."},
+        {"Type":0, "Talker":"", "Context":"'개같은'이라는 욕을 듣자 주인 옆에서 꼬리를 흔드는 해피가 인상을 팍 씁니다."},
+        {"Type":0, "Talker":"", "Context":"주인이 우리 동물의 말을 못 알아들어 다행이라는 생각이 듭니다."},
+        {"Type":0, "Talker":"", "Context":"그날 밤, 작게 난 우리의 창밖으로 오웰이 바깥풍경을 조용히 구경하고 있습니다. 나는 오늘의 일이 생각나 말을 겁니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"아저씨! 이게 몇번째 격리에요!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"이러다 진짜 도살당하는거 아니에요? 솔직히 아저씨 계속 잘 돌아오는게 더 신기하다니까요?"},
+                        {"Type":0, "Talker":"", "Context":"내가 말을 너무 많이 했는지 오웰이 대답도 하지 않습니다."}
+                    ]
+                },
+                {
+                    "Context":"달이 참 밝아요. 밖에 풀잎도 참 예쁘고.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"오웰은 아무말도 하지 않고 내 말을 듣는 둥 마는 둥 합니다. 깊은 생각에 잠겨있는 걸까요?"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

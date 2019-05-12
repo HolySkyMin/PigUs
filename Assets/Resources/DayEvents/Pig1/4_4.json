@@ -1,0 +1,61 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_4_6"},
+        {"Type":0, "Talker":"", "Context":"하지만 이내 차에 탄지 얼마 안되어, 꽃돼지도 죽음의 냄새를 맡아버렸습니다."},
+        {"Type":0, "Talker":"", "Context":"지금까지 본 적 없는 가장 어두운 표정에 사시나무 떨듯이 꽃돼지가 떱니다."},
+        {"Type":0, "Talker":"", "Context":"하지만 차는 푸른 하늘에 먼지를 날리며, 도살장을 향해 출발해버렸습니다."},
+        {"Type":0, "Talker":"<i>돼지들</i>", "Context":"... ... ..."},
+        {"Type":0, "Talker":"", "Context":"순식간에 일어난 일에, 정적만이 우리를 감쌉니다."},
+        {"Type":0, "Talker":"<i>돼지들</i>", "Context":"... ... ..."},
+        {"Type":0, "Talker":"???", "Context":"<i>이런 씨발!!</i> 더 이상 못 참겠어!!!"},
+        {"Type":0, "Talker":"", "Context":"누군가가 괴성을 지르며 문으로 달려듭니다.\n\n어어?! 근육돼지입니다."},
+        {"Type":0, "Talker":"", "Context":"다시 보니 농장 주인이 빨리 떠나는 바람에 문이 살짝 열려 있습니다! 근육돼지는 힘으로 돌진해 문을 열려고 합니다."},
+        {"Type":0, "Talker":"<i>근육돼지</i>", "Context":"쿵! 쿵! 쿵! <i>철컥!</i>"},
+        {"Type":0, "Talker":"", "Context":"소리를 듣고 뒤늦게 해피가 달려오며 소리칩니다."},
+        {"Type":0, "Talker":"해피", "Context":"당장 저 돼지놈을 막아!"},
+        {"Type":0, "Talker":"", "Context":"질세라 오웰도 소리지릅니다."},
+        {"Type":0, "Talker":"오웰", "Context":"근육이를 도와줘!!"},
+        {"Type":0, "Talker":"", "Context":"일촉즉발의 순간, 내가 진정 해야 할 일은 무엇인지 생각한 뒤에 나는..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"근육돼지를 넘어뜨린다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":2, "ImageKey":"story_4_human1"},
+                        {"Type":0, "Talker":"", "Context":"해피는 넘어진 근육돼지의 목덜미를 강하게 물어뜯었습니다."},
+                        {"Type":0, "Talker":"", "Context":"근육돼지는 몸부림치지만 이내 소란을 듣고 다시 돌아온 주인의 총에 맞아 쓰러집니다."},
+                        {"Type":0, "Talker":"", "Context":"우리 안에 피가 흥건합니다."},
+                        {"Type":0, "Talker":"", "Context":"... ... ..."},
+                        {"Type":0, "Talker":"", "Context":"그날 주인집에서는 의도치않게 돼지고기 만찬이 벌어졌습니다."},
+                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ..."},
+                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ..."},
+                        {"Type":2, "ImageKey":"story_4_human2_pig"},
+                        {"Type":0, "Talker":"", "Context":"그날 밤, 오웰이 나에게 분노의 얼굴을 하고 찾아왔습니다."},
+                        {"Type":0, "Talker":"오웰", "Context":"멍청이... 정말 너를 조금이라도 믿은 내가 멍청이구나. 너와 내가 같은 돼지라는걸 부정하고 싶을 정도다."},
+                        {"Type":0, "Talker":"오웰", "Context":"다시는 마주치지 말자."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 나를 노려보다 떠났습니다."}
+                    ]
+                },
+                {
+                    "Context":"달려오는 해피를 넘어뜨린다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":2, "ImageKey":"story_4_pig1"},
+                        {"Type":0, "Talker":"", "Context":"해피가 넘어진 사이 근육돼지는 우리를 빠져나가 숲을 향해 달렸습니다."},
+                        {"Type":0, "Talker":"", "Context":"이를 늦게 발견한 주인은 차에서 그를 향해 총을 쏘지만 맞추기엔 너무 멀어졌습니다."},
+                        {"Type":0, "Talker":"", "Context":"달려나가는 근육돼지의 모습을 보며 우리 안의 돼지들은 모두 말이 없었습니다."},
+                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ..."},
+                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ..."},
+                        {"Type":2, "ImageKey":"story_4_pig2_pig"},
+                        {"Type":0, "Talker":"", "Context":"그날 밤, 오웰이 나에게 찾아왔습니다. 내 어깨에 손을 얹습니다."},
+                        {"Type":0, "Talker":"오웰", "Context":"역시, 내 눈이 틀리지 않았군! 용감한 너 덕분에 근육이가 탈출할 수 있었다."},
+                        {"Type":0, "Talker":"오웰", "Context":"그러니 너도 나와 함께, 우리 돼지들 모두 자유롭게, 총과 도살에 대한 두려움 없이 살 세상을 만들어보자."},
+                        {"Type":0, "Talker":"오웰", "Context":"....멍청이, 우리 혁명파에 들어오거라. 너가 꼭 필요하구나."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

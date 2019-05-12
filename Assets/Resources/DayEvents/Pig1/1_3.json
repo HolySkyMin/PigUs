@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":0, "Talker":"오웰", "Context":"... 멍청한 너는 아직 잘 모르겠지만..."},
+        {"Type":0, "Talker":"", "Context":"오웰은 잠깐 뜸을 들였다 다시 말을 잇습니다."},
+        {"Type":0, "Talker":"오웰", "Context":"자유를 위해서다."},
+        {"Type":0, "Talker":"", "Context":"오웰은 그 길로 사라졌습니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"어음.. 그게 무슨 말이죠?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"아직은 오웰을 이해하기는 어렵지만, 나처럼 하루하루 뭘 먹을지, 어디에서 잘지 고민하는 돼지와는 다른 존재임은 확실합니다."}
+                    ]
+                },
+                {
+                    "Context":"오오 뭔가 멋있는 말인것 같다...", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"아직은 오웰을 이해하기는 어렵지만,  나처럼 하루하루 뭘 먹을지, 어디에서 잘지 고민하는 돼지와는 다른 존재임은 확실합니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

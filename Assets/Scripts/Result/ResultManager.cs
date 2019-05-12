@@ -16,7 +16,7 @@ namespace Result
             {
                 var log = GameManager.Instance.Save.DayLog[i];
                 var newObj = Instantiate(LogElement);
-                newObj.GetComponent<ResultLogElement>().Set(log.Day, log.SelectedContext, log.DeltaValue);
+                newObj.GetComponent<ResultLogElement>().Set(log.Phase, log.Day, log.SelectedContext, log.DeltaValue);
                 newObj.transform.SetParent(LogParent);
                 newObj.transform.localScale = Vector3.one;
                 newObj.SetActive(true);

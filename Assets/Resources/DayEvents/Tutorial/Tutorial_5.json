@@ -8,7 +8,7 @@
             "Selects":
             [
                 {
-                    "Context":"네? 처음 듣는 얘기에요!", "VariableType":[1, 0, 0], "VariableDelta":[5, 0, 0],
+                    "Context":"네? 처음 듣는 얘기에요!", "VariableType":[1, 0, 0, 0], "VariableDelta":[5, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"네가 선택한 대로 네 삶이 흘러간다는 말이지. 혹여나 잘못된 선택을 하지 않도록 조심하렴."},
                         {"Type":0, "Talker":"이모", "Context":"잘못된 선택이 쌓이다 보면 목숨이 위험해질 수 있단다."},
@@ -16,7 +16,7 @@
                     ]
                 },
                 {
-                    "Context":"네! 무슨 말인지 알 것 같아요!", "VariableType":[1, 0, 0], "VariableDelta":[5, 0, 0],
+                    "Context":"네! 무슨 말인지 알 것 같아요!", "VariableType":[1, 0, 0, 0], "VariableDelta":[5, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"그래, 넌 참 강하구나. 분명 넌 잘 할 수 있을 거야."},
                         {"Type":0, "Talker":"이모", "Context":"배고프지? 우선 여기 남은 사료들 좀 먹으렴. 잘 먹어야 선택도 잘 하지~"}

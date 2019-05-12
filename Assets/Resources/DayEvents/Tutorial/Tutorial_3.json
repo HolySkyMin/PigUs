@@ -7,7 +7,7 @@
             "Selects":
             [
                 {
-                    "Context":"여긴 어디?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"여긴 어디?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"여기는 '우리' 란다.\n우리가 뭐냐고?"},
                         {"Type":0, "Talker":"이모", "Context":"우리는 지옥이란다. 매 순간 최선의 <color=cyan>선택</color>을 내려야만 살아남을 수 있는 곳이지."},
@@ -15,7 +15,7 @@
                     ]
                 },
                 {
-                    "Context":"이 쇠창살은 다 뭐죠?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"이 쇠창살은 다 뭐죠?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"여기는 '우리' 란다.\n우리가 뭐냐고?"},
                         {"Type":0, "Talker":"이모", "Context":"우리는 지옥이란다. 매 순간 최선의 <color=cyan>선택</color>을 내려야만 살아남을 수 있는 곳이지."},

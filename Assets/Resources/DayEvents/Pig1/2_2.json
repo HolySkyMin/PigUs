@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_2_3"},
+        {"Type":0, "Talker":"오웰", "Context":"그렇게 마음이 약해서 쓰냐 멍청한 신입. 도살트럭은 일상이야. 벗어나지 못한다면 익숙해지기라고 하라고."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"멍청이 아니에요!!! (버럭)", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"적어도 아저씨처럼 난동꾼은 아니라구요! 벗어날 방법도 없으면서.."}
+                    ]
+                },
+                {
+                    "Context":"하지만 진짜 친구가 팔려가는건 처음 봤는걸요...", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"벗어날 방법도 없는데 자꾸 그러지 마시구요.."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":0, "Talker":"오웰", "Context":"이정도 얘기하면 알아듣겠지 신입? 아무튼... 잘 살아남아 보라구."},
+        {"Type":0, "Talker":"", "Context":"오웰은 마치 하룻강아지를 보는 것처럼 나를 한번 흘겨보고 떠났습니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"기분 나쁜 아저씨야...", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"무시당하는 것 같아 기분은 좀 나쁘지만, 계속 아저씨에 대한 궁금증이 생깁니다."}
+                    ]
+                },
+                {
+                    "Context":"저 아저씨는 도대체 뭘까...", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"그의 떠난 빈자리를 한참 처다보며 생각했습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

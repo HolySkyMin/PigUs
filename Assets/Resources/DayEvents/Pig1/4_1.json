@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_4_1"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"아아, 사실 이거 주인집 소녀가 버리고 간걸 주운거야..ㅎㅎ 뭔가 몰래 축사로 오더니 버리고 가더라구...헤헤"},
+        {"Type":0, "Talker":"", "Context":"꽃돼지가 꽃을 만지작거리며 말합니다."},
+        {"Type":0, "Talker":"꽃돼지", "Context":"그 아이에게는 쓰레기일지 몰라도, 이렇게 예쁜 쓰레기가 어디있어!^.^"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"맞아 꽃을 버린 애가 나쁜거지!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"그치 ^.^?? 아무튼 나는 행복해~~ 으왕^.^"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지가 행복해하는 모습을 보니 나도 마음이 좋습니다."}
+                    ]
+                },
+                {
+                    "Context":"그래도 인간이 버린거니까 조심해", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"우음... 그런가... ㅠ.ㅠ 그래두 덕분에 오늘은 행복한 날이 되었는걸! ^.^"},
+                        {"Type":0, "Talker":"", "Context":"무언가 불안한 마음이 들면서도 꽃돼지가 행복해하는 모습을 보니 나도 마음이 좋습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

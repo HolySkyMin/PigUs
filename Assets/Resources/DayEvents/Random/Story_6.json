@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"A38", "Context":"이봐 칭구! 내가 요새 이것 저것 관찰하다 농장 구성원들이 뭘 좋아하는지 알아냈다고!"},
+        {"Type":0, "Talker":"A38", "Context":"내 추리에 따르면 넌 뭔가 궁금한 게 있을 거 같은데?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"주인집 소녀는 무얼 좋아할까?", "VariableType":[0, 0, 1, 0], "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"오? <i>의외네.</i> 음... 아 그래!"},
+                        {"Type":0, "Talker":"A38", "Context":"그 여자애가 저번에 '난 보랏빛이 좋아'라고 말하는 걸 들었어. 참고하라구 칭구~"}
+                    ]
+                },
+                {
+                    "Context":"네가 뭘 좋아하는지 제일 궁금하네", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"우웩, 네가 그런 낯 뜨거운 대사를 아무렇지 않게 할 수 있다고?"},
+                        {"Type":0, "Talker":"A38", "Context":"내가 좋아하는 건 이런 새로운 사실이긴 한데.. 다 좋은 건 아니었나 보네 으으으으"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

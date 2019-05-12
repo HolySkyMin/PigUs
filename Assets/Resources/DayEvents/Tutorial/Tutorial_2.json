@@ -9,14 +9,14 @@
             "Selects":
             [
                 {
-                    "Context":"이모?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"이모?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"호호호, 편한 대로 불러도 된단다."},
                         {"Type":0, "Talker":"이모", "Context":"내가 누구인지는 네가 <color=cyan>선택</color>하는 거니까."}
                     ]
                 },
                 {
-                    "Context":"울 엄마는 외동인데...", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"울 엄마는 외동인데...", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"호호호, 편한 대로 불러도 된단다."},
                         {"Type":0, "Talker":"이모", "Context":"내가 누구인지는 네가 <color=cyan>선택</color>하는 거니까."}

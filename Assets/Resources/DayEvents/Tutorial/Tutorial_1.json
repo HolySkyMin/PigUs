@@ -8,12 +8,12 @@
             "Selects":
             [
                 {
-                    "Context":"누... 누구세요?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"누... 누구세요?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                     ]
                 },
                 {
-                    "Context":"다... 다가오지 마!", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"다... 다가오지 마!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                     ]
                 }

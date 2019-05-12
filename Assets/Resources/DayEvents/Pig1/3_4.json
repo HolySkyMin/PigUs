@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_3_5"},
+        {"Type":0, "Talker":"오웰", "Context":"...하지만 격리되기 위해 이동하는 중, 우리를 가두는 시스템에 대해 많은 허점을 알게 되었지."},
+        {"Type":0, "Talker":"오웰", "Context":"그때부터 나는 이 모든 돼지들이 우리를 벗어나, 자유로운 삶을 쟁취할 수 있다는 확신이 생겼다."},
+        {"Type":0, "Talker":"오웰", "Context":"너가 만약 생각이 있고, 자격을 갖춘다면 내가 아는 것을 다 알려주고, 내 원대한 계획에 동참할 수 있게 하겠다."},
+        {"Type":0, "Talker":"오웰", "Context":"...그래서 어떤가 멍청이? 이 모든걸 들으니?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"앗... 아직은 잘 모르겠어요.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그래... 생각을 더 해보라구. 완벽하게 자유로운 돼지들만의 세상을 말이야."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 떠나고, 나는 고민에 잠깁니다."}
+                    ]
+                },
+                {
+                    "Context":"자격이라면, 저는 무엇을 해야 하죠?", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"적극적이어서 좋군. 그것은 차차 알게 될 걸세"},
+                        {"Type":0, "Talker":"", "Context":"오웰은 떠나고, 나는 오웰이 말한 '자유로운 삶'을 계속 되뇌입니다. 가슴 한켠이 뜨거워지는걸 느낍니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_3_4"},
+        {"Type":0, "Talker":"오웰", "Context":"그 이후로 난 더 이상 주인의 말을 잘 듣는 돼지가 될 수 없었다."},
+        {"Type":0, "Talker":"오웰", "Context":"그래서 처음에는 죽으려고 난동을 부렸지만, 내 몸뚱이에 아직 가치가 남아있어 주인은 나를 격리만 하더군..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"씨돼지라서요?? 그럼...설마 아부지???", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"물론 너가 이 농장 출신이라면 그럴 수도 있지만. 어차피 죽고 대체되고.. 그런 생에 정 주어서 무엇하나?"},
+                        {"Type":0, "Talker":"", "Context":"오웰은 다시 말을 이어갑니다."}
+                    ]
+                },
+                {
+                    "Context":"...", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"너무 많은 이야기로 잠시 사고가 정지했습니다."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 다시 말을 이어갑니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

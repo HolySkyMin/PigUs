@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"A38", "Context":"이봐 칭구! 아까 낮잠 시간에 발생한 '고급 사료 절도 사건'을 수사해야 하는데 지금 좀 도와줄 수 있어!?"},
+        {"Type":0, "Talker":"", "Context":"음? 좀 이따 주인집 소녀랑 놀기로 했는데 어떡하죠?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"뭐?? 돼지들아! 자수해서 광명찾자!", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"이봐 A76! 배 밑에 빠져나온거 그거 뭐야! 사료가 전부 여기 있었구만! 딱 걸렸어 너!"},
+                        {"Type":0, "Talker":"", "Context":"일주일에 한 번 나오는 고급 사료는 무엇과도 바꿀 수 없다구요!"}
+                    ]
+                },
+                {
+                    "Context":"엄... 나는 주인집 소녀를 조사해볼게", "VariableType":[0, 0, 1, 0], "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"아 맞아! 아까 우리 먹이 주러 온 게 그 여자애였어!"},
+                        {"Type":0, "Talker":"A38", "Context":"근데 걔는 범행 동기가 없는데.. 그럼 네가 한 번 접촉해볼래?"},
+                        {"Type":0, "Talker":"", "Context":"휴... A76 배 밑에 깔려있는 사료는 안 보이는 걸까요. 무튼 수사를 가장해 소녀와 재밌게 놀았습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

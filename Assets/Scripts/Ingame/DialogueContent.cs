@@ -1,7 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class DialogueGroup
 {
     public int Length { get { return Dialogues.Length; } }
@@ -15,6 +17,7 @@ public class DialogueGroup
     }
 }
 
+[Serializable]
 public class DialogueContent 
 {
     public int Type;
@@ -24,6 +27,7 @@ public class DialogueContent
     public DialogueSelectData[] Selects;
 }
 
+[Serializable]
 public class DialogueSelectData
 {
     public int Length { get { return AfterDialogues.Length; } }
@@ -31,6 +35,7 @@ public class DialogueSelectData
     public string Context;
     public int[] VariableType;
     public int[] VariableDelta;
+    public bool IsTrigger;
     public DialogueContent[] AfterDialogues;
 
     public DialogueContent this[int index]

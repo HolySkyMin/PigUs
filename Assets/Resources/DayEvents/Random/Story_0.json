@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"화난 새", "Context":"네가 내 알 가져갔지? 어서 돌려줘!! 친구들 부르기 전에!!"},
+        {"Type":0, "Talker":"", "Context":"으악! 웬 빨간 새가 다짜고짜 쪼기 시작하네요! 이게 무슨 일이죠?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"우리 안을 뛰어다니며 떨쳐버린다", "VariableType":[1, 0, 0, 0], "VariableDelta":[-10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"화난 새", "Context":"응? 알을 가져간 건 초록색 돼지였다고?"},
+                        {"Type":0, "Talker":"", "Context":"화난 새는 친구로 보이는 조그마한 3마리의 파란 새와 함께 떠났습니다."},
+                        {"Type":0, "Talker":"", "Context":"오해는 풀려서 다행인데 뛰어다녔더니 배가 고프네요."}
+                    ]
+                },
+                {
+                    "Context":"구조물을 세워 숨는다", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"화난 새", "Context":"너... 두고봐! 다음엔 내가 친구들이랑 그거 다 쳐부수고 말거다!"},
+                        {"Type":0, "Talker":"", "Context":"한 고비를 넘기긴 했네요. 근데 모르는데 어떻게 훔쳐요!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

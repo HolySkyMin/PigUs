@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_3_3"},
+        {"Type":0, "Talker":"오웰", "Context":"... 나는 이 농장의 씨돼지다."},
+        {"Type":0, "Talker":"오웰", "Context":"젊었을 적엔 이 농장 밖 지역 대회에서 미스터 돼지 1등상을 받기도 했지. 주인은 나를 항상 잘 대해줬어."},
+        {"Type":0, "Talker":"오웰", "Context":"하지만 1등하지 못한 내 친구들은... <i>1등이 아니었기에,</i> 내가 보는 앞에서 끌려가 고사상에 올라갔지."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"끔찍해", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"끔찍하지만 사실이다."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 나름 덤덤하게 말을 이어갑니다."}
+                    ]
+                },
+                {
+                    "Context":"세상에", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"믿기 어렵지만 사실이다."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 나름 덤덤하게 말을 이어갑니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

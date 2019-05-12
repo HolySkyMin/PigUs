@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"A38", "Context":"이봐 칭구! 나의 추리에 따르면 요새 오웰이 뭔가 엄청난 걸 꾸미고 있는 것 같아. 넌 뭣 좀 아는 거 없어?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"글쎄.. 난 잘 모르겠는데 헤헤", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"5252~ 너 뭔가 숨기고 있는 거 같다구~"},
+                        {"Type":0, "Talker":"A38", "Context":"내 추리가 맞다면 뭔가 탈출 계획을 세우는 거 같은데!"}
+                    ]
+                },
+                {
+                    "Context":"오웰을 도와서 농장을 탈출하자!", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"호오! 역시 그런거였군!"},
+                        {"Type":0, "Talker":"", "Context":"A38은 놀라기보다는 추리를 맞춘 것에 더 기뻐하는 거 같네요!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

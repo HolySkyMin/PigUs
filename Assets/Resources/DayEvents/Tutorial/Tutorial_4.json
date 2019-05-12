@@ -7,7 +7,7 @@
             "Selects":
             [
                 {
-                    "Context":"난 누구?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"난 누구?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"음... 그건 어려운 질문이구나."},
                         {"Type":0, "Talker":"이모", "Context":"그들은 우리를 '돼지'라고 부르던데..."},
@@ -15,7 +15,7 @@
                     ]
                 },
                 {
-                    "Context":"우린 여기 왜 있는 거죠?", "VariableType":[0, 0, 0], "VariableDelta":[0, 0, 0],
+                    "Context":"우린 여기 왜 있는 거죠?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"음... 그건 어려운 질문이구나."},
                         {"Type":0, "Talker":"이모", "Context":"그들은 우리를 '돼지'라고 부르던데..."},

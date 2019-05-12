@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig1_2_4"},
+        {"Type":0, "Talker":"오웰", "Context":"글쎄, 과연 도살트럭에서 벗어나는 방법이 없을까? 그리고 괜히 내가 매일매일 난동을 부릴까?"},
+        {"Type":0, "Talker":"", "Context":"오웰이 오묘하게 씩 웃습니다."},
+        {"Type":0, "Talker":"오웰", "Context":"봐, 내가 격리우리로 가는 중 무엇을 보고, 무엇을 생각하는지... 멍청한 너는 꿈도 못 꿀꺼다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"네? 아니 근데 멍청이 아니라니까요!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"멍청이가 되지 말라고 그렇게 부르는거다 멍청이. 마음을 단단히 먹도록."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 다시 난동을 부려 격리우리로 떠납니다. 참으로 그는 이상한 돼지입니다."}
+                    ]
+                },
+                {
+                    "Context":"조금 더 자세히 알려주시면 안되나요?", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"흠... 알고싶냐? 다음 격리 이후에 알려주지."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 갑자기 난동을 부리기 시작했고, 결국 주인에 의해 갹리우리로 떠납니다."},
+                        {"Type":0, "Talker":"", "Context":"참으로 그는 이상한 돼지입니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

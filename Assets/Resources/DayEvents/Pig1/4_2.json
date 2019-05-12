@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_4_3"},
+        {"Type":0, "Talker":"", "Context":"그렇게 하루가 지나고 아침이 찾아왔습니다."},
+        {"Type":0, "Talker":"", "Context":"잠이 깨기도 전, 갑자기 쾅! 하는 소리와 함께 농장 주인이 축사로 들어옵니다. 아주 화가 난 얼굴입니다."},
+        {"Type":2, "ImageKey":"story_4_4"},
+        {"Type":0, "Talker":"주인", "Context":"이런 환장할 노릇이! 어머니 기일에 맞춰 기르던 국화가 다 어디로 사라진거야??"},
+        {"Type":0, "Talker":"", "Context":"주인은 두리번거리기 시작합니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"...꽃돼지야!!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"하지만 눈치가 더럽게 없는 꽃돼지는 이제야 꿀잠에서 깨는 듯 합니다."},
+                        {"Type":0, "Talker":"꽃돼지", "Context":"으음...? =.=?? 나 불렀엉?? ^.^ 역시 좋은 꽃은 하루가 지나도 싱싱하구나 ^.^"}
+                    ]
+                },
+                {
+                    "Context":"꽃돼지야! 빨리 꽃을 빼!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"하지만 눈치가 더럽게 없는 꽃돼지는 정말 꽃을 귀에서만 빼, 발치에 내려놓았습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

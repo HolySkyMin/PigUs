@@ -9,7 +9,7 @@
             "Selects":
             [
                 {
-                    "Context":"야!! 돼짖는 소리 좀 안나게 하라! ..zzZ", "VariableType":[0, 1, 0], "VariableDelta":[0, 5, 0],
+                    "Context":"야!! 돼짖는 소리 좀 안나게 하라! ..zzZ", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 5, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"왠지 모르게 자리가 넓어진 것 같아 곧 숙면을 취할 수 있었습니다."},
                         {"Type":0, "Talker":"", "Context":"어? 근데 깨어나 보니 몇몇 돼지가 사라져 있어요!"},
@@ -18,7 +18,7 @@
                     ]
                 },
                 {
-                    "Context":"웅엉... 10분만 더 잘게요... ..zzZ", "VariableType":[0, 1, 0], "VariableDelta":[0, 5, 0],
+                    "Context":"웅엉... 10분만 더 잘게요... ..zzZ", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 5, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"왠지 모르게 자리가 넓어진 것 같아 곧 숙면을 취할 수 있었습니다."},
                         {"Type":0, "Talker":"", "Context":"어? 근데 깨어나 보니 몇몇 돼지가 사라져 있어요!"},
