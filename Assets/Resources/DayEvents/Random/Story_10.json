@@ -13,7 +13,7 @@
                     ]
                 },
                 {
-                    "Context":"쿨럭..! 나도 좀 안좋네.. 쉬어야겠어", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
+                    "Context":"최대한 멀리 피한다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"한참이 지난 뒤에야 말벌이 사라졌습니다. 쏘이지 않아서 다행이에요."}
                     ]
