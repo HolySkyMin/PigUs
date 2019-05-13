@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_0_4"},
+        {"Type":0, "Talker":"오웰", "Context":"상상해봐라. 농장을 박차고 나가서 제한없는 자유를 누리는 우리의 모습을!"},
+        {"Type":0, "Talker":"오웰", "Context":"그것은 지금까지 맛보지 못했던 황홀함이자, 가장 높은 차원의 쾌일 것이다!"},
+        {"Type":0, "Talker":"오웰", "Context":"더 이상의 학살도, 사육도 없는 세상... 너도 바라는 바 아니더냐?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"아아.. 너무도 행복한 세상일겁니다. 무엇이든 지금보다는 낫겠지요.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그래. 운명의 날이 다가온다. 이제 계획을 실행할 때가 되었다."}
+                    ]
+                },
+                {
+                    "Context":"갑작스런 방종은 혼란을 야기할 수도 있습니다. 탈출 이후 구체적 계획이 있는지요?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"음... 크흠...! 그건 지금 중요한 것이 아니다! 모든 미래는 혁명의 성공으로부터 시작될 수 있다!"},
+                        {"Type":0, "Talker":"오웰", "Context":"이제 때가 되었으니 계획을 실행해야겠다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

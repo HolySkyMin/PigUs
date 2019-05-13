@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"왜소한 돼지가 비틀대며 다가옵니다."},
+        {"Type":0, "Talker":"왜소한 돼지", "Context":"근육 돼지들한테 밀려서 삼일 째 밥을 못먹고 있어.. 혹시 밥 좀 나눠줄 수 있을까?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"쿨럭..! 아니야.. 칭구들을 도우러 가자", "VariableType":[1, 0, 0, 1], "VariableDelta":[-10, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"밥을 나눠주니 먹을 게 거의 없어졌습니다. 그래도 친구는 행복해보이네요."}
+                    ]
+                },
+                {
+                    "Context":"쿨럭..! 나도 좀 안좋네.. 쉬어야겠어", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"왜소한 친구는 비틀대며 다른 돼지들에게 떠났습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"우리 안이 시끌시끌합니다. 돼지들끼리 싸움이 난 듯 하네요!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"싸움을 말린다.", "VariableType":[0, 1, 0, 1], "VariableDelta":[0, -10, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"싸움이 진정됐지만 말리다가 몇대 얻어맞았습니다. 다들 친하게 지내야지요..."}
+                    ]
+                },
+                {
+                    "Context":"즐겁게 관람한다.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"한 친구가 피떡이 돼서 쓰러졌습니다. 아무도 그에게 관심을 기울이지 않습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

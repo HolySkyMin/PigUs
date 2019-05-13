@@ -1,0 +1,24 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"우리 안에 말벌이 들어왔습니다! 친구들이 야단법석입니다!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"앞발로 벌을 잡는다", "VariableType":[0, 1, 0, 1], "VariableDelta":[0, -10, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"앞발을 쏘여서 퉁퉁 부어버렸지만 우리에는 평화가 찾아왔습니다."}
+                    ]
+                },
+                {
+                    "Context":"쿨럭..! 나도 좀 안좋네.. 쉬어야겠어", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"한참이 지난 뒤에야 말벌이 사라졌습니다. 쏘이지 않아서 다행이에요."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

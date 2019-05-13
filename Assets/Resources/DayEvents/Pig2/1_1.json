@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_1_1"},
+        {"Type":0, "Talker":"A38", "Context":"사실은 나도 이것저것 해결하며 남들에게 도움이 되는 탐정이 되고 싶은데, 이런 환경에서는 쉽지 않더라."},
+        {"Type":0, "Talker":"A38", "Context":"모리어티에 맞서 싸우는 셜록 홈즈가 되고 싶었지만, 여긴 사건도, 적도 없어."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"아니야! 너의 도움을 필요로 하는 돼지들이 있는걸!?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"모리어티는 항상 자신의 손을 직접 더럽히지 않고 사람들을 죽였지."},
+                        {"Type":0, "Talker":"나", "Context":"언제 찾아 올 지 모르는 죽음의 공포에 떨고 있는 우리 동족을 보렴."},
+                        {"Type":0, "Talker":"나", "Context":"자기들 손을 더럽히지 않고 우리를 잡아먹는 인간들은 모리어티나 다름없어."},
+                        {"Type":0, "Talker":"나", "Context":"돼지들은 <i>그 어느 때보다</i> 모리어티의 숙적이 필요하지"}
+                    ]
+                },
+                {
+                    "Context":"우리의 적은 인간이지.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"모리어티는 항상 자신의 손을 직접 더럽히지 않고 사람들을 죽였지."},
+                        {"Type":0, "Talker":"나", "Context":"언제 찾아 올 지 모르는 죽음의 공포에 떨고 있는 우리 동족을 보렴."},
+                        {"Type":0, "Talker":"나", "Context":"자기들 손을 더럽히지 않고 우리를 잡아먹는 인간들은 모리어티나 다름없어."},
+                        {"Type":0, "Talker":"나", "Context":"돼지들은 <i>그 어느 때보다</i> 모리어티의 숙적이 필요하지"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

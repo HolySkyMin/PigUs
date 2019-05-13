@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_0_2"},
+        {"Type":0, "Talker":"소녀", "Context":"어?! 이 꿀꿀이가 나랑 친해지고 싶나보네! 히히 귀여워라~"},
+        {"Type":0, "Talker":"소녀", "Context":"어머! 너 해피랑 조금 어울리던 꿀꿀이 아니었니? 요새는 같이 있는 거 못본거 같네~ 여기 당근 좀 먹어볼래?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"손을 덥썩 문다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"소녀", "Context":"아악!!! 꿀꿀아 왜그래 대체!!ㅠㅠ"},
+                        {"Type":0, "Talker":"", "Context":"소녀가 피를 뚝뚝 흘리며 축사 밖으로 나갑니다."}
+                    ]
+                },
+                {
+                    "Context":"아... 어떡하지.....", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"뭐하는 거야! 네 각오는 이것 뿐이었던 거야?! 죽어간 동지들은 다 <i>잊어버린건가!!!!!</i>"},
+                        {"Type":0, "Talker":"", "Context":"갑자기 꽃돼지와 근육돼지의 마지막 순간이 떠오르며 정신이 아득해집니다."},
+                        {"Type":0, "Talker":"", "Context":"정신을 차려보니 소녀는 피나는 손을 부여잡고 축사를 뛰쳐나가는 중입니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

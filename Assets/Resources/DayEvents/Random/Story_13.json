@@ -1,0 +1,24 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"비바람이 불어 지붕이 떨어졌습니다. 한 친구가 날아간 지붕 밑에 깔려 끙끙대고 있네요."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"등으로 받쳐준다", "VariableType":[0, 1, 0, 1], "VariableDelta":[0, -10, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"도와주다가 등을 삐끗하긴 했지만 깔린 친구는 빠져나왔습니다. "}
+                    ]
+                },
+                {
+                    "Context":"나부터 도망간다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"안전이 제일입니다. 저 친구는 운이 없었지만.."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

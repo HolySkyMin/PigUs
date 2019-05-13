@@ -212,8 +212,12 @@ namespace Ingame
                         var stories = Data.StoryQueue.Dequeue();
                         bool selectRes = false;
                         for (int j = 0; j < stories.Count; j++)
+                        {
                             selectRes = await RunDayDialogue(stories[j]);
-
+                            if (selectRes)
+                                break;
+                        }
+                        
                         // Trigger가 True이면 게임 오버가 되어 씬을 이동합니다.
                         if (selectRes)
                         {

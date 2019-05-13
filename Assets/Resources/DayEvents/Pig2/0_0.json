@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_0_1"},
+        {"Type":0, "Talker":"오웰", "Context":"마음만 같아서는 바로 입단시켜주고 싶지만 마지막 단계가 남았다."},
+        {"Type":0, "Talker":"오웰", "Context":"우린 어떤 인간에게도 헛된 감정을 가지지 않지. 설령 정말 착해보여도 말이야."},
+        {"Type":0, "Talker":"오웰", "Context":"모든 인간을 적대하겠다는 의미로 해피의 주인에게 해를 입히도록!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"드디어 첫 임무군요!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"착각하지마. 아직 너는 우리 일원이 아니라고."},
+                        {"Type":0, "Talker":"", "Context":"얼마 후 소녀가 축사 안으로 들어옵니다."}
+                    ]
+                },
+                {
+                    "Context":"그런 녀석의 주인은 도통 어떤 인간일지..", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"네 예상과는 다르겠지만 잊지 말도록. 그녀는 우리의 적의 자식이다."},
+                        {"Type":0, "Talker":"", "Context":"얼마 후 소녀가 축사 안으로 들어옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"한 돼지가 멱따는 소리를 내며 다가옵니다."},
+        {"Type":0, "Talker":"작곡가 돼지", "Context":"내 노래 어때? 어제 쓴 신곡이야."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"제발 그만해줘.", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"친구는 풀이 죽었습니다. 그래도 시끄러운 소리를 안들으니 마음이 편하네요."}
+                    ]
+                },
+                {
+                    "Context":"빌보드 각인데?", "VariableType":[0, 1, 0, 1], "VariableDelta":[0, -10, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"친구는 신이 나서 노래를 마구 불러댑니다. 잠을 잘 수가 없군요."}
+                    ]
+                }
+            ]
+        }
+    ]
+}
