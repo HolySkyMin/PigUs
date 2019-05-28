@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_1_1"},
+        {"Type":0, "Talker":"", "Context":"주인집 강아지가 꼬리를 흔들며 다가옵니다."},
+        {"Type":0, "Talker":"해피", "Context":"너가 <i>삼겹살</i>..인가 뭔가 하는 그놈이냐?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"뭐 그런 셈이지...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"강아지는 무표정을 유지한 채 말을 이어갑니다."}
+                    ]
+                },
+                {
+                    "Context":"맞아! 난 삼겹살이야.", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"강아지는 뒷발로 귀를 한 번 긁고 말을 이어갑니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

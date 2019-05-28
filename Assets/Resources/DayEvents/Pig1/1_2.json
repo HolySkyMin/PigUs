@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+	    {"Type":2, "ImageKey":"story_pig1_1_3"},
         {"Type":0, "Talker":"", "Context":"오웰은 내 말에 조금은 마음이 풀린 듯 합니다."},
         {"Type":0, "Talker":"오웰", "Context":"격리라... 진심인진 모르겠지만 걱정해줘서 고맙구나."},
         {"Type":0, "Talker":"오웰", "Context":"너는 이해하지 못하겠지만, 괜히 부리는 난동은 아니다."},

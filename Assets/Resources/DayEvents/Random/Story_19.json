@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_a38"},
+        {"Type":0, "Talker":"A38", "Context":"친구야 오늘같이 더운 날은 진흙 목욕을 해야 한다구!"},
+        {"Type":0, "Talker":"A38", "Context":"나랑 같이 뒹굴뒹굴 철퍽철퍽 시간 보내는거 어때?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"오우 너무 좋은걸?", "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"A38과 오랜만에 그늘에서 뒹굴뒹굴 하니 참 시원하고 즐겁습니다."}
+                    ]
+                },
+                {
+                    "Context":"으으... 아냐 좀 더러운걸.. ", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"힝 알았어.. 나나 뒹굴지 뭐"},
+                        {"Type":0, "Talker":"", "Context":"A38의 목소리는 풀이 죽었지만, 알게 뭐 있나요?"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

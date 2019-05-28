@@ -1,25 +1,26 @@
 {
     "Dialogues":
     [
-        {"Type":0, "Talker":"이모", "Context":"혹시 더 궁금한 게 있니?"},
+        {"Type":2, "ImageKey":"tutorial_ingame_3"},
+        {"Type":0, "Talker":"이모", "Context":"아차, 여기가 어딘지 모르겠구나. 여기는 '우리'란다."},
+        {"Type":0, "Talker":"이모", "Context":"집처럼 보이지만 그렇게 편안한 곳은 아니지."},
+        {"Type":0, "Talker":"이모", "Context":"매 순간 최선의 <color=blue>선택</color>을 내려야만 살아남을 수 있는 곳이야."},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"여긴 어디?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"그럼 죽을 수도.. 있나요?", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"이모", "Context":"여기는 '우리' 란다.\n우리가 뭐냐고?"},
-                        {"Type":0, "Talker":"이모", "Context":"우리는 지옥이란다. 매 순간 최선의 <color=cyan>선택</color>을 내려야만 살아남을 수 있는 곳이지."},
-                        {"Type":0, "Talker":"이모", "Context":"그래도 함께 버텨 나간다는 게 위안이 될 수 있을 거야."}
+                        {"Type":0, "Talker":"이모", "Context":"먹을 거 잘 먹고, 건강도 잘 챙겨야 살 수 있는 건 상식이겠지?"},
+                        {"Type":0, "Talker":"이모", "Context":"그런데 너무 과하면 모자란 것만 못하단다. 그런 아이들은 모두 어디론가 사라졌어. 다시 돌아오지 않았지.."}
                     ]
                 },
                 {
-                    "Context":"이 쇠창살은 다 뭐죠?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"무엇이 최선의 선택이죠?", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"이모", "Context":"여기는 '우리' 란다.\n우리가 뭐냐고?"},
-                        {"Type":0, "Talker":"이모", "Context":"우리는 지옥이란다. 매 순간 최선의 <color=cyan>선택</color>을 내려야만 살아남을 수 있는 곳이지."},
-                        {"Type":0, "Talker":"이모", "Context":"그래도 함께 버텨 나간다는 게 위안이 될 수 있을 거야."}
+                        {"Type":0, "Talker":"이모", "Context":"먹을 거 잘 먹고, 건강도 잘 챙겨야 살 수 있는 건 상식이겠지?"},
+                        {"Type":0, "Talker":"이모", "Context":"그런데 너무 과하면 모자란 것만 못하단다. 그런 아이들은 모두 어디론가 사라졌어. 다시 돌아오지 않았지.."}
                     ]
                 }
             ]

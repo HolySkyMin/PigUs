@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_basicpig"},
+        {"Type":0, "Talker":"나", "Context":"아니, 주인 녀석 며칠째 청소를 안해주는 거야 대체! 이건 너무한 거 아니냐고!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"어휴, 나라도 해야지", "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"반짝반짝 깨끗깨끗! 막혀있던 코가 뻥 뚫리는 느낌이네요!"}
+                    ]
+                },
+                {
+                    "Context":"그래, 누가 이기나 보자", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"긁적긁적 벅벅벅벅.. 피부가 너무 가려워 철장에 대고 비벼봅니다. 이제라도 청소를 해야하나요..."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_2_1"},
+        {"Type":0, "Talker":"", "Context":"주인집 소녀와 주인이 우리 앞을 지나가던 중 주인집 소녀가 우리 앞으로 달려옵니다."},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"<i>삼겹살!!!!</i> 아빠 얘가 내가 말한 그 재밌는 돼지야! 귀엽게 생겼지??"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"꿀꿀꿀! (소녀에게 다가간다)", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"소녀는 웃으며 얼굴을 쓰다듬습니다. 주인은 약간 떨떠름한 표정입니다."} 
+                    ]
+                },
+                {
+                    "Context":"고개를 돌린다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"소녀는 다가와 머리를 툭툭치며 반가워합니다. 주인은 약간 떨떠름한 표정입니다."} 
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_basicpig"},
+        {"Type":0, "Talker":"", "Context":"헉! 주인이 빨간 십자가가 그려진 상자에서 무서운 바늘을 꺼내 듭니다!"},
+        {"Type":0, "Talker":"", "Context":"갑자기 나를 잡아서 바늘을 꽂으려 하고 있어요! 이게 무슨 상황이죠?!!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"주인을 걷어찬다", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"주인", "Context":"어이쿠! ...이 망할 녀석."},
+                        {"Type":0, "Talker":"", "Context":"바늘은 빗나갑니다.\n알고보니 그 바늘은 '예방주사'라고 하는, 병에 안걸리게 해주는 좋은 약이었습니다."}
+                    ]
+                },
+                {
+                    "Context":"얌전히 기다린다", "VariableDelta":[0, 10, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"따끔한게 조금 아프긴 했지만, 더 이상 유행병에 안 걸릴 것 같은 느낌이 듭니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

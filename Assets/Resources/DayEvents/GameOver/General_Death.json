@@ -6,10 +6,10 @@
         {"Type":0, "Talker":"", "Context":"그 이유가 뭐가 되었든, 지금 이 상태로는 오늘을 무사히 보내기조차 힘들 것 같습니다."},
         {"Type":0, "Talker":"", "Context":"그 때, 저 멀리서 한 줄기 빛이 눈앞을 비춥니다. 그리고 희미하게 들려오는 목소리..."},
         {"Type":0, "Talker":"???", "Context":"...ㅑ... ...ㅒ...야...\n얘...야... <i>얘야...</i>"},
-        {"Type":0, "Talker":"나", "Context":"<color=#C0C0C0>...이...모... <i>이모...?</i></color>"},
+        {"Type":0, "Talker":"나", "Context":"<color=#404040>...이...모... <i>이모...?</i></color>"},
         {"Type":0, "Talker":"", "Context":"그 목소리는 분명히, 그리웠던 이모의 목소리였습니다."},
-        {"Type":0, "Talker":"이모", "Context":"얘야... 너의 <color=cyan>선택</color>이... 결국 너를 여기로 이끌었구나."},
-        {"Type":0, "Talker":"이모", "Context":"<color=cyan>선택</color>에는 대가가 따르니 신중하게 <color=cyan>선택</color>하라고 했는데... 기어이 내가 있는 곳까지 오게 되다니..."},
+        {"Type":0, "Talker":"이모", "Context":"얘야... 너의 <color=blue>선택</color>이... 결국 너를 여기로 이끌었구나."},
+        {"Type":0, "Talker":"이모", "Context":"<color=blue>선택</color>에는 대가가 따르니 신중하게 <color=blue>선택</color>하라고 했는데... 기어이 내가 있는 곳까지 오게 되다니..."},
         {"Type":0, "Talker":"이모", "Context":"정말로 안타깝구나, 얘야. 얘야... <i>얘...야......</i>"},
         {"Type":0, "Talker":"", "Context":"이모의 모습이 희미하게 사라집니다. 지금 그 모습을 놓쳐버리면 영영 다시 볼 수는 없을 것 같습니다."},
         {

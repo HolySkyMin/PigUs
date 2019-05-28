@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_0_2"},
+        {"Type":0, "Talker":"", "Context":"주인집 소녀가 나뭇가지를 들이밀며 얘기합니다."},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"이거 진짜 맛있는 건데, 한 번 먹어볼래? 넌 돼지니까 아무거나 다 먹을 수 있지??"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"나뭇가지를 먹는다", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"맛도 이상하고 속도 좋지 않지만 소녀는 정말 기분 좋아 보입니다."}
+                    ]
+                },
+                {
+                    "Context":"고개를 돌린다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"소녀는 억지로 나뭇가지를 입안에 쑤셔 넣습니다. 당황한 나머지 그대로 삼켜버렸습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

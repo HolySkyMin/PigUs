@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"day_tuto_0"},
+	    {"Type":2, "ImageKey":"tutorial_ingame_1"},
         {"Type":0, "Talker":"나", "Context":"으... 여긴... 어디지? 엄마 젖을 먹다가 어딘가로 끌려왔는데..."},
         {"Type":0, "Talker":"나", "Context":"이 쇠창살은 뭐야? 어떻게 해야 하지?"},
         {
@@ -9,7 +9,7 @@
             "Selects":
             [
                 {
-                    "Context":"있는 힘껏 부딪힌다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, -5, 0, 0],
+                    "Context":"있는 힘껏 부딪힌다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, -10, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"<i>꽝!</i>...... 광!.... <i>광</i>..."},
                         {"Type":0, "Talker":"", "Context":"소리가 축사 안에 메아리쳐 울립니다. 부딪힌 머리가 지끈거립니다."}

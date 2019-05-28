@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":3, "BgmKey":"Orwell Appearing"},
 	    {"Type":2, "ImageKey":"story_pig1_0_1"},
         {"Type":0, "Talker":"", "Context":"어라, 갑자기 우리에 처음 보는 돼지가 들어옵니다."},
         {"Type":0, "Talker":"", "Context":"그 돼지는 약간 희끗희끗한 털에 다리도 조금 저는 것 같아요. 하지만 엄청난 덩치에 눈빛만큼은 아주 매섭습니다."},
@@ -20,7 +21,7 @@
                     ]
                 },
                 {
-                    "Context":"아 네넵..! 제 이름은 ##라고 합니다..! ..아저씨는요?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"아 네넵..! 제 이름은 A99라고 합니다..! ..아저씨는요?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"그의 포스에 눌려 쭈그리가 되고 말았습니다."}
                     ]

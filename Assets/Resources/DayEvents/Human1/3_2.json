@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_3_3"},
+        {"Type":0, "Talker":"단식돼지", "Context":"너는 이곳이 좋니? 이 좁아터진 곳에서 죽기만 기다리는 것 말이야."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"헛소리 하지말고 밥이나 먹어", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"단식돼지가 내 눈을 똑바로 봅니다. 무언가 깊은 감정이 느껴집니다."}
+                    ]
+                },
+                {
+                    "Context":"뭐?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"단식돼지가 내 눈을 똑바로 봅니다. 무언가 깊은 감정이 느껴집니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

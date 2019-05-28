@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"[개발진 일동]", "Context":"...현재 보여드릴 수 있는 부분은 여기까지입니다!"},
+        {"Type":0, "Talker":"[개발진 일동]", "Context":"앞으로 우리 구구, A99는 어떤 여정을 겪게 될까요? 그리고 그 끝에는 무엇이 기다리고 있을까요?"},
+        {"Type":0, "Talker":"[개발진 일동]", "Context":"최종 시연 때에는 모든 이야기를 만나보실 수 있을 것입니다!"},
+        {"Type":0, "Talker":"[개발진 일동]", "Context":"'돼지, 우리'를 플레이해주셔서 감사합니다!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"안녕히 계세요!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                    ]
+                },
+                {
+                    "Context":"다음에 또 올게요!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                    ]
+                }
+            ]
+        }
+    ]
+}

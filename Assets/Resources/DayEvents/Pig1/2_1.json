@@ -1,10 +1,11 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_2_2"},
+	    {"Type":2, "ImageKey":"story_pig1_2_1"},
         {"Type":0, "Talker":"", "Context":"부르으으응~ 이내 트럭은 떠났습니다."},
         {"Type":0, "Talker":"", "Context":"트럭이 어제까지 같이 밥을 먹던 친구들을 데려가고, 그 자리에 아무것도 모르는 어린 돼지들이 들어왔습니다."},
         {"Type":0, "Talker":"", "Context":"그들을 보니 이 우리에서 보냈던 내 첫날이 떠오릅니다. 이모가 너무나도 그리워집니다."},
+        {"Type":2, "ImageKey":"story_pig1_2_2"},
         {"Type":0, "Talker":"", "Context":"우울한 눈물이 고이는 찰나 옆에서 오웰의 시선을 느낍니다."},
         {
             "Type":1, 

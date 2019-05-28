@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+	    {"Type":2, "ImageKey":"story_pig1_0_3"},
         {"Type":0, "Talker":"오웰", "Context":"이정도 얘기하면 알아듣겠지 신입? 아무튼... 잘 살아남아 보라구."},
         {"Type":0, "Talker":"", "Context":"오웰은 마치 하룻강아지를 보는 것처럼 나를 한번 흘겨보고 떠났습니다."},
         {

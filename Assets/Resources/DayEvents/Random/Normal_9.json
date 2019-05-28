@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_happydog"},
+        {"Type":0, "Talker":"해피", "Context":"<i>빨리빨리 안움직여?!!!</i> 우리 청소해야 되니까 다 나오라고! 뇌까지 살 쪄서 무슨 말인지 못 알아듣겠어?!!!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"너어는 진짜... 한 발짝도 못 움직여!", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"ㅋㅋㅋ그렇게 살만 찌우다보면 트럭밖에 더 타겠냐? 멍청하긴"},
+                        {"Type":0, "Talker":"", "Context":"해피는 코웃음을 치며 사라집니다. 근데 확실히 좀 더럽긴 하네요. 코가 꽉 막혔습니다."}
+                    ]
+                },
+                {
+                    "Context":"아~ 방금 출발했어요~!", "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"어차피 30분 지나면 다시 더럽히는 미개한 애들한테 주인님은 뭘 이렇게 잘해주지?"},
+                        {"Type":0, "Talker":"", "Context":"잘해주는 게 아니라 당연한거 아닌가요. 뭐 쨌든 깔끔해졌으니 다시 더렵혀 볼까요!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

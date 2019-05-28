@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_3_5"},
+        {"Type":0, "Talker":"해피", "Context":"...뭐, 대략 정리가 된 것 같군. 고맘네 삼겹살."},
+        {"Type":0, "Talker":"해피", "Context":"자넨 확실히 다른 돼지들 보다는 우수한 것 같구만. 이대로 잘해 보자구."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"감사합니다.", "VariableDelta":[6, 6, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"해피가 자신의 집에서 쿠키를 하나 물어와 전해줍니다."},
+                        {"Type":0, "Talker":"", "Context":"황홀한 기분이 입에서 온 몸으로 전해집니다."}
+                    ]
+                },
+                {
+                    "Context":"혹시 무언가 보상은 없나요?", "VariableDelta":[6, 6, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"해피는 재밌다는 듯 웃더니 자신의 집에서 쿠키를 하나 물어와 전해줍니다."},
+                        {"Type":0, "Talker":"", "Context":"황홀한 기분이 입에서 온 몸으로 전해집니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

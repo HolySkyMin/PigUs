@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_flowerpig"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"이잉 꽃이 다 시들었네 ㅠ.ㅠ 이번엔 좀 다른 들꽃을 꽂아볼까? 노란색? 보라색?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"어... 음... 여름이니까 파란색?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"음... 파란색 꽃은 없는걸 ㅠㅠ"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지의 말을 대충 들은 티가 나버렸습니다."}
+                    ]
+                },
+                {
+                    "Context":"뭘 해도 돼지목에 진주목걸이지 뭐, 꿀꿀!", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"헐... 너무 심한 말이야 ㅠ.ㅠ"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지는 한동안 토라졌습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

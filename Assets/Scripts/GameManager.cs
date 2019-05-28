@@ -22,9 +22,9 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void CreateData()
+    public void CreateData(bool skipTutorial)
     {
-        Save = new SaveData();
+        Save = new SaveData() { SkipTutorial = skipTutorial };
         Save.Phase1StoryDay = Random.Range(3, 5);
         SaveToFile();
     }

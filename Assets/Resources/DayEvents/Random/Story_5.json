@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_a38"},
         {"Type":0, "Talker":"A38", "Context":"내 추리에 따르면 해피 저 성격파탄견 겉으로는 행복해보여도 사실 외로운 거 같던데. 아참, 네가 좀 친했던가?"},
         {
             "Type":1, 

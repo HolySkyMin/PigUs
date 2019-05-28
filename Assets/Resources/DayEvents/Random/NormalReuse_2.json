@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_basicpig"},
+        {"Type":0, "Talker":"나", "Context":"나는 봄비가 참 좋아. 오늘은 빗소리를 들으면서 창가에서 자볼까?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"창가에서 잔다", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"아~ 츄! 재채기가 나올 것 같아ㅠ"},
+                        {"Type":0, "Talker":"", "Context":"추워서 감기에 걸려버렸어요ㅠㅠ"}
+                    ]
+                },
+                {
+                    "Context":"돼지한테 무슨 낭만이야", "VariableDelta":[0, 10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"아~ 따! 뜨뜻~ 한게 최고지~"},
+                        {"Type":0, "Talker":"", "Context":"고로롱 고로롱... 오늘도 역시 꿀잠입니다!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

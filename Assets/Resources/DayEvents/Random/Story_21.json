@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_basicpig"},
+        {"Type":0, "Talker":"", "Context":"오잉? 이 음악은? 탭댄스를 추어야 할 것 같은 흥겨운 음악이 들립니다."},
+        {"Type":0, "Talker":"", "Context":"우리 밖에서 축제를 하나본데, 몸이 들썩 들썩 하는군요!!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"두 발로 일어나 춤을 춘다", "VariableDelta":[0, -10, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"룰루랄라 또각 또각! 마치 사람처럼 춤을 추니 밖의 사람들이 신기하듯 구경합니다!"},
+                        {"Type":0, "Talker":"", "Context":"관심을 받는 건 너무나도 즐겁습니다. 어이쿠! 근데 발목이 좀 아프네요..."}
+                    ]
+                },
+                {
+                    "Context":"네 발로 춤을 춘다", "VariableDelta":[0, 10, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":2, "ImageKey":"character_flowerpig"},
+                        {"Type":0, "Talker":"꽃돼지", "Context":"꿀꿀!!"},
+                        {"Type":2, "ImageKey":"character_a38"},
+                        {"Type":0, "Talker":"A38", "Context":"나도 같이 출래!"},
+                        {"Type":2, "ImageKey":"character_basicpig"},
+                        {"Type":0, "Talker":"", "Context":"우리 안에서도 돼지 춤판이 벌어집니다. 같이 춤을 추고 나니 몸도 기분도 가뿐합니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

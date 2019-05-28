@@ -8,22 +8,28 @@ public class SaveData
 {
     public int DayCount;
     public int StoryPhase; // 0: neutral (init), 1: human story, 2: pig story, -1: game over @ phase 1, -9: game over @ general
+    public int CurrentStoryType;
     public int PhaseChangedDate;
     public int Phase1StoryDay;
     public bool SkipTutorial;
+    public bool BlendRandomNormal;
     public bool IsGameOver;
     public int[] Variables;
     public List<SelectionLog> DayLog;
+    public List<DialogueGroup> RandomNormal;
     public Queue<DialogueGroup> RandomGeneralBag, RandomStoryBag;
     public Queue<List<DialogueGroup>> StoryQueue;
+    public Queue<int> StoryTypeQueue;
 
     public SaveData()
     {
         Variables = new int[] { 50, 50, 0, 0 };
         DayLog = new List<SelectionLog>();
+        RandomNormal = new List<DialogueGroup>();
         RandomGeneralBag = new Queue<DialogueGroup>();
         RandomStoryBag = new Queue<DialogueGroup>();
         StoryQueue = new Queue<List<DialogueGroup>>();
+        StoryTypeQueue = new Queue<int>();
     }
 }
 

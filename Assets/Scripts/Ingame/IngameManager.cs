@@ -23,7 +23,7 @@ namespace Ingame
         public ScriptAnimation DialogAnimation;
 
         private bool isHumanStackFull = false, isPigStackFull = false;
-        private List<DialogueGroup> dayRandGeneral, dayStoryNeutral;
+        private List<DialogueGroup> dayStoryNeutral, dayNormalReuse;
         private Dictionary<int, List<DialogueGroup>> dayEvents, storyHuman1, storyPig1, storyPig2;
 
         private void Awake()
@@ -37,24 +37,9 @@ namespace Ingame
         public void LoadData()
         {
             Data = GameManager.Instance.Save;
-        }
 
-        public void SaveData()
-        {
-            GameManager.Instance.SaveToFile();
-        }
-
-        private void Start()
-        {
-            SoundManager.Instance.PlayBgm("Choice");
-            UpdateRoutine();
-        }
-
-        public void Initialize()
-        {
-            // 랜덤 일반 이벤트들을 불러옵니다.
-            dayRandGeneral = new List<DialogueGroup>();
-            for(int i = 0; ; i++)
+            // 랜덤 일회성 일반 이벤트들을 불러옵니다.
+            for (int i = 0; ; i++)
             {
                 var asset = Resources.Load<TextAsset>($"DayEvents/Random/Normal_{i}");
                 if (asset == null)
@@ -62,7 +47,21 @@ namespace Ingame
                 else
                 {
                     var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
-                    dayRandGeneral.Add(dialog);
+                    Data.RandomNormal.Add(dialog);
+                }
+            }
+
+            // 랜덤 다회성 일반 이벤트들을 불러옵니다.
+            dayNormalReuse = new List<DialogueGroup>();
+            for (int i = 0; ; i++)
+            {
+                var asset = Resources.Load<TextAsset>($"DayEvents/Random/NormalReuse_{i}");
+                if (asset == null)
+                    break;
+                else
+                {
+                    var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
+                    dayNormalReuse.Add(dialog);
                 }
             }
 
@@ -81,23 +80,23 @@ namespace Ingame
             }
 
             // 인간 스토리 (1차) 를 불러옵니다.
-            //storyHuman1 = new Dictionary<int, List<DialogueGroup>>();
-            //for(int i = 0; i < 5; i++)
-            //{
-            //    for(int j = 0; ; j++)
-            //    {
-            //        var asset = Resources.Load<TextAsset>($"DayEvents/Human1/{i}_{j}");
-            //        if (asset == null)
-            //            break;
-            //        else
-            //        {
-            //            if (!storyHuman1.ContainsKey(i))
-            //                storyHuman1.Add(i, new List<DialogueGroup>());
-            //            var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
-            //            storyHuman1[i].Add(dialog);
-            //        }
-            //    }
-            //}
+            storyHuman1 = new Dictionary<int, List<DialogueGroup>>();
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; ; j++)
+                {
+                    var asset = Resources.Load<TextAsset>($"DayEvents/Human1/{i}_{j}");
+                    if (asset == null)
+                        break;
+                    else
+                    {
+                        if (!storyHuman1.ContainsKey(i))
+                            storyHuman1.Add(i, new List<DialogueGroup>());
+                        var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
+                        storyHuman1[i].Add(dialog);
+                    }
+                }
+            }
 
             // 동물 스토리 (1차) 를 불러옵니다.
             storyPig1 = new Dictionary<int, List<DialogueGroup>>();
@@ -138,11 +137,27 @@ namespace Ingame
             }
         }
 
+        public void SaveData()
+        {
+            GameManager.Instance.SaveToFile();
+        }
+
+        private void Start()
+        {
+            UpdateRoutine();
+        }
+
+        public void Initialize()
+        {
+            Data.BlendRandomNormal = true;
+        }
+
         public async void UpdateRoutine()
         {
-            // If first run and set to be ran, run the tutorial.
+            // 조건에 맞을 시 튜토리얼을 실행합니다.
             if (Data.DayCount == 0 && !Data.SkipTutorial)
             {
+                SoundManager.Instance.PlayBgm("Tutorial");
                 await RunTutorial();
                 Data.SkipTutorial = true;
                 SaveData();
@@ -154,91 +169,113 @@ namespace Ingame
             {
                 // 우선 일수를 늘립니다.
                 Data.DayCount++;
+                Data.CurrentStoryType = 0;
 
                 // 이후의 값과 비교하기 위해 현재 값들을 저장해 둡니다.
                 var befHumanProg = HumanFavority / 3;
                 var befPigProg = PigFavority / 3;
                 var befPhase = Data.StoryPhase;
-                
+
                 // 조건에 따라 다이얼로그를 실행합니다.
+                SoundManager.Instance.PlayBgm("Choice");
                 if(Data.StoryPhase == 0)
                 {
+                    if (Data.RandomGeneralBag.Count < 1)
+                    {
+                        ShowGameOver("DayEvents/GameOver/General_Sold");
+                        break;
+                    }
                     if (Data.DayCount == Data.Phase1StoryDay)
                     {
                         if(Data.StoryQueue.Count > 0)
                         {
                             var stories = Data.StoryQueue.Dequeue();
+                            Data.CurrentStoryType = Data.StoryTypeQueue.Dequeue();
                             bool selectRes = false;
                             for (int j = 0; j < stories.Count; j++)
-                                selectRes = await RunDayDialogue(stories[j]);
+                                selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 ? true : false);
 
                             if (isHumanStackFull)
                             {
                                 if (selectRes)
                                     SetPhase2(1);
                                 else
-                                    Data.StoryPhase = -1;
+                                    SetPhase1GameOver();
                             }
                             if (isPigStackFull)
                             {
                                 if (selectRes)
                                     SetPhase2(2);
                                 else
-                                    Data.StoryPhase = -1;
+                                    SetPhase1GameOver();
                             }
                         }
                         else
-                            await RunDayDialogue(GetDayRandomEvent(50));
+                            await RunDayDialogue(GetDayRandomEvent(50), true, true);
                         Data.Phase1StoryDay += Random.Range(3, 5);
                     }
                     else
-                        await RunDayDialogue(GetDayRandomEvent(50));
+                        await RunDayDialogue(GetDayRandomEvent(50), true, true);
                 }
                 else if(Data.StoryPhase == 1)
                 {
+                    Data.CurrentStoryType = 1;
                     Debug.Log("Succesfully entered human phase 2.");
+                    ShowGameOver("DayEvents/GameOver/Phase2_PlaytestEnd");
                     break;
                 }
                 else if(Data.StoryPhase == 2)
                 {
-                    if(Data.StoryQueue.Count < 1)
-                    {
-                        // Pig Ending. Will move to ending cutscene.
-                        SceneChanger.Instance.ChangeScene("ResultScene");
-                        break;
-                    }
-                    else
-                    {
-                        var stories = Data.StoryQueue.Dequeue();
-                        bool selectRes = false;
-                        for (int j = 0; j < stories.Count; j++)
-                        {
-                            selectRes = await RunDayDialogue(stories[j]);
-                            if (selectRes)
-                                break;
-                        }
-                        
-                        // Trigger가 True이면 게임 오버가 되어 씬을 이동합니다.
-                        if (selectRes)
-                        {
-                            ShowGameOver($"DayEvents/GameOver/Phase2_Pig{storyPig2.Count - Data.StoryQueue.Count}");
-                            break;
-                        }
-                    }
+                    Data.CurrentStoryType = 2;
+                    ShowGameOver("DayEvents/GameOver/Phase2_PlaytestEnd");
+                    break;
+                    //if(Data.StoryQueue.Count < 1)
+                    //{
+                    //    // Pig Ending. Will move to ending cutscene.
+                    //    SceneChanger.Instance.ChangeScene("ResultScene");
+                    //    break;
+                    //}
+                    //else
+                    //{
+                    //    var stories = Data.StoryQueue.Dequeue();
+                    //    bool selectRes = false;
+                    //    for (int j = 0; j < stories.Count; j++)
+                    //    {
+                    //        selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 ? true : false);
+                    //        if (selectRes)
+                    //            break;
+                    //    }
+
+                    //    // Trigger가 True이면 게임 오버가 되어 씬을 이동합니다.
+                    //    if (selectRes)
+                    //    {
+                    //        ShowGameOver($"DayEvents/GameOver/Phase2_Pig{storyPig2.Count - Data.StoryQueue.Count}");
+                    //        break;
+                    //    }
+                    //}
                 }
                 else if(Data.StoryPhase == -1)
                 {
+                    Data.CurrentStoryType = -1;
+                    Data.BlendRandomNormal = false;
                     if(Data.DayCount > Data.PhaseChangedDate + 12)
                     {
                         ShowGameOver("DayEvents/GameOver/Phase1_WrongSelect");
                         break;
                     }
                     else
-                        await RunDayDialogue(GetDayRandomEvent(0));
+                        await RunDayDialogue(GetDayRandomEvent(0), true, true);
                 }
                 else if(Data.StoryPhase == -9)
                 {
+                    Data.CurrentStoryType = -1;
                     ShowGameOver("DayEvents/GameOver/General_Death");
+                    break;
+                }
+                else if(Data.StoryPhase == -10)
+                {
+                    Data.CurrentStoryType = -1;
+                    ShowGameOver("DayEvents/GameOver/General_Sold");
                     break;
                 }
                 else
@@ -246,17 +283,18 @@ namespace Ingame
                 CheckQueue();
 
                 // 값 변화를 비교하고 변경 사항을 적용합니다.
-                //if((HumanFavority / 3) > befHumanProg && HumanFavority < 18)
-                //{
-                //    for(int j = befHumanProg; j < HumanFavority / 3; j++)
-                //    {
-                //        var stories = new List<DialogueGroup>();
-                //        for (int k = 0; k < storyHuman1[j].Count; k++)
-                //            stories.Add(storyHuman1[j][k]);
-                //        dayStoryQueue.Enqueue(stories);
-                //    }
-                //}
-                if((PigFavority / 3) > befPigProg && PigFavority < 18 && !isHumanStackFull)
+                if ((HumanFavority / 3) > befHumanProg && HumanFavority < 18)
+                {
+                    for (int j = befHumanProg; j < HumanFavority / 3; j++)
+                    {
+                        var stories = new List<DialogueGroup>();
+                        for (int k = 0; k < storyHuman1[j].Count; k++)
+                            stories.Add(storyHuman1[j][k]);
+                        Data.StoryQueue.Enqueue(stories);
+                        Data.StoryTypeQueue.Enqueue(1);
+                    }
+                }
+                if ((PigFavority / 3) > befPigProg && PigFavority < 18 && !isHumanStackFull)
                 {
                     for (int j = befPigProg; j < PigFavority / 3; j++)
                     {
@@ -264,6 +302,7 @@ namespace Ingame
                         for (int k = 0; k < storyPig1[j].Count; k++)
                             stories.Add(storyPig1[j][k]);
                         Data.StoryQueue.Enqueue(stories);
+                        Data.StoryTypeQueue.Enqueue(2);
                     }
                 }
                 if (HumanFavority >= 15)
@@ -272,6 +311,8 @@ namespace Ingame
                     isPigStackFull = true;
                 if (Food <= 0 || Health <= 0)
                     Data.StoryPhase = -9;
+                if (Food >= 100 || Health >= 100)
+                    Data.StoryPhase = -10;
                 if (befPhase != Data.StoryPhase)
                     Data.PhaseChangedDate = Data.DayCount;
 
@@ -294,14 +335,23 @@ namespace Ingame
         {
             if(Data.RandomGeneralBag.Count < 1)
             {
-                var shuffler = new List<DialogueGroup>();
-                foreach (var item in dayRandGeneral)
-                    shuffler.Add(item);
-                while(shuffler.Count > 0)
+                if(Data.RandomNormal.Count > 0)
                 {
-                    int idx = Random.Range(0, shuffler.Count);
-                    Data.RandomGeneralBag.Enqueue(shuffler[idx]);
-                    shuffler.RemoveAt(idx);
+                    var shuffler = new List<DialogueGroup>();
+                    foreach (var item in dayNormalReuse)
+                        shuffler.Add(item);
+                    if(Data.BlendRandomNormal)
+                    {
+                        int normIdx = Random.Range(0, Data.RandomNormal.Count);
+                        shuffler.Add(Data.RandomNormal[normIdx]);
+                        Data.RandomNormal.RemoveAt(normIdx);
+                    }
+                    while (shuffler.Count > 0)
+                    {
+                        int idx = Random.Range(0, shuffler.Count);
+                        Data.RandomGeneralBag.Enqueue(shuffler[idx]);
+                        shuffler.RemoveAt(idx);
+                    }
                 }
             }
             if(Data.RandomStoryBag.Count < 1)
@@ -330,11 +380,19 @@ namespace Ingame
             }
         }
 
+        public void SetPhase1GameOver()
+        {
+            Data.StoryPhase = -1;
+            Data.BlendRandomNormal = false;
+            Data.RandomGeneralBag.Clear();
+            CheckQueue();
+        }
+
         public async void ShowGameOver(string dialogPath)
         {
             var dialog = JsonMapper.ToObject<DialogueGroup>(Resources.Load<TextAsset>(dialogPath).text);
             if(dialog != null)
-                await RunDayDialogue(dialog);
+                await RunDayDialogue(dialog, true, true);
             SceneChanger.Instance.ChangeScene("ResultScene");
         }
 
@@ -363,12 +421,13 @@ namespace Ingame
 
             // 튜토리얼을 플레이합니다.
             for(int i = 0; i < tutorial.Count; i++)
-                await RunDayDialogue(tutorial[i], false);
+                await RunDayDialogue(tutorial[i], i > 0 ? false : true, i < tutorial.Count - 1 ? false : true, false);
         }
 
-        public async Task<bool> RunDayDialogue(DialogueGroup dialogGroup, bool writeLog = true)
+        public async Task<bool> RunDayDialogue(DialogueGroup dialogGroup, bool playAppear, bool playDisappear, bool writeLog = true)
         {
-            await DialogAnimation.Appear();
+            if(playAppear)
+                await DialogAnimation.Appear();
             bool selectRes = false;
             for(int i = 0; i < dialogGroup.Length; i++)
             {
@@ -379,33 +438,46 @@ namespace Ingame
                 {
                     var res = await DialogueManager.Instance.ShowInteraction(new[] { dialog.Selects[0].Context, dialog.Selects[1].Context });
                     selectRes = dialog.Selects[res].IsTrigger;
-                    for(int j = 0; j < Data.Variables.Length; j++)
+                    for (int j = 0; j < Data.Variables.Length; j++)
                     {
-                        if (dialog.Selects[res].VariableType[j] > 0)
+                        Data.Variables[j] += dialog.Selects[res].VariableDelta[j];
+                        if (Data.Variables[j] > 100)
+                            Data.Variables[j] = 100;
+                        if (Data.Variables[j] < 0)
+                            Data.Variables[j] = 0;
+
+                        // 예외 케이스
+                        if(dialog.Selects[res].VariableDelta[0] == 6 && dialog.Selects[res].VariableDelta[1] == 6)
                         {
-                            Data.Variables[j] += dialog.Selects[res].VariableDelta[j];
-                            if (Data.Variables[j] > 100)
-                                Data.Variables[j] = 100;
-                            if (Data.Variables[j] < 0)
-                                Data.Variables[j] = 0;
+                            Data.Variables[0] = 50;
+                            Data.Variables[1] = 50;
                         }
                     }
                     if (writeLog)
-                        Data.DayLog.Add(new SelectionLog(Data.StoryPhase, Data.DayCount, dialog.Selects[res].Context, dialog.Selects[res].VariableDelta));
+                        Data.DayLog.Add(new SelectionLog(Data.CurrentStoryType, Data.DayCount, dialog.Selects[res].Context, dialog.Selects[res].VariableDelta));
                     for (int j = 0; j < dialog.Selects[res].Length; j++)
                     {
                         var afterDialog = dialog.Selects[res][j];
                         if (afterDialog.Type == 0)
                             await DialogueManager.Instance.ShowDialogue(afterDialog.Talker, afterDialog.Context);
-                        else if(afterDialog.Type == 2)
+                        else if (afterDialog.Type == 2)
                             DialogueManager.Instance.ShowImage(afterDialog.ImageKey);
+                        else if (afterDialog.Type == 3)
+                            SoundManager.Instance.PlayBgm(afterDialog.BgmKey);
+                        else if (afterDialog.Type == 4)
+                            SoundManager.Instance.PlaySe(afterDialog.SEKey);
                     }
                 }
                 else if (dialog.Type == 2)
                     DialogueManager.Instance.ShowImage(dialog.ImageKey);
+                else if (dialog.Type == 3)
+                    SoundManager.Instance.PlayBgm(dialog.BgmKey);
+                else if (dialog.Type == 4)
+                    SoundManager.Instance.PlaySe(dialog.SEKey);
             }
             DialogueManager.Instance.CleanDialogue();
-            await DialogAnimation.Disappear();
+            if(playDisappear)
+                await DialogAnimation.Disappear();
             return selectRes;
         }
     }

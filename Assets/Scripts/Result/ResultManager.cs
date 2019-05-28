@@ -27,7 +27,7 @@ namespace Result
 
         private void Start()
         {
-            SoundManager.Instance.PlayBgm("Ending");
+            SoundManager.Instance.PlayBgm("Game Over");
         }
 
         public void GoToTitle()

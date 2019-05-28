@@ -6,6 +6,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; private set; }
 
+    public string PlayingBgm { get; private set; }
+
     public AudioSource BgmPlayer, SePlayer;
 
     private void Awake()
@@ -21,8 +23,12 @@ public class SoundManager : MonoBehaviour
 
     public void PlayBgm(string audioKey)
     {
-        BgmPlayer.clip = Resources.Load<AudioClip>($"Sounds/{audioKey}");
-        BgmPlayer.Play();
+        if(audioKey != PlayingBgm)
+        {
+            BgmPlayer.clip = Resources.Load<AudioClip>($"Sounds/{audioKey}");
+            BgmPlayer.Play();
+            PlayingBgm = audioKey;
+        }
     }
 
     public void PlaySe(string audioKey)

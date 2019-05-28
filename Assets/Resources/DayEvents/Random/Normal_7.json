@@ -1,21 +1,25 @@
 {
     "Dialogues":
     [
-        {"Type":0, "Talker":"", "Context":"내가 자던 바로 그 자리에 화려한 버섯이 자라기 시작했다. 먹어도 되는걸까?"},
+        {"Type":2, "ImageKey":"character_flowerpig"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"비둘기가 말해줬는데, 요즘은 날씬한것보다는 그...뭐더라... 맞다! '근육돼지'가 인기래!"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"나도 그래서 운동 좀 하려는데 같이 할래?? ^.^"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"일단 먹는다", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "Context":"가만히 있어도 난 근육돼지인걸", "VariableDelta":[0, -10, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"기분이 몽롱해지는 요상한 버섯이다. 하나만 더..."}
+                        {"Type":0, "Talker":"나", "Context":"으.. 하루만 쉴래애애애애..."},
+                        {"Type":0, "Talker":"", "Context":"작심삼일이라더니 결국 며칠만에 운동을 포기하고 말았습니다ㅠ"}
                     ]
                 },
                 {
-                    "Context":"짓뭉갠다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, 10, 0, 0],
+                    "Context":"헛둘헛둘!!", "VariableDelta":[0, 10, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"덕분에 오늘은 잠을 푹 잘 수 있었다."}
+                        {"Type":0, "Talker":"나", "Context":"같이 땀을 흘리다 보니 기분도 좋아진 것 같아!"},
+                        {"Type":0, "Talker":"", "Context":"의도했던 근육돼지는 아니지만 몸도 가벼워진 것 같고 좋네요!"}
                     ]
                 }
             ]

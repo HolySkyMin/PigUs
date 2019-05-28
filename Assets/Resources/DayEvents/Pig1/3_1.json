@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_3_2"},
+	    {"Type":2, "ImageKey":"story_pig1_3_3"},
         {"Type":0, "Talker":"", "Context":"오웰은 한참 있다 말을 하기 시작합니다."},
         {"Type":0, "Talker":"오웰", "Context":"이 우리, 이 돼지들 중에 나에게 먼저 다가오는 돼지는 너가 유일하구나."},
         {"Type":0, "Talker":"오웰", "Context":"...아직 좀 멍청하긴 하지만 나름 믿을 만 한 것 같군. 이제 이야기할 때가 되었다."},

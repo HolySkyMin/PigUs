@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_3_2"},
+        {"Type":0, "Talker":"", "Context":"곧 쓰러질 것만 같은 깡마른 돼지가 천천히 고개를 들어 나를 봅니다."},
+        {"Type":0, "Talker":"단식돼지", "Context":"...무슨 일이지?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"좋은 말로 할 때 얼른 밥을 먹는게 좋을거야", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"단식돼지가 나를 째려봅니다."}
+                    ]
+                },
+                {
+                    "Context":"이봐, 괜찮은거야?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"단식돼지가 힘없이 나를 바라봅니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

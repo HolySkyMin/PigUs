@@ -24,6 +24,8 @@ public class DialogueContent
     public string Talker;
     public string Context;
     public string ImageKey;
+    public string BgmKey;
+    public string SEKey;
     public DialogueSelectData[] Selects;
 }
 
@@ -33,7 +35,6 @@ public class DialogueSelectData
     public int Length { get { return AfterDialogues.Length; } }
 
     public string Context;
-    public int[] VariableType;
     public int[] VariableDelta;
     public bool IsTrigger;
     public DialogueContent[] AfterDialogues;

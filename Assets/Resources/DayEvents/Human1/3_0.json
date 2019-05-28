@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_3_1"},
+        {"Type":0, "Talker":"", "Context":"우리 앞을 걸어다니던 해피가 나에게 다가옵니다."},
+        {"Type":0, "Talker":"해피", "Context":"이봐 삼겹살! 저기 골치아픈 친구가 하나 있는데, 너가 좀 얘기해보는게 어때?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"좋아요", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"저기 있는 친구가 삼일 째 밥을 먹질 않고 있어."},
+                        {"Type":0, "Talker":"해피", "Context":"주인님은 이런 상황을 아주 싫어하시지. 가서 얘기 좀 해보라구."}
+                    ]
+                },
+                {
+                    "Context":"그러죠 뭐...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"저기 있는 친구가 삼일 째 밥을 먹질 않고 있어."},
+                        {"Type":0, "Talker":"해피", "Context":"주인님은 이런 상황을 아주 싫어하시지. 가서 얘기 좀 해보라구."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

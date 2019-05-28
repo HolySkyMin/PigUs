@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"tutorial_ingame_2"},
         {"Type":0, "Talker":"???", "Context":"얘야, 진정하렴. 그렇게 큰 소리를 내면 다른 돼지들이 동요한단다."},
         {"Type":0, "Talker":"???", "Context":"그러면 우리는 더 이상 여기 있을 수 없을 지도 몰라."},
         {

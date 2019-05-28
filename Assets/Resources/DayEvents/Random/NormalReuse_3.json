@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_happydog"},
+        {"Type":0, "Talker":"해피", "Context":"이봐 뚱땡, 배고프지 않아?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"응..", "VariableDelta":[10, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"어? 웬일로 순순히 먹을 걸 주네요! 배가 고파서 허겁지겁 먹습니다!"},
+                        {"Type":0, "Talker":"해피", "Context":"ㅋㅋㅋ 멍청한 것들. 평생 그 모양으로 살아라ㅋㅋㅋ"},
+                        {"Type":0, "Talker":"", "Context":"으악, 너무 급하게 먹느라 소화가 안되고 어지러워요."}
+                    ]
+                },
+                {
+                    "Context":"또 무슨 속셈이냐!", "VariableDelta":[-10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"아 됐어. 재미없게 됐네."},
+                        {"Type":0, "Talker":"", "Context":"해피는 꼬리를 흔들며 떠났습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

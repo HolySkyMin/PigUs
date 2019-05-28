@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_2_3"},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"다음에 또 놀러올게 삼겹살! 잘 기다리고 있어!! <i>안녕!!</i>"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"꿀꿀!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"소녀는 집으로 달려갑니다. 주인이 잠시 나를 쳐다보고는 이내 소녀를 따라 집으로 갑니다."}
+                    ]
+                },
+                {
+                    "Context":"꿀!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"소녀는 집으로 달려갑니다. 주인이 잠시 나를 쳐다보고는 이내 소녀를 따라 집으로 갑니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

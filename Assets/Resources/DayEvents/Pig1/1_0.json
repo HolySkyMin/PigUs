@@ -1,7 +1,8 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":3, "BgmKey":"Orwell"},
+	    {"Type":2, "ImageKey":"story_pig1_1_1"},
         {"Type":0, "Talker":"오웰", "Context":"<i>아니 이 미친@#$%$#@ 강아지 같으니라구!</i> 짖을 거면 저리 꺼져서 짖어!"},
         {"Type":0, "Talker":"", "Context":"짖고 있는 해피에게 오웰이 욕을 한바가지 합니다."},
         {"Type":0, "Talker":"", "Context":"오웰은 다혈질이라 난동부리고 격리되는게 일상 다반사지만, 오늘은 좀 심하게 화난 것 같아 대화를 시도합니다."},

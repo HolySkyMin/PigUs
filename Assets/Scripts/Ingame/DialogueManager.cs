@@ -12,6 +12,7 @@ namespace Ingame
         public DialogueDisplayer Displayer;
         public DialogueClickReceiver Receiver;
         public DialogueInteractor Interactor;
+        public Sprite DefaultSprite;
 
         private void Awake()
         {
@@ -21,6 +22,8 @@ namespace Ingame
         public void ShowImage(string imageKey)
         {
             Displayer.CaseImage.sprite = Resources.Load<Sprite>($"Images/{imageKey}");
+            Displayer.CaseImage.type = UnityEngine.UI.Image.Type.Simple;
+            Displayer.CaseImage.preserveAspect = true;
         }
 
         public async Task ShowDialogue(string talker, string context)
@@ -44,6 +47,7 @@ namespace Ingame
         {
             Displayer.Talker.text = "";
             Displayer.Context.text = "";
+            Displayer.CaseImage.sprite = DefaultSprite;
         }
     }
 }

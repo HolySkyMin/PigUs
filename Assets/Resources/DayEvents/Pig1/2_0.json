@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+        {"Type":3, "BgmKey":"Orwell"},
         {"Type":0, "Talker":"", "Context":"오늘 아침은 트럭 엔진소리에 잠을 깼습니다. 불쾌한 소음에 정신을 차려갈 무렵,"},
         {"Type":2, "ImageKey":"story_pig1_2_1"},
         {"Type":0, "Talker":"꽃돼지", "Context":"이야 저기 봐 얘! 저 친구 부릉부릉 드라이브 간다!!!! ^ㅗ^"},
@@ -20,7 +20,7 @@
                 {
                     "Context":"어... 나는 거절할게.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"나", "Context":"<color=#B0B0B0>꽃돼지는 저게 도살장 트럭인 줄 알고 그러는걸까...</color>"},
+                        {"Type":0, "Talker":"나", "Context":"<color=#404040>꽃돼지는 저게 도살장 트럭인 줄 알고 그러는걸까...</color>"},
                         {"Type":0, "Talker":"", "Context":"괜히 해맑은 꽃돼지가 한심하게 느껴집니다."},
                         {"Type":0, "Talker":"", "Context":"그것도 모르고 꽃돼지는 또 헤헤거리고 있습니다."}
 

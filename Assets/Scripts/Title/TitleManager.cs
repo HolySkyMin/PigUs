@@ -8,6 +8,7 @@ namespace Title
     public class TitleManager : MonoBehaviour
     {
         public Button NewGameBtn, LoadGameBtn;
+        public Toggle TutorialSkipper;
 
         private void Start()
         {
@@ -16,12 +17,12 @@ namespace Title
             else
                 LoadGameBtn.interactable = false;
 
-            SoundManager.Instance.PlayBgm("Title");
+            SoundManager.Instance.PlayBgm("Pig, Us");
         }
 
         public void StartGame()
         {
-            GameManager.Instance.CreateData();
+            GameManager.Instance.CreateData(TutorialSkipper.isOn);
             SceneChanger.Instance.ChangeScene("DayScene");
         }
 

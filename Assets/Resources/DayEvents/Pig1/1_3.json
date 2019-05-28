@@ -1,10 +1,11 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+	    {"Type":2, "ImageKey":"story_pig1_1_3"},
         {"Type":0, "Talker":"오웰", "Context":"... 멍청한 너는 아직 잘 모르겠지만..."},
         {"Type":0, "Talker":"", "Context":"오웰은 잠깐 뜸을 들였다 다시 말을 잇습니다."},
         {"Type":0, "Talker":"오웰", "Context":"자유를 위해서다."},
+        {"Type":2, "ImageKey":"story_pig1_1_4"},
         {"Type":0, "Talker":"", "Context":"오웰은 그 길로 사라졌습니다."},
         {
             "Type":1, 

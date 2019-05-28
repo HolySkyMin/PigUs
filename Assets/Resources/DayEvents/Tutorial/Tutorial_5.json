@@ -1,25 +1,24 @@
 {
     "Dialogues":
     [
-        {"Type":0, "Talker":"이모", "Context":"궁금한 점이 많을 거야, 이해한단다."},
-        {"Type":0, "Talker":"이모", "Context":"그래도 한 가지 획실한 점은, <i>네가 무엇이 될 지는 네가 <color=cyan>선택</color>한다는 것이란다.</i>"},
+        {"Type":2, "ImageKey":"tutorial_ingame_4"},
+        {"Type":0, "Talker":"이모", "Context":"갑자기 우리 생활을 하게 되어서 힘든 점이 많을 거야. 아무리 힘들고 어려워도 이것만은 기억하렴."},
+        {"Type":0, "Talker":"이모", "Context":"<i>네가 무엇이 될 지는 네가 <color=blue>선택</color>하는 거야.</i>"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"네? 처음 듣는 얘기에요!", "VariableType":[1, 0, 0, 0], "VariableDelta":[5, 0, 0, 0],
+                    "Context":"네? 처음 듣는 얘기에요!", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"이모", "Context":"네가 선택한 대로 네 삶이 흘러간다는 말이지. 혹여나 잘못된 선택을 하지 않도록 조심하렴."},
-                        {"Type":0, "Talker":"이모", "Context":"잘못된 선택이 쌓이다 보면 목숨이 위험해질 수 있단다."},
-                        {"Type":0, "Talker":"이모", "Context":"배고프지? 우선 여기 남은 사료들 좀 먹으렴. 잘 먹어야 선택도 잘 하지~"}
+                        {"Type":0, "Talker":"이모", "Context":"호호호. 단순히 잘 먹고 잘 자는 것만이 인생의 전부는 아니라는 얘기야~"},
+                        {"Type":0, "Talker":"이모", "Context":"뭔가 거대한 사건이 너를 기다리고 있을 수도 있단다."}
                     ]
                 },
                 {
-                    "Context":"네! 무슨 말인지 알 것 같아요!", "VariableType":[1, 0, 0, 0], "VariableDelta":[5, 0, 0, 0],
+                    "Context":"네! 무슨 말인지 알 것 같아요!", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"이모", "Context":"그래, 넌 참 강하구나. 분명 넌 잘 할 수 있을 거야."},
-                        {"Type":0, "Talker":"이모", "Context":"배고프지? 우선 여기 남은 사료들 좀 먹으렴. 잘 먹어야 선택도 잘 하지~"}
+                        {"Type":0, "Talker":"이모", "Context":"그래, 넌 참 강하구나. 분명 넌 잘할 수 있을거야! 이모가 옆에서 응원해줄게~!!"}
                     ]
                 }
             ]

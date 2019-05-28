@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_1_2"},
+        {"Type":0, "Talker":"해피", "Context":"나는 이 농장의 관리견 해피다."},
+        {"Type":0, "Talker":"해피", "Context":"보아하니 넌 인간을 잘 따르는 것 같더군. 다른 멍청한 돼지들과는 조금 다른 것 같아..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"당연한거 아니야?", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"해피는 허허 웃음을 짓습니다."} 
+                    ]
+                },
+                {
+                    "Context":"멍청하다니... 내 친구들한테!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"해피는 고개를 갸우뚱합니다. "}
+                    ]
+                }
+            ]
+        }
+    ]
+}

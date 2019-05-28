@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_musclepig"},
+        {"Type":0, "Talker":"근육돼지", "Context":"해피 그 망할 애완견.. 요새 거슬리네... 확 그냥 정리해버려?"},
+        {"Type":0, "Talker":"근육돼지", "Context":"야! 걔랑 나랑 붙으면 누가 이길거 같냐?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"강아지가 강하지!", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"근육돼지", "Context":"야 임마! 돼지가 이기면 되지! 맞고싶냐? (퍽)"}
+                    ]
+                },
+                {
+                    "Context":"당연히 행님이시죠", "VariableDelta":[-10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"근육돼지", "Context":"암 그렇고 말고. 그런 의미에서 먹을 거 좀 줘봐. 펌핑 좀 해야지"},
+                        {"Type":0, "Talker":"", "Context":"에.. 그거 원래 운동으로 하는 거 아닌가요?ㅠ"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

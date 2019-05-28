@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_2_4"},
+	    {"Type":2, "ImageKey":"story_pig1_2_3"},
         {"Type":0, "Talker":"오웰", "Context":"글쎄, 과연 도살트럭에서 벗어나는 방법이 없을까? 그리고 괜히 내가 매일매일 난동을 부릴까?"},
         {"Type":0, "Talker":"", "Context":"오웰이 오묘하게 씩 웃습니다."},
         {"Type":0, "Talker":"오웰", "Context":"봐, 내가 격리우리로 가는 중 무엇을 보고, 무엇을 생각하는지... 멍청한 너는 꿈도 못 꿀꺼다."},

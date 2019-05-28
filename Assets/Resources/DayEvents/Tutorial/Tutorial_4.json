@@ -1,25 +1,25 @@
 {
     "Dialogues":
     [
-        {"Type":0, "Talker":"이모", "Context":"혹시 더 궁금한 게 있니?"},
+        {"Type":2, "ImageKey":"tutorial_ingame_3"},
+        {"Type":0, "Talker":"이모", "Context":"우울한 얘기는 그만하자꾸나!"},
+        {"Type":0, "Talker":"이모", "Context":"갑자기 우리로 오느라 경황이 없었지? 혹시 뭐 필요한게 있니?"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"난 누구?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"배가 너무 고파요..", "VariableDelta":[10, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"이모", "Context":"음... 그건 어려운 질문이구나."},
-                        {"Type":0, "Talker":"이모", "Context":"그들은 우리를 '돼지'라고 부르던데..."},
-                        {"Type":0, "Talker":"이모", "Context":"좋은 뜻은 아닌 것 같지만...\n무엇으로 부르는가는 중요하지 않단다!"}
+                        {"Type":0, "Talker":"이모", "Context":"에구...ㅠㅠ 갑자기 어미랑 떨어지느라 제대로 먹지도 못했겠구나."},
+                        {"Type":0, "Talker":"이모", "Context":"우선 여기 남은 사료를 먹으렴. 잘 먹어야 선택도 잘 하지~"}
                     ]
                 },
                 {
-                    "Context":"우린 여기 왜 있는 거죠?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"식은 땀이 흘러요..", "VariableDelta":[0, 10, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"이모", "Context":"음... 그건 어려운 질문이구나."},
-                        {"Type":0, "Talker":"이모", "Context":"그들은 우리를 '돼지'라고 부르던데..."},
-                        {"Type":0, "Talker":"이모", "Context":"좋은 뜻은 아닌 것 같지만...\n무엇으로 부르는가는 중요하지 않단다!"}
+                        {"Type":0, "Talker":"이모", "Context":"에구...ㅠㅠ 아무래도 많이 놀랬나 보구나... 우리 돼지들은 체온 조절이 힘들어서 항상 조심해야 해."},
+                        {"Type":0, "Talker":"이모", "Context":"여기 일단 시원한 물 좀 마셔보렴."}
                     ]
                 }
             ]

@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_musclepig"},
+        {"Type":0, "Talker":"근육돼지", "Context":"이봐 신입. 지금 너무 지루해서 그런데 웃기는 것 좀 해봐."},
+        {"Type":0, "Talker":"근육돼지", "Context":"뭐 장기자랑, 성대모사 이런거 없냐???"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"오웰 성대모사를 한다", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"멍멍컹컹!! 나는 하룻강아지 해피라네!!"},
+                        {"Type":0, "Talker":"", "Context":"근육돼지는 잘못 시켰다는 표정입니다."}
+                    ]
+                },
+                {
+                    "Context":"해피 성대모사를 한다", "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"멍멍컹컹!! 나는 하룻강아지 해피라네!!"},
+                        {"Type":0, "Talker":"", "Context":"근육돼지는 잘못 시켰다는 표정입니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human1_2_2"},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"삼겹살 춤춰봐 춤!! 그럼 내가 맛있는 거 갖다줄게! 아빠 이거 <i>봐봐!!</i>"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"박자에 맞춰 고개를 흔든다", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"주인은 약간 놀란 표정으로 웃습니다."},
+                        {"Type":0, "Talker":"", "Context":"꺄르르하는 소녀가 주인의 주머니에서 무언가를 꺼내옵니다."}
+                    ]
+                },
+                {
+                    "Context":"소녀를 째려본다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"소녀는 박자에 맞춰 내 귀를 잡아당깁니다. 억지로 고개를 끄덕이는 모습을 보며 주인은 살짝 웃음을 짓습니다."},
+                        {"Type":0, "Talker":"", "Context":"즐거워하던 소녀는 이내 주인의 주머니에서 무언가를 꺼내옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

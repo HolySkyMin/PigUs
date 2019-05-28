@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig1_0_2"},
+	    {"Type":2, "ImageKey":"story_pig1_1_2"},
         {"Type":0, "Talker":"", "Context":"해피와 오웰의 싸움이 끝난 뒤, 나는 혼자 남은 오웰에게 다가갑니다."},
         {
             "Type":1, 

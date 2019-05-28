@@ -1,21 +1,24 @@
 {
     "Dialogues":
     [
-        {"Type":0, "Talker":"", "Context":"다리를 다친 제비가 씨앗을 던져줬다. 이건 대체 뭐지?"},
+        {"Type":2, "ImageKey":"character_flowerpig"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"구구야! 내가 뭘 찾았나 봐봐! 반짝반짝하는게 나한테 정말 잘 어울리지 않아? ^.^"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"땅에 심는다", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "Context":"음...? 돼지 목에 진주 목걸이라니...", "VariableDelta":[0, -10, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"이게 무슨일? 사료로 가득찬 박이 주렁주렁 열렸다."}
+                        {"Type":0, "Talker":"꽃돼지", "Context":"힝! 구구 너 미워! (흑흑)"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지가 토라져서 나를 뒷발로 차고 돌아갑니다. 아 근데 이거 좀 아픈데요."}
                     ]
                 },
                 {
-                    "Context":"일단 먹는다", "VariableType":[1, 0, 0, 0], "VariableDelta":[-10, 0, 0, 0],
+                    "Context":"응! 너도 반짝반짝 빛이 나네!", "VariableDelta":[10, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"속이 더부룩해... 다이어트 음식인가..."}
+                        {"Type":0, "Talker":"꽃돼지", "Context":"진짜?! 거짓말 아니지? (히히)"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지가 기뻐하며 간식을 나눠줍니다."}
                     ]
                 }
             ]

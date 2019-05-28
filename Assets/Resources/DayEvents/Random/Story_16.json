@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_basicpig"},
+        {"Type":0, "Talker":"", "Context":"앗! 흙 속에 무언가 반짝이는게 있네요!"},
+        {"Type":0, "Talker":"", "Context":"꽃돼지가 숨겨둔 사탕 같기도 하고... 이걸 어떻게 하죠?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"먹는다... 냠냠...", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"사탕처럼 생겼지만 사실 예쁜 돌맹이었습니다. 작지만 속이 더부룩해졌습니다."}
+                    ]
+                },
+                {
+                    "Context":"혹시 모르니 물어보자", "VariableDelta":[10, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"주인", "Context":"이거.. 몇년 전에 잃어버렸던 진주 펜던트잖아!"},
+                        {"Type":0, "Talker":"", "Context":"주인이 갑자기 나를 '복덩이'라 부르며 간식을 주었습니다."},
+                        {"Type":0, "Talker":"", "Context":"역시 사람도 돼지도 착하고 볼 일입니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

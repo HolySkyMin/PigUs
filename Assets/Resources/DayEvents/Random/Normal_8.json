@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_flowerpig"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"이것봐! 지금까지 내가 모은 동글동글 반짝반짝 무지개 열매들이야!"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"눈에도 예쁜게 몸에도 좋대~ ^.^ 너도 하나 먹어볼래?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"이거 먹을 수 있는거 맞아? 난 안먹을게", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"너 나를 믿지 못하는구나.. 힝 미워 ㅠ.ㅠ"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지는 또 토라졌습니다."}
+                    ]
+                },
+                {
+                    "Context":"응! 고마워", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"어? 이거 알고보니 과일맛 사탕이었네! 마시따!"},
+                        {"Type":0, "Talker":"", "Context":"에구, 근데 하나 둘 나눠먹다 배탈이 나고 말았네요."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

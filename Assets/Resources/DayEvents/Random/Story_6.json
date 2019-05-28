@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_a38"},
         {"Type":0, "Talker":"A38", "Context":"이봐 칭구! 내가 요새 이것 저것 관찰하다 농장 구성원들이 뭘 좋아하는지 알아냈다고!"},
         {"Type":0, "Talker":"A38", "Context":"내 추리에 따르면 넌 뭔가 궁금한 게 있을 거 같은데?"},
         {
