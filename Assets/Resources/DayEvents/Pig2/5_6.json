@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_19"},
+        {"Type":0, "Talker":"소녀", "Context":"어?.... 너는... 삼겹살아 그땐 왜 나를 물었던 거야...?"},
+        {"Type":0, "Talker":"소녀", "Context":"대체...왜! 우리 농장이 어쩌다 이렇게 된 거지?"},
+        {"Type":0, "Talker":"소녀", "Context":"해피는 또 어쩌다 저렇게 됐고... 너무 혼란스럽고 두려워..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"꿀꿀꿀꿀!!\n(빨리 안 비켜?)", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"소녀", "Context":"하하하 나도 참.. 무슨 돼지한테 하소연이람..."},
+                        {"Type":0, "Talker":"나", "Context":"<color=#303030>아, 그래... 얘는 내 말을 알아들을 수 없지..</color>"}
+                    ]
+                },
+                {
+                    "Context":"꿀꿀꿀꿀...\n(더이상 다치게 하고 싶지 않아..)", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"소녀", "Context":"하하하 나도 참.. 무슨 돼지한테 하소연이람..."},
+                        {"Type":0, "Talker":"나", "Context":"<color=#303030>아, 그래... 얘는 내 말을 알아들을 수 없지..</color>"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

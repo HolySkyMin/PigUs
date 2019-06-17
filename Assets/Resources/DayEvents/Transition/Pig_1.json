@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"tutorial_ingame_3"},
+        {"Type":0, "Talker":"", "Context":"이모는 나라는 걸 이미 다 알고 있었다는 듯, 살포시 웃습니다."},
+        {"Type":0, "Talker":"이모", "Context":"어머 구구, 그 사이에 이렇게 자랐구나 ㅎㅎ... 그동안 잘 지냈니?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"네! 물론이죠!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"물론... 많은 일들이 있었지만요."},
+                        {"Type":0, "Talker":"이모", "Context":"역시, 우리의 삶이 팍팍하긴 하지?"},
+                        {"Type":0, "Talker":"이모", "Context":"그래도 여기까지 온거 보면 넌 <color=blue>너가 어떤 존재가 되고 싶은지,</color> 잘 결정했나보구나. 장하다 우리 구구ㅎㅎ"}
+                    ]
+                },
+                {
+                    "Context":"음....뭐 그랬죠 ㅎㅎ...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"역시, 우리의 삶이 팍팍하긴 하지?"},
+                        {"Type":0, "Talker":"이모", "Context":"그래도 여기까지 온거 보면 넌 <color=blue>너가 어떤 존재가 되고 싶은지,</color> 잘 결정했나보구나. 장하다 우리 구구ㅎㅎ"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

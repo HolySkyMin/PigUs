@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"잠이 들려는 찰나 어디선가 이야기 소리가 들려옵니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"엿듣는다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"돼지들", "Context":"...... 이제 우리는...... 되는 거야?......"},
+                        {"Type":0, "Talker":"돼지들", "Context":"그렇게...... 그 녀석처럼은...... 수치잖아?......"},
+                        {"Type":0, "Talker":"돼지들", "Context":"뭐...... 되지 않는...... 상식이고 올바른...... 이지."}
+                    ]
+                },
+                {
+                    "Context":"그냥 잔다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"이야기 소리는 서서히 커져 잠을 방해합니다."},
+                        {"Type":0, "Talker":"돼지들", "Context":"...... 이제 우리는...... 되는 거야?......"},
+                        {"Type":0, "Talker":"돼지들", "Context":"그렇게...... 그 녀석처럼은...... 수치잖아?......"},
+                        {"Type":0, "Talker":"돼지들", "Context":"뭐...... 되지 않는...... 상식이고 올바른...... 이지."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

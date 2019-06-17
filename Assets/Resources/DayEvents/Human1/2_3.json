@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human1_2_3"},
+	    {"Type":2, "ImageKey":"story_human1_2_1"},
         {"Type":0, "Talker":"주인집 소녀", "Context":"다음에 또 놀러올게 삼겹살! 잘 기다리고 있어!! <i>안녕!!</i>"},
         {
             "Type":1, 

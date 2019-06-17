@@ -1,0 +1,33 @@
+{
+    "ToGameOver":"Phase2_Pig4",
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_11.2"},
+        {"Type":0, "Talker":"해피", "Context":"<i>헉... 헉... 헤엑.... 헥....</i> 오랜만에 느껴보는.... 싸구려.. 선지 냄새군.."},
+        {"Type":0, "Talker":"해피", "Context":"죽이지는 않았다. <i>헉... 헉...</i> 고사가 끝나면 도살장에 끌려가서.. <i>헉..</i> 더 잔인하게 죽을테니..."},
+        {"Type":0, "Talker":"해피", "Context":"<i>헉...</i> 숨이 차는군. 더럽지만 여기있는 물이라도 마셔야겠어. 꼴깍, 꼴깍, 꼴깍..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"이제 그만!!!! 더 마시면 안 돼!!!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"아직도 소리지를 힘이 남았나! 하여ㄱ...ㅏ... <i>헙...!</i> 켁!!! 갸아악! 캭컥컥컥!! 컥!! <i>컥!... 커.... 그어...</i>"},
+                        {"Type":0, "Talker":"해피", "Context":"..............!!!!!!!!", "Unskippable":true},
+                        {"Type":0, "Talker":"해피", "Context":".............!!!!!!!!!!!!!!", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"해피가 고통스러운 듯 목을 부여잡고 달려나갑니다."},
+                        {"Type":0, "Talker":"", "Context":"그러나 발소리만 들릴 뿐, 더 이상 목소리는 들리지 않습니다."}
+                    ]
+                },
+                {
+                    "Context":"(가만히 지켜본다)", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"꼴깍꼴깍... 켁..! 컥! 풀썩."},
+                        {"Type":0, "Talker":"", "Context":"해피가 쓰러진 채 미동도 하지 않습니다. 코끝 바로 앞의 흩어진 톱밥 역시 미동도 하지 않습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

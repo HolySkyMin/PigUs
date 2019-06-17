@@ -1,0 +1,31 @@
+{
+    "Dialogues":
+    [
+        {"Type":3, "BgmKey":"Day of Revolution"},
+	    {"Type":2, "ImageKey":"story_pig2_15"},
+        {"Type":0, "Talker":"오웰", "Context":"드디어 오늘이 고삿날이다."},
+        {"Type":0, "Talker":"오웰", "Context":"틀림없이 한 번은 우리의 문이 열릴 것이고, 우리는 그 문으로 당당히 걸어나갈 것이다"},
+        {"Type":0, "Talker":"오웰", "Context":"제군들! 우린 지금 엔드게임에 있다!!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"우리는 가망이 없어!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"여기 우리 안이 가망이 없다는 말 맞지? 괜히 헷갈리게 말이야! 다들 너를 믿고 있다고..!"},
+                        {"Type":0, "Talker":"", "Context":"오웰의 기쁨도 슬픔도 아닌 표정이 오묘합니다."}
+                    ]
+                },
+                {
+                    "Context":"이게 당신이 본 탈출하는 유일한 경우인가요?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그걸 지금 말하면 실현되지 않을 거다. 아 이 경우에는 말해야 실현되려나?"},
+                        {"Type":0, "Talker":"오웰", "Context":"하하! 그냥 단지 너를 믿는다고 말해두지."},
+                        {"Type":0, "Talker":"", "Context":"오웰의 기쁨도 슬픔도 아닌 표정이 오묘합니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

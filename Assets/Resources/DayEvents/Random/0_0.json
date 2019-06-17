@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"이모가 없어진 낮의 우리, 너무나도 낯선 돼지들이 많습니다."},
+        {"Type":0, "Talker":"", "Context":"아무도 나에게 눈길을 주지 않고, 도대체 뭘 해야하는지 몰라 불안한 그때,"},
+        {"Type":0, "Talker":"???", "Context":"오! 안녀어엉! 너 어제 처음 온.. 어디보자... A99구나!!"},
+        {"Type":0, "Talker":"", "Context":"쇠창살을 질겅질겅 씹고 있는 돼지가 말을 겁니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"내 이름을 어떻게??!???!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"???", "Context":"그야 너의 등짝을 봐~ 우리 돼지들은 모두 이렇게 번호가 붙어있다구~"}
+                    ]
+                },
+                {
+                    "Context":"엇.. 안녕하세요...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"???", "Context":"힛.. 말을 편하게 해줘어어~"},
+                        {"Type":0, "Talker":"", "Context":"내가 너무 주눅들어 보였나 봅니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_a38"},
+        {"Type":0, "Talker":"A38", "Context":"밖에서 구구구 거리는 비둘기를 봐.. 자유롭게 날아다니는 기분은 어떨까?"},
+        {"Type":0, "Talker":"A38", "Context":"근데 그게 좋은건지 아닌지는 내 뛰어난 추리력으로도 알 수가 없군. 이봐 칭구 네 생각은 어때??"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"당연히 자유가 최고지~ 동의?", "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"어~ 보감~ 근데 자유를 얻고는 무얼하지?"},
+                        {"Type":0, "Talker":"", "Context":"오늘따라 궁금한 게 많은 A38이네요."}
+                    ]
+                },
+                {
+                    "Context":"집 나가면 개고생이다!", "VariableDelta":[0, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"누군가의 영향을 받은 거 같은데! 그런 개 같은 친구 말고 나랑도 좀 놀아줘~ 섭섭해~ 섭섭해~"},
+                        {"Type":0, "Talker":"", "Context":"허헛. 근데 개 같은 게 아니라 개 맞는데.."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

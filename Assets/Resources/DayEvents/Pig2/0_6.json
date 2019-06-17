@@ -1,8 +1,9 @@
 {
+    "ToGameOver":"Phase2_Pig1",
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_0_6"},
-        {"Type":0, "Talker":"오웰", "Context":"그래서 네 역할이 중요하지. 작전을 성공시킬 가장 충성스러운 혁명 전사를 만들어라."},
+	    {"Type":2, "ImageKey":"story_pig2_0_3"},
+        {"Type":0, "Talker":"오웰", "Context":"네 역할은 작전을 성공시킬 충성스러운 혁명 전사를 만드는 것이다."},
         {"Type":0, "Talker":"오웰", "Context":"며칠 후에 고사를 위해 돼지를 잡으러 오면 건강한 척 날뛰게 해라."},
         {"Type":0, "Talker":"오웰", "Context":"인간은 반드시 길조라 여기며 그 돼지를 잡아갈 터이니. 반드시 충분히 믿을 수 있을 때 작전을 설명하고 실행에 옳길 수 있도록."},
         {
@@ -10,13 +11,13 @@
             "Selects":
             [
                 {
-                    "Context":"알겠습니다. 자유를 위해.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"알겠습니다. 자유를 위해.", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"오웰", "Context":"자유를 위해."}
                     ]
                 },
                 {
-                    "Context":"동지를 희생시킬 순 없습니다. 제가 그 역할을 하겠습니다.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "Context":"동지를 희생시킬 순 없습니다. 제가 그 역할을 하겠습니다.", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
                     "AfterDialogues":[
                         {"Type":0, "Talker":"오웰", "Context":"너에겐 더 큰 역할이 준비되어 있었는데. 아쉽군. 그렇게 감정에 휘둘리는지 몰랐군."},
                         {"Type":0, "Talker":"오웰", "Context":"소원대로 해도 좋다."}

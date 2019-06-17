@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"random_10_7"},
+        {"Type":0, "Talker":"", "Context":"으악! 비가 너무 많이 와요! 바닥으로 물이 점점 새들어오는데 어떡하죠?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"It's Raining Pigs~! 할렐루야~", "VariableDelta":[0, -10, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"으.. 재밌게 놀기는 했는데 갑자기 한기가 느껴지네요. 바닥 물도 그리 깨끗해보이지는 않네요ㅠ"}
+                    ]
+                },
+                {
+                    "Context":"그래, 누가 이기나 보자", "VariableDelta":[-10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"휴! 쾌적한 우리를 사수했어요! 그런데 너무 열심히 했나.. 배에서 꼬르륵 소리가!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

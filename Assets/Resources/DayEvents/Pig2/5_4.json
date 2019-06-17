@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_17"},
+        {"Type":0, "Talker":"", "Context":"녀석이 나가니 몸이 축 쳐져 기운이 없어보이는 해피가 터덜터덜 들어옵니다"},
+        {"Type":0, "Talker":"", "Context":"금방이라도 우리에게 달려들 것 같은 표정에는 원한이 가득 서려있지만 그는 말할 수도, 덤빌 힘도 없어 보입니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"포기해. 니가 더 이상 할 수 있는 건 없다.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"!!!!!!!!"},
+                        {"Type":0, "Talker":"", "Context":"해피는 화를 주체하지 못해 얼굴이 새빨갛게 달아오른 채 뛰어나갑니다."},
+                        {"Type":0, "Talker":"", "Context":"여전히 그 어떤 울음소리도 들리지 않고 다급한 발소리 뿐입니다."}
+                    ]
+                },
+                {
+                    "Context":"사실, 우린 모두 피해자일지 몰라.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"........!"},
+                        {"Type":0, "Talker":"", "Context":"해피의 풀린 눈이 동그랗게 커지더니 놀란 듯 우리를 응시합니다."},
+                        {"Type":0, "Talker":"", "Context":"해피는 갑자기 고개를 젓는 듯 떠는 듯 몸을 움츠리다가 황급히 축사 밖으로 뛰어나갑니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

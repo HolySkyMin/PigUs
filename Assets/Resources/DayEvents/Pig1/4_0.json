@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"story_4_1"},
         {"Type":3, "BgmKey":"Escape"},
         {"Type":0, "Talker":"", "Context":"꽃돼지가 평소보다 크고 하얀 꽃을 꽂고 나타났습니다."},
         {"Type":0, "Talker":"꽃돼지", "Context":"얘 이것봐! ^.^ 무려 국화라구! 역시 들꽃들하고는 차원이 다르다니까~^.^"},

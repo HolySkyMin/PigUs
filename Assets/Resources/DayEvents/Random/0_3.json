@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_flowerpig"},
+        {"Type":0, "Talker":"꽃돼지", "Context":"아잉 ~.~ 어떻게 알구...여기있지룽! 히히 이거 잘 먹구 힘내!! 38이랑두 나랑두 잘 지내부쟈 친구!!^~^"},
+        {"Type":0, "Talker":"", "Context":"머리에 꽃이 올라가있는, 뭔가 살짝 눈에 초점이 없어보이지만 항상 웃어서 해맑고 즐거워보이는 돼지입니다."},
+        {"Type":0, "Talker":"", "Context":"꽃돼지는 아마 머리 위 꽃때문에 붙은 별명 같습니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"응! 그래! 친구!", "VariableDelta":[0, 0, 0, 1],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"히히~~ 친구 하나 또 생겨따 ㅎㅁㅎ"},
+                        {"Type":0, "Talker":"", "Context":"그렇게 아무도 모르는 우리 속에서, 혼자였던 나에게는 처음으로 친구가 둘이나 생겼습니다."},
+                        {"Type":0, "Talker":"", "Context":"무언가 든든한 마음이 듭니다."}
+                    ]
+                },
+                {
+                    "Context":"우잉 갑자기 '친구'라구??", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"꽃돼지", "Context":"왜... 시롱??? ㅠ.ㅠ"},
+                        {"Type":0, "Talker":"나", "Context":"아..아 아니야! 난 좋아!! 우리 친구하자 친구ㅎ..."},
+                        {"Type":0, "Talker":"", "Context":"...그렇게 아무도 모르는 우리 속에서, 혼자였던 나에게는 처음으로 친구가 둘이나 생겼습니다."},
+                        {"Type":0, "Talker":"", "Context":"무언가 든든한 마음이 듭니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

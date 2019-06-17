@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"바닥에 사탕처럼 보이는 무언가가 떨어져 있습니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"먹는다", "VariableDelta":[0, -5, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"먹었는데... 맛이 좀... <i>역겹습니다.</i>"},
+                        {"Type":0, "Talker":"", "Context":"바로 다른 곳에서 속을 게우고 있는데, 아까 그 곳에서,"},
+                        {"Type":0, "Talker":"돼지", "Context":"흠, 여기에 쌌던 내 예쁜 똥이 어디 갔지? ㅎㅎ"},
+                        {"Type":0, "Talker":"", "Context":"이런, 사탕처럼 보였던 그것이 다름 아닌 똥이었군요. 어쩐지."}
+                    ]
+                },
+                {
+                    "Context":"던진다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"그것을 집어 멀리 던졌습니다. 앞발에서 냄새가 나는 걸 보니 썩 좋은 물건은 아니네요."},
+                        {"Type":0, "Talker":"돼지", "Context":"으악! ...이게 뭐야, 똥이잖아? 누가 던지기라도 <i>했나?</i> 에휴 <i>재수 없어라...</i>"},
+                        {"Type":0, "Talker":"", "Context":"어디서 누가 던졌는지는 신경도 안 쓰는 모양입니다... <i>아니면 알고도 무시하는 걸지도요.<i>"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

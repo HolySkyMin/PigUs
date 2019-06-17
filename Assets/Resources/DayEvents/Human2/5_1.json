@@ -1,0 +1,31 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_17"},
+        {"Type":0, "Talker":"", "Context":"해피는 힘없이 고개를 끄덕입니다."},
+        {"Type":0, "Talker":"", "Context":"아아.. 나는 그것도 모르고.. 결국 나는 아무것도 막지 못하.. 아니, 잠깐..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"그럼 소녀는...?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"ㅇ... ㅏ.... ㅈㅣ..... ㄱ... 으... ㄴ.... 괘..... ㄴ... ㅊ.."},
+                        {"Type":0, "Talker":"오웰", "Context":"끝까지 동족들 생각은 안 드나보군."},
+                        {"Type":0, "Talker":"오웰", "Context":"그 여자애는 뭐 방해만 안 한다면야. 뭐 직접적인 원흉도 아니고.. 듣자하니 몸도 안 좋다던데."},
+                        {"Type":0, "Talker":"오웰", "Context":"어쨌건! 혁명은 빠르고, 긴밀하게 진행된다. 이제 곧."},
+                        {"Type":0, "Talker":"", "Context":"말이 끝나는 순간 주인이 술에 취했는지 비틀거리며 축사 안으로 들어옵니다."}
+                    ]
+                },
+                {
+                    "Context":"그럼 이제 곧...?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"맞아, 혁명은 이제 시작된다. 방해만 해봐. 동족들의 염원을 막은 죄. 반드시 피로서 응징할 것이다."},
+                        {"Type":0, "Talker":"", "Context":"말이 끝나는 순간 주인이 술에 취했는지 비틀거리며 축사 안으로 들어옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

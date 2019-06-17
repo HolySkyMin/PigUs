@@ -1,0 +1,11 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"story_4_6human"},
+        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"나는 그날 밤이 되어서야 깨어났습니다."},
+        {"Type":0, "Talker":"", "Context":"그 다음 새벽, 해피가 나를 노려보며 다가왔습니다."},
+        {"Type":0, "Talker":"해피", "Context":"<i>미쳤군.</i> 너도 결국 멍청이었구만. "},
+        {"Type":0, "Talker":"해피", "Context":"마음 같아선 너도 물어죽이고 싶지만 보는 주인님 눈이 있으니... 다신 마주치지 말자구."}
+    ]
+}

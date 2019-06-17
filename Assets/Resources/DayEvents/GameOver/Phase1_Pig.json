@@ -1,0 +1,12 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"story_4_6pig"},
+        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"나는 그날 밤이 되어서야 깨어났습니다."},
+        {"Type":0, "Talker":"", "Context":"그 다음 새벽, 오웰이 나에게 분노의 얼굴을 하고 찾아왔습니다."},
+        {"Type":0, "Talker":"오웰", "Context":"<i>멍청이...</i> 정말 너를 조금이라도 믿은 내가 멍청이구나."},
+        {"Type":0, "Talker":"오웰", "Context":"너와 내가 같은 돼지라는걸 부정하고 싶을 정도다. 다시는 마주치지 말자."},
+        {"Type":0, "Talker":"", "Context":"오웰은 나를 노려보다 떠났습니다. "}
+    ]
+}

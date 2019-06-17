@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_9"},
+        {"Type":0, "Talker":"오웰", "Context":"이걸 받아. 내가 격리 축사를 오가며 몰래 훔쳐온 농약병이다."},
+        {"Type":0, "Talker":"오웰", "Context":"이걸 녀석이 마시게 해 더 이상 그 주둥아리를 나불대지 못하게 하는거다."},
+        {"Type":0, "Talker":"오웰", "Context":"완장을 차고 있어도 혁명의 날엔 아무 역할도 못하겠지."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"그 녀석과는 아예 담 쌓았는데..", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그 점을 이용할 수도 있지 않겠어? 이건 너밖에 할 수 없는 일이야. 계획에 필요한 돼지가 있으면 지원해주지"},
+                        {"Type":0, "Talker":"", "Context":"일단 해피 녀석을 찾아가야겠네요."}
+                    ]
+                },
+                {
+                    "Context":"알겠습니다. 자유를 위해.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"역시 넌 믿음직스럽군. 계획에 필요한 돼지가 있으면 지원해주지"},
+                        {"Type":0, "Talker":"", "Context":"일단 해피 녀석을 찾아가야겠네요."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

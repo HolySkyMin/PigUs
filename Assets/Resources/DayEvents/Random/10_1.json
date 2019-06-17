@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"random_10_1"},
+        {"Type":0, "Talker":"", "Context":"다리를 다친 제비가 씨앗을 던져줬습니다. 이건 대체 뭘까요?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"땅에 심는다", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"이게 무슨 일이죠? 사료로 가득찬 박이 주렁주렁 열렸습니다"}
+                    ]
+                },
+                {
+                    "Context":"일단 먹는다", "VariableType":[1, 0, 0, 0], "VariableDelta":[-10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"속이 더부룩해... 다이어트 음식인가..."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

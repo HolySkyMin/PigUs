@@ -8,14 +8,18 @@ namespace Title
     public class TitleManager : MonoBehaviour
     {
         public Button NewGameBtn, LoadGameBtn;
-        public Toggle TutorialSkipper;
+        public Toggle TutorialSkipper, Phase1Skipper;
 
         private void Start()
         {
-            if (GameManager.SaveFileExists)
+            if (GameManager.SaveFileExists || GameManager.Phase2Exists)
                 LoadGameBtn.interactable = true;
             else
                 LoadGameBtn.interactable = false;
+            if (GameManager.Phase2Exists)
+                Phase1Skipper.interactable = true;
+            else
+                Phase1Skipper.interactable = false;
 
             SoundManager.Instance.PlayBgm("Pig, Us");
         }
@@ -28,7 +32,10 @@ namespace Title
 
         public void LoadGame()
         {
-            GameManager.Instance.LoadToData();
+            if (Phase1Skipper.isOn || !GameManager.SaveFileExists)
+                GameManager.Instance.LoadPhase2();
+            else
+                GameManager.Instance.LoadToData();
             SceneChanger.Instance.ChangeScene("DayScene");
         }
     }

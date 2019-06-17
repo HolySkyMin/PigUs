@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"random_11_1"},
+        {"Type":0, "Talker":"", "Context":"꽃돼지가 비상 식량으로 몰래 숨겨놓은 밀을 발견했습니다!"},
+        {"Type":0, "Talker":"", "Context":"어떻게 하죠? 마침 배가 고팠는데..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"배부른 돼지가 될래", "VariableType":[1, 0, 0, 0], "VariableDelta":[10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"쿰척쿰척~ 먹고 죽은 돼지가 때깔도 좋다고~"},
+                        {"Type":0, "Talker":"", "Context":"역시 탄수화물! 언제나 새로워! 짜릿해!"}
+                    ]
+                },
+                {
+                    "Context":"배고픈 소크라테스가 될래", "VariableType":[1, 0, 0, 0], "VariableDelta":[-10, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"배고프다고 아무거나 훔쳐먹을 순 없지!"},
+                        {"Type":0, "Talker":"나", "Context":"악법도 법이다~ 이말이야~"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

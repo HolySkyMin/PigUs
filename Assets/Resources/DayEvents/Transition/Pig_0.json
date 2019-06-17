@@ -1,0 +1,33 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"tutorial_ingame_1"},
+        {"Type":0, "Talker":"", "Context":"... ... ... 온 세상이 어둡습니다."},
+        {"Type":0, "Talker":"", "Context":"눈을 뜨고 있는건지, 감고 있는건지도 구분 안되는 어둠 속."},
+        {"Type":0, "Talker":"", "Context":"죽으면 이런 느낌이겠거니...하는 생각이 듭니다."},
+        {"Type":2, "ImageKey":"tutorial_ingame_2"},
+        {"Type":0, "Talker":"", "Context":"그렇게 멍하니 있다 누군가의 기척을 느낍니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"누구야!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"저 멀리서, 희미하게 반짝거리며 누군가가 다가옵니다. 이상하게 무섭지는 않습니다."},
+                        {"Type":0, "Talker":"", "Context":"점점 가까워질수록 무언가 익숙하고 포근한 느낌이 듭니다."},
+                        {"Type":0, "Talker":"나", "Context":"<i>...이모...?...!!!</i> 이모! 이모!!"}
+                    ]
+                },
+                {
+                    "Context":"누구야!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"저 멀리서, 희미하게 반짝거리며 누군가가 다가옵니다. 이상하게 무섭지는 않습니다."},
+                        {"Type":0, "Talker":"", "Context":"점점 가까워질수록 무언가 익숙하고 포근한 느낌이 듭니다."},
+                        {"Type":0, "Talker":"나", "Context":"<i>...이모...?...!!!</i> 이모! 이모!!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

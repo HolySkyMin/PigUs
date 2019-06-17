@@ -13,7 +13,7 @@ namespace Ingame
 
         public Image CaseImage;
         public Text Talker, Context;
-        public GameObject EndIndicator;
+        public GameObject EndIndicator, UnskipIndicator;
 
         public async Task DisplayContext(string talker, string context)
         {
@@ -40,7 +40,10 @@ namespace Ingame
                 {
                     Context.text = context.RichTextSubString(rtCount);
                     if (rtCount >= rtMaxCount)
+                    {
                         IsFullyAnimated = true;
+                        DialogueManager.Instance.Receiver.AllowedToReceive = true;
+                    }
                     else
                     {
                         rtCount++;

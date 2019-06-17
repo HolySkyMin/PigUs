@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public static bool SaveFileExists { get { return File.Exists($"{Application.dataPath}/save"); } }
+    public static bool Phase2Exists { get { return File.Exists($"{Application.dataPath}/save_phase2"); } }
 
     public SaveData Save;
 
@@ -43,5 +44,26 @@ public class GameManager : MonoBehaviour
         var formatter = new BinaryFormatter();
         formatter.Serialize(stream, Save);
         stream.Close();
+    }
+
+    public void LoadPhase2()
+    {
+        var stream = new FileStream($"{Application.dataPath}/save_phase2", FileMode.Open);
+        var formatter = new BinaryFormatter();
+        Save = formatter.Deserialize(stream) as SaveData;
+        stream.Close();
+    }
+
+    public void SavePhase2()
+    {
+        var stream = new FileStream($"{Application.dataPath}/save_phase2", FileMode.Create);
+        var formatter = new BinaryFormatter();
+        formatter.Serialize(stream, Save);
+        stream.Close();
+    }
+
+    public void DeleteFile(string filename)
+    {
+        File.Delete(filename);
     }
 }

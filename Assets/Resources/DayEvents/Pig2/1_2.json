@@ -1,26 +1,28 @@
 {
+    "ToGameOver":"Phase2_Pig2",
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_1_1"},
-        {"Type":0, "Talker":"A38", "Context":"엄.. 그렇게는 생각해본 적이 없었네.. 맞아, 사실 나는 중요한 걸 바라보지 않으려 한 거 같아."},
-        {"Type":0, "Talker":"A38", "Context":"그래, 돼지들에게는 셜록 홈즈가 필요했던 거야. 범인을 추리하는 데 그치지 않고 직접 잡아 처단할 수 있는."},
+	    {"Type":2, "ImageKey":"story_pig2_5"},
+        {"Type":0, "Talker":"A38", "Context":"엄... 맞아... 사실 나는 되도 않는 탐정 놀이나 하며 중요한 걸 바라보지 않으려 했던 거야..."},
+        {"Type":0, "Talker":"A38", "Context":"그래, 돼지들에게는 배트맨이 필요했던 거였어. 머리만으로는 아무 것도 해결할 수 없지."},
+        {"Type":0, "Talker":"A38", "Context":"세상은 악을 직접 처단할 수 있는 집행자를 원하는 거야!"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"바로 그거야! 내 계획을 들어볼래?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "Context":"바로 그거야! 내 계획을 들어볼래?", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"계획을 들은 A38의 표정이 떨떠름해 보입니다."},
                         {"Type":0, "Talker":"A38", "Context":"...내가 그런 큰 일을 할 수 있을까.. 추리가 필요한 일도 아니고. 목숨까지 걸어야 하는 거잖아.."},
-                        {"Type":0, "Talker":"나", "Context":"아니야 칭구. 사람을 구하는 탐정. 너 밖에 할 수 없어. 넌 잘 해낼 수 있을 거야."}
+                        {"Type":0, "Talker":"나", "Context":"아니야 칭구. 사람을 구하는 영웅. 너 밖에 할 수 없어. 넌 잘 해낼 수 있을 거야."}
                     ]
                 },
                 {
-                    "Context":"그래! 라이헨바흐 폭포 알지?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"맞아! 그는 항상 자신의 모든 걸 걸었지!", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"나", "Context":"홈즈는 모두를 위협하는 적을 없애기 위해 기꺼이 목숨도 바칠 수 있었던 뛰어난 탐정이었어."},
-                        {"Type":0, "Talker":"나", "Context":"고통받는 돼지들에게 필요한 건 숙적과 함께 폭포 밑으로 떨어질 수 있는 탐정이지."}
+                        {"Type":0, "Talker":"나", "Context":"브루스 웨인은 모두를 위협하는 적을 없애기 위해 기꺼이 명예도, 목숨도 바칠 수 있었던 숭고한 영웅이었어."},
+                        {"Type":0, "Talker":"나", "Context":"고통받는 돼지들에게 필요한 건 기꺼이 자신을 헌신할 수 있는 영웅이지."}
                     ]
                 }
             ]

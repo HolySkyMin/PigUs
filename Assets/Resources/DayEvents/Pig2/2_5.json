@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_11.1"},
+        {"Type":0, "Talker":"해피", "Context":"이 자식들 요새 쑥덕거리더니 대체 뭘 꾸미고 있는거냐!!!!"},
+        {"Type":0, "Talker":"해피", "Context":"이 농장의 질서를 주관하는 진행자. 무질서는 절대 용납하지 못한다. 이제 나도 한계야."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"어쩔? 우리 같은 상품에 흠집이나 낼 수 있겠어?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"뭐?!! 내가 못할거 같아! 오늘 돼지 선지로 <i>피칠 좀 해봐?!!!!!!!!!!</i> 물 수 있어!!!"},
+                        {"Type":0, "Talker":"", "Context":"해피가 우리 안으로 돌격해옵니다."}
+                    ]
+                },
+                {
+                    "Context":"하하하하! 진짜 멍청한게 누군지 참!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"하! 오늘 돼지 선지 맛 좀 한 번 <i>봐??!!!</i>"},
+                        {"Type":0, "Talker":"", "Context":"해피가 우리 안으로 돌격해옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

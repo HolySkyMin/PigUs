@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_8"},
+        {"Type":0, "Talker":"오웰", "Context":"자, 이제 거사일이 정말 얼마 남지 않았군."},
+        {"Type":0, "Talker":"오웰", "Context":"하지만 리모콘을 없앤 것만으로는 아직 완벽하게 성공할 수 없다. 바로 거슬리는 해피 녀석 때문이지."},
+        {"Type":0, "Talker":"오웰", "Context":"인간들의 충실한 노예인 저 녀석이 우리의 탈출을 인간들에게 알릴 수 없게 해야해."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"죽여버릴까요", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그건 안 돼. 죽은 시체를 처리할 데도 없어서 바로 들키고 말거다."},
+                        {"Type":0, "Talker":"오웰", "Context":"오히려 자기 역할을 못하게 하는게 이상적이지."}
+                    ]
+                },
+                {
+                    "Context":"그럼 못 알리게 하면 되죠", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"그거 좋은 생각이군. 제 역할을 못하게 하면 우리가 탈출한다는 사실조차 알 수 없을 거야."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_11.2"},
+        {"Type":0, "Talker":"오웰", "Context":"대체 무슨 의도로 저 개자식을 자극한거야! 아니, 뭔가 생각이 있었겠지."},
+        {"Type":0, "Talker":"오웰", "Context":"그래, 일단 어떻게 해줬으면 좋겠냐?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"돌아가면서 리모콘이 있는 척 해주세요!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"돼지들", "Context":"<i>여기다 여기!</i> 여기에 리모콘이 있지롱!"},
+                        {"Type":0, "Talker":"돼지들", "Context":"<i>아니아니!</i> 여기가 맞는데?!?!?"},
+                        {"Type":0, "Talker":"해피", "Context":"....두 말 안 한다, 잡히면 다 죽는거야."},
+                        {"Type":0, "Talker":"", "Context":"노련한 해피의 공격에 많은 돼지가 다쳐 쓰러집니다."}
+                    ]
+                },
+                {
+                    "Context":"쪽수로 밀어붙입시다!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"돼지들", "Context":"<i>꿀!!!!</i> 저 인간의 앞잡이를 타도하자!!!"},
+                        {"Type":0, "Talker":"돼지들", "Context":"<i>꾸에에엑!!</i> 컹컹!! 푹! 꾸엑... 픽.. 퍽퍽! <i>컥!!</i>"},
+                        {"Type":0, "Talker":"해피", "Context":"발악해봐야 너흰 돼지에 불과하다!! 그건 변하지 않아!!"},
+                        {"Type":0, "Talker":"", "Context":"노련한 해피의 반격에 많은 돼지가 다쳐 쓰러집니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

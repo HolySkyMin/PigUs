@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_a38"},
+        {"Type":0, "Talker":"A38", "Context":"내 이름은 A38! 그리고 탐정이지 @-@\n\n무려 A는 Agent를 의미한다구!"},
+        {"Type":0, "Talker":"A38", "Context":"아무튼! 이 우리 안에선 정말 다양한 사건들이 일어나는데, 그 진상을 밝혀내는게 나의 임무! 와하~!"},
+        {"Type":0, "Talker":"", "Context":"A38이 나에게 자랑스럽게 말합니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"'A'99...!\n헉 그럼 나두... 에이전트...?!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"5252! 때찌! 요원들끼리는 서로 밝히는거 아냐~"},
+                        {"Type":0, "Talker":"", "Context":"방금 전에 밝힌 것 같은데...\n\n참인지 거짓인지 판단은 포기하는게 편해보입니다."}
+                    ]
+                },
+                {
+                    "Context":"정말이야?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"응 정말 정말이지~ 후후."},
+                        {"Type":0, "Talker":"", "Context":"요원이라기엔 너무 실실 웃는게 좀 이상합니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

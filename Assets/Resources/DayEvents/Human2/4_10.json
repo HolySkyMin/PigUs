@@ -1,0 +1,35 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_13"},
+        {"Type":0, "Talker":"", "Context":"밖은 아주 강한 소나기가 내리치고 있습니다. 주인은 투덜대며 나를 마당의 막사로 끌고 갑니다."},
+        {"Type":0, "Talker":"", "Context":"맞아요.. 생각해보면 A38은 처음부터 곁에 있었죠."},
+        {"Type":0, "Talker":"", "Context":"왠지.. 이젠 더 이상 그럴 수 없을 것만 같아요.. 마음이 아주 공허하네요..."},
+        {"Type":0, "Talker":"", "Context":"빗물이 눈에 들어가 눈이 따갑습니다.\n... ... ...\n... ... ..."},
+        {"Type":0, "Talker":"", "Context":"아차 이럴 때가 아니에요. 어서 오웰 무리의 계획을 알려야 해요!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"해피!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"해피는 어디에 갔는지 집에 없습니다."},
+                        {"Type":0, "Talker":"나", "Context":"꿀꿀꿀!!!"},
+                        {"Type":0, "Talker":"", "Context":"애타게 소녀를 불러보지만 주인만 얼굴을 빼꼼 내밀고 바라볼 뿐 소녀의 모습은 찾을 수 없습니다."},
+                        {"Type":0, "Talker":"", "Context":"마당에는 빗소리와 내 울음소리만이 가득합니다. 다들 무슨 일이 있는 걸까요..."}
+                    ]
+                },
+                {
+                    "Context":"꿀꿀꿀!!(소녀야!!!)", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"애타게 소녀를 불러보지만 주인만 얼굴을 빼꼼 내밀고 바라볼 뿐 소녀의 모습은 찾을 수 없습니다."},
+                        {"Type":0, "Talker":"나", "Context":"해피!!!!"},
+                        {"Type":0, "Talker":"", "Context":"해피도 어디에 갔는지 집에 없습니다."},
+                        {"Type":0, "Talker":"", "Context":"마당에는 빗소리와 내 울음소리만이 가득합니다. 다들 무슨 일이 있는 걸까요..."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"낮잠이 몰려옵니다. 잘 보니 이 바닥도 눕기에는 되게 좋아보이네요."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"바로 눕는다", "VariableDelta":[0, -5, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"바로 누우니 피곤함이 조금 줄어드는 느낌을 받았습니다."},
+                        {"Type":0, "Talker":"", "Context":"그 때 한 무리의 돼지들이 다가와, 누워 있는 나를 밟고 지나갑니다. 마치 돌멩이를 밟듯이."},
+                        {"Type":0, "Talker":"", "Context":"비명을 질러 보지만, 모두들 들은 체도 하지 않습니다."}
+                    ]
+                },
+                {
+                    "Context":"지푸라기에 눕는다", "VariableDelta":[0, 5, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"근처에 있는 지푸라기에 몸을 뉘였습니다. 정말 편안합니다."},
+                        {"Type":0, "Talker":"", "Context":"잠시 눈을 붙이고 일어나니, 어떤 돼지가 경멸하는 눈빛으로 보고 있습니다."},
+                        {"Type":0, "Talker":"돼지", "Context":"어마마, 이게 무슨... 아... 에휴... 나 어떡해..."},
+                        {"Type":0, "Talker":"", "Context":"이게 무슨 일이죠? 원래 자리에 주인 같은 건 딱히 없었잖아요!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_26"},
+        {"Type":0, "Talker":"A38", "Context":"오웰, 그만하세요.... 계속 그렇게 서로 비난만 해대면.. 아무도 앞으로 나아갈 수 없을 거에요.."},
+        {"Type":0, "Talker":"A38", "Context":"네가 이렇게 부르지 말랬지만.. 그냥 널 대하는 방식으로 할게."},
+        {"Type":0, "Talker":"A38", "Context":"<i>구구야,</i> 난 널 더 이상 원망하지 않아.", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"나 또한 너에게 마음으로 다가가지 못했고.. 우린 모두 관계에 있어 미숙하고, 또 유약했지.", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"너와 함께 걷지 못해.. 정말...! 슬프..지만.. 가끔은 날 기억해줬으면.. 좋겠어. 나도.. 그럴거야..", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"우린 네게서 어떤 답이 나오든 그 길을 따라 이동할거야. 믿을 거야. 그게 우리의 마지막 사죄라고 생각해주겠니..", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"부담스러워 하지마. 넌 네가 날 대하는 방식으로 대하면 돼. 늘 그렇듯이. 아무것도 변하지 않아... 그래서 좋아.", "Unskippable":true},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"...미명이 보이는 방향으로.. 꽃밭을.. 지나.. 개울가를 찾아가..", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"고마워. 어려운 선택이었을텐데..."},
+                        {"Type":0, "Talker":"A38", "Context":"이미 우리보다 잘 해낸것 같지만.. 계속 그렇게 네가 바라는 삶을 살길 바래."},
+                        {"Type":0, "Talker":"A38", "Context":"앞으로의 길도 쉽지 않겠지. 각자의 자리에서 응원해주자. 올바른 선택을 할 수 있기를."},
+                        {"Type":0, "Talker":"A38", "Context":"그럼 우린 이만... 출발할게."}
+                    ]
+                },
+                {
+                    "Context":"...저 쪽 길이야. (거짓말)", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"고마워. 어려운 선택이었을텐데..."},
+                        {"Type":0, "Talker":"A38", "Context":"이미 우리보다 잘 해낸것 같지만.. 계속 그렇게 네가 바라는 삶을 살길 바래."},
+                        {"Type":0, "Talker":"A38", "Context":"앞으로의 길도 쉽지 않겠지. 각자의 자리에서 응원해주자. 올바른 선택을 할 수 있기를."},
+                        {"Type":0, "Talker":"A38", "Context":"그럼 우린 이만... 출발할게."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

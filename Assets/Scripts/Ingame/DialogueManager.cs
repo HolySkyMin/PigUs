@@ -26,9 +26,10 @@ namespace Ingame
             Displayer.CaseImage.preserveAspect = true;
         }
 
-        public async Task ShowDialogue(string talker, string context)
+        public async Task ShowDialogue(string talker, string context, bool unskippable)
         {
-            Receiver.AllowedToReceive = true;
+            Receiver.AllowedToReceive = !unskippable;
+            Displayer.UnskipIndicator.SetActive(unskippable);
             await Displayer.DisplayContext(talker, context);
             Receiver.AllowedToReceive = false;
         }

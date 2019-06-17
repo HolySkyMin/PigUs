@@ -1,0 +1,21 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"story_human2_gameover4"},
+        {"Type":0, "Talker":"", "Context":"쾅!....광....ㄱ.... <i>쾅!....</i> 광....ㄱ...."},
+        {"Type":0, "Talker":"", "Context":"우리 안에 둔탁한 굉음이 메아리치고, 주변이 아득해집니다. 그러나 아직 아프지는 않습니다."},
+        {"Type":0, "Talker":"", "Context":"좀 더, 좀 더. 그러다 보니 어느샌가 A38이 달려와 막고 있습니다, 눈에 눈물이 가득 고인 채로."},
+        {"Type":0, "Talker":"나", "Context":"아니, 막지 마. 제발, 끝까지 나를 방해하지 마. 이것만이 나를 행복으로 이끌 수 있어. 비켜!"},
+        {"Type":0, "Talker":"", "Context":"<i>쾅!!!!.... 광!.... 과....ㄱ...</i>"},
+        {"Type":0, "Talker":"", "Context":"눈 사이로 순간 나타나는 수직의 쇠창살. 그 길을 따라 흘러내리는 따뜻한... 따뜨...ㅅ......", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"소녀", "Context":"삼겹살아!!"},
+        {"Type":0, "Talker":"해피", "Context":"거기 누워서 뭐해?!"},
+        {"Type":0, "Talker":"", "Context":"히히히... <i>역시 내 생각이 맞았어. 다시 볼 수 있잖아. 이렇게.</i>", "Unskippable":true},
+        {"Type":0, "Talker":"소녀", "Context":"빨리 일어나! 꽃놀이하러 가야지! 네가 저번에 나한테 준 보랏빛 꽃 있잖아, 그게 도라지 꽃이었대!"},
+        {"Type":0, "Talker":"소녀", "Context":"꽃말은 뭐였더라... '영원한 사랑'이었나? 너도 그 꽃 좋아하지?"},
+        {"Type":0, "Talker":"", "Context":"하하하.. <i>맞아.. 나도.. 보라가 좋아...</i>", "Unskippable":true},
+        {"Type":0, "Talker":"소녀", "Context":"엇! 해가 점점 지고 있는 것 같아. 빨리 가자니까! 온 세상이 <i>붉게 물들었어!</i>"},
+        {"Type":0, "Talker":"", "Context":"<i>그래.. 이제 갈 시간이야...!</i>", "Unskippable":true}
+    ]
+}

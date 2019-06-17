@@ -1,0 +1,40 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_12.2"},
+        {"Type":0, "Talker":"A38", "Context":"그래.. 그랬구나... 정말 힘들었겠어.", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"그런데.. 참 아쉽네.. 하하.. 난 항상 너랑 친해지고 싶었는데..", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"네가 처음 왔을 때 신나서 우리에 대해 소개해줬고..", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"꽃돼지랑 네가 먼저 우리한테 말을 잘 안걸어주는 것에 대해 이야기 한 적도 있는 걸..", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"솔직히 네가 심심해 보여서 모자란 척 먼저 말 걸어준 적도 있었어..", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"하하하 웃기지?...", "Unskippable":true},
+        {"Type":0, "Talker":"A38", "Context":"나만.. 함께라고 생각했었나...", "Unskippable":true},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"미안해. 내가 바란 건 그런 게 아니었어.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"난 지금 더 큰 행복을 찾았는 걸.. 너에겐 미안하지만... 아무리 생각해도 내가 있을 곳은 여기가 아닌 것 같아."},
+                        {"Type":0, "Talker":"나", "Context":"이젠.. 날 내버려 둬...", "Unskippable":true},
+                        {"Type":0, "Talker":"주인", "Context":"아니! 99번이 또??!! 대체 뭔데 얘는 만날 다쳐?"},
+                        {"Type":0, "Talker":"", "Context":"우리의 문이 열리며 주인이 들어옵니다. 주인은 피투성이가 된 나를 보고 경악하며 끌고 나갑니다."},
+                        {"Type":0, "Talker":"", "Context":"A38의 눈에 눈물이 고이는 것 같습니다."}
+                    ]
+                },
+                {
+                    "Context":"미안해... 근데 이미 돌아가기엔 너무 늦었어.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"어쩌면 내가 처음부터 나 살 궁리만 하면서 살아간지도 모르겠다. 맞아.. 이기적이고 오만했을거야."},
+                        {"Type":0, "Talker":"나", "Context":"그런데 말이야. 난 이미 행복이 어디에 있는지 알아."},
+                        {"Type":0, "Talker":"나", "Context":"너희와는.. 같이 갈 수 없는 길이야.. 그 길은..", "Unskippable":true},
+                        {"Type":0, "Talker":"주인", "Context":"아니! 99번이 또??!! 대체 뭔데 얘는 만날 다쳐?"},
+                        {"Type":0, "Talker":"", "Context":"우리의 문이 열리며 주인이 들어옵니다. 주인은 피투성이가 된 나를 보고 경악하며 끌고 나갑니다."},
+                        {"Type":0, "Talker":"", "Context":"A38의 눈에 눈물이 고이는 것 같습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

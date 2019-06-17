@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":3, "BgmKey":"Girl"},
 	    {"Type":2, "ImageKey":"story_human1_2_1"},
         {"Type":0, "Talker":"", "Context":"주인집 소녀와 주인이 우리 앞을 지나가던 중 주인집 소녀가 우리 앞으로 달려옵니다."},
         {"Type":0, "Talker":"주인집 소녀", "Context":"<i>삼겹살!!!!</i> 아빠 얘가 내가 말한 그 재밌는 돼지야! 귀엽게 생겼지??"},

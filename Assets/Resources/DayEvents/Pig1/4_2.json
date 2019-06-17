@@ -1,10 +1,9 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_4_3"},
+	    {"Type":2, "ImageKey":"story_4_2"},
         {"Type":0, "Talker":"", "Context":"그렇게 하루가 지나고 아침이 찾아왔습니다."},
         {"Type":0, "Talker":"", "Context":"잠이 깨기도 전, 갑자기 쾅! 하는 소리와 함께 농장 주인이 축사로 들어옵니다. 아주 화가 난 얼굴입니다."},
-        {"Type":2, "ImageKey":"story_4_4"},
         {"Type":0, "Talker":"주인", "Context":"이런 환장할 노릇이! 어머니 기일에 맞춰 기르던 국화가 다 어디로 사라진거야??"},
         {"Type":0, "Talker":"", "Context":"주인은 두리번거리기 시작합니다."},
         {

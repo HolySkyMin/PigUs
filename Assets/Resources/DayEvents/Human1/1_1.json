@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human1_1_2"},
+	    {"Type":2, "ImageKey":"story_human1_1_1"},
         {"Type":0, "Talker":"해피", "Context":"나는 이 농장의 관리견 해피다."},
         {"Type":0, "Talker":"해피", "Context":"보아하니 넌 인간을 잘 따르는 것 같더군. 다른 멍청한 돼지들과는 조금 다른 것 같아..."},
         {

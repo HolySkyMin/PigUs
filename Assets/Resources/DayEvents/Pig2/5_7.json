@@ -1,0 +1,30 @@
+{
+    "ToGameOver":"Phase2_Pig6",
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_19"},
+        {"Type":0, "Talker":"소녀", "Context":"대체 어디서부터 잘못된 거지? 난 도대체 어떻게 해야하는 거야....??"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"꿀꿀꿀!!!!!!!!!\n(비키라고!!!!!!)", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"소녀", "Context":"으악!!! 날 해치치마...! 그때처럼 날 또 물고말거야!! <i>살려줘!!!!</i>"}
+                    ]
+                },
+                {
+                    "Context":"꿀....!\n(우릴 지나가게 해줘....!)", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"소녀", "Context":"... 마치 넌 내게 무어라고 말을 거는 것 같구나."},
+                        {"Type":0, "Talker":"", "Context":"소녀가 무릎을 굽혀 나의 눈을 똑바로 바라봅니다. 나도 소녀의 눈을 똑바로 분명하게 바라봅니다."},
+                        {"Type":0, "Talker":"소녀", "Context":"강한 척 바라보고 있지만 슬픔으로 가득 차있어..."},
+                        {"Type":0, "Talker":"소녀", "Context":"난 이 눈빛을 아주 잘 알고 있거든.. 가장 위태로운 눈.. 무엇이 너를 여기까지 오게 만들었을까...."},
+                        {"Type":0, "Talker":"", "Context":"소녀는 고개를 들어 우리를 한 바퀴 둘러봅니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

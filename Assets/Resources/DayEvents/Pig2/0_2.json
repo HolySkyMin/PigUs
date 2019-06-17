@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_0_3"},
+	    {"Type":2, "ImageKey":"story_pig2_3"},
         {"Type":0, "Talker":"오웰", "Context":"잘했다. 입단을 축하한다. 이제 너도 농장 해방을 위해 목숨을 바쳐 싸우는 혁명군의 일원이군."},
         {"Type":0, "Talker":"오웰", "Context":"우리의 삶은 오로지 자유를 위해 존재할 뿐이다. 여기서 탈출하여 자유를 쟁취한다면 더 이상 죽음을 두려워 할 필요 없지."},
         {
@@ -9,13 +9,13 @@
             "Selects":
             [
                 {
-                    "Context":"더 이상 이렇게 살 순 없어요! 자유를 위해서 싸우겠습니다!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"더 이상 이렇게 살 순 없어요! 자유를 위해서 싸우겠습니다!", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"오웰", "Context":"그렇지! 넌 위대한 혁명전사로서의 자질이 충분하다. 이래야 중책을 맡길 수 있지."}
                     ]
                 },
                 {
-                    "Context":"Freedom is not Free.. 아마도 많은 것을 희생해야겠죠..", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"Freedom is not Free.. 아마도 많은 것을 희생해야겠죠..", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"오웰", "Context":"공짜로 얻은 것은 다시 버리기도 쉬운 법. 피를 통해 얻은 자유만이 값어치 있는 것이다!"},
                         {"Type":0, "Talker":"오웰", "Context":"너에게는 중책이 예정되어 있으니 잃을 것보다 얻을 걸 생각하여 임하도록!"}

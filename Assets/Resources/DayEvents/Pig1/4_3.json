@@ -1,10 +1,11 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_4_5"},
+	    {"Type":2, "ImageKey":"story_4_2"},
         {"Type":0, "Talker":"", "Context":"주인이 새하얀 국화를 결국 발견하고 말았습니다."},
         {"Type":0, "Talker":"주인", "Context":"이놈의 돼지... 어떻게 꺾었는진 모르겠지만 너 딱 걸렸다."},
         {"Type":0, "Talker":"주인", "Context":"넌 팔기도 아까우니 꽃 대신 우리 엄니 제사상에나 올라가자."},
+        {"Type":2, "ImageKey":"story_4_3"},
         {"Type":0, "Talker":"", "Context":"주인은 아직 상황파악이 안된 꽃돼지를 거칠게 묶어 차로 데려갑니다."},
         {"Type":0, "Talker":"꽃돼지", "Context":"헐...나 드디어 드라이브 가는거야?? 부릉부릉?? ^.^"},
         {

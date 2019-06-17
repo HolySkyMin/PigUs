@@ -1,0 +1,41 @@
+{
+    "ToGameOver":"Phase2_Human4",
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_14"},
+        {"Type":0, "Talker":"", "Context":"다음 날, 주인은 사색이 되어서 여기저기 집을 들락달락합니다. 차를 타고 어디론가 갔다오기도 하네요."},
+        {"Type":0, "Talker":"", "Context":"손에는 두둑한 하얀 종이 봉지가 들려있습니다. 해피와 소녀는 아직도 보이질 않아요."},
+        {"Type":0, "Talker":"", "Context":"어서 그들이 위험하다는 것을 알려야 하는데... 난 지금 그들의 따뜻한 말 한마디.. 손길이 너무 필요한데.."},
+        {"Type":0, "Talker":"", "Context":"힘없는 울음만이 마당에 메아리 칩니다."},
+        {"Type":0, "Talker":"주인", "Context":"야!! 너 그 삼겹살인가 뭔가! 조용히 안 해?? 너 때문에 도통 안정을 못 취하잖아!!"},
+        {"Type":0, "Talker":"", "Context":"주인은 화를 내며 아직 다 낫지도 않은 나를 다시 끌고갑니다. 그러나 그 표정은 분노가 아니라 무언가 걱정이 가득해보입니다..."},
+        {"Type":0, "Talker":"", "Context":"아.. 안돼요.. 이대로 다시 들어오면.. 다시 나가야만 해요! 다시 나가고 싶어요!"},
+        {"Type":0, "Talker":"", "Context":"여긴 지옥이라구요. 다시.. 그 행복을 주세요...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"계획을 알리고.. 행복이 깨지지 않게... <i>해주세요!!</i>", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"<i>꼭.. 나가야만 해요...</i>", "Unskippable":true},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"당장 내가 할 수 있는 건 없어...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"<i>그렇지만.. 난 그 둘을 믿어!</i> 곧 있으면 반드시 내게 전과 같이 웃어주며 그 개울가에 가자고 할 거야."},
+                        {"Type":0, "Talker":"나", "Context":"그간 무슨 일이 있었는지 소상히 내게 얘기하며 따뜻하게 대해줄 거야."},
+                        {"Type":0, "Talker":"나", "Context":"우린 가족이니까. 일단은 여기서 오웰 무리의 동태를 살펴야겠어."},
+                        {"Type":0, "Talker":"나", "Context":"나의 행복은 내가 지켜낼 거야."}
+                    ]
+                },
+                {
+                    "Context":"방법은 한 가지 밖에 없어!", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"그래, <i>심각하게 다치면</i> 다시 한 번 나갈 수 있어. 두 번이나 성공했고, 다른 방법은 지금까지 본 적도 없거든."},
+                        {"Type":0, "Talker":"나", "Context":"내 가족과 행복을 위해서라면 그깟 고통즈음이야."},
+                        {"Type":0, "Talker":"나", "Context":"어디보자.. 그래! 창살.. 하하하 맞다 쇠창살에 있는 힘껏 박으면 엄청 아팠었지."},
+                        {"Type":0, "Talker":"나", "Context":"후.. 후... 그래, 여기서는 아무 것도 할 수 없잖아? <i>간다아아!!!</i>"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

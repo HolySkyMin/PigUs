@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_10"},
+        {"Type":0, "Talker":"오웰", "Context":"수작부리지 말고 말해봐라. 바깥세상은 어떻지?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"나비 얘기를 한다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":2, "ImageKey":"story_human2_10.1"},
+                        {"Type":0, "Talker":"돼지들", "Context":"오오오.. 자유롭게 하늘을 하는 나비... 아름다운 색..."},
+                        {"Type":0, "Talker":"", "Context":"돼지들의 눈이 반짝입니다."}
+                    ]
+                },
+                {
+                    "Context":"고양이 얘기를 한다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":2, "ImageKey":"story_human2_10.2"},
+                        {"Type":0, "Talker":"돼지들", "Context":"오오오.. 고상하게 돌담 위를 걸어다니다 멍청한 개를 약올리는 멋진 동물이야..."},
+                        {"Type":0, "Talker":"", "Context":"돼지들의 눈이 반짝입니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

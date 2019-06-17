@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+        {"Type":3, "BgmKey":"For the Freedom"},
+	    {"Type":2, "ImageKey":"story_pig2_8"},
+        {"Type":0, "Talker":"오웰", "Context":"역시 내가 잘못보지 않았군. 넌 성공할 줄 알았어."},
+        {"Type":0, "Talker":"오웰", "Context":"자 제군들, 모두를 위해 목숨을 바친 우리의 흑기사 A38를 위해 우리 모두 묵념하도록."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"그의 정신을 이어 받아 혁명을 성공시키자!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"돼지들", "Context":"<i>꿀!!!!</i>"},
+                        {"Type":0, "Talker":"", "Context":"동지들의 사기가 축사 천장을 찌릅니다."}
+                    ]
+                },
+                {
+                    "Context":"사실 혁명 정신에서 비롯된 것은 아닌데..", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"<i>그 입 다물어.</i> 단결된 전사들을 봐. 이 분위기 그대로 가야 성공적으로 탈출할 수 있다."},
+                        {"Type":0, "Talker":"", "Context":"오웰은 내 귀에 대고 속삭이듯 거칠게 말했습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

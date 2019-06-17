@@ -8,6 +8,7 @@ public class DialogueGroup
 {
     public int Length { get { return Dialogues.Length; } }
 
+    public string ToGameOver;
     public DialogueContent[] Dialogues;
 
     public DialogueContent this[int index]
@@ -23,6 +24,7 @@ public class DialogueContent
     public int Type;
     public string Talker;
     public string Context;
+    public bool Unskippable;
     public string ImageKey;
     public string BgmKey;
     public string SEKey;

@@ -22,9 +22,8 @@ namespace Ingame
         public Slider FoodSlider, HealthSlider, FavoritySlider;
         public ScriptAnimation DialogAnimation;
 
-        private bool isHumanStackFull = false, isPigStackFull = false;
         private List<DialogueGroup> dayStoryNeutral, dayNormalReuse;
-        private Dictionary<int, List<DialogueGroup>> dayEvents, storyHuman1, storyPig1, storyPig2;
+        private Dictionary<int, List<DialogueGroup>> dayEvents, storyHuman1, storyPig1;
 
         private void Awake()
         {
@@ -38,46 +37,8 @@ namespace Ingame
         {
             Data = GameManager.Instance.Save;
 
-            // 랜덤 일회성 일반 이벤트들을 불러옵니다.
-            for (int i = 0; ; i++)
-            {
-                var asset = Resources.Load<TextAsset>($"DayEvents/Random/Normal_{i}");
-                if (asset == null)
-                    break;
-                else
-                {
-                    var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
-                    Data.RandomNormal.Add(dialog);
-                }
-            }
-
-            // 랜덤 다회성 일반 이벤트들을 불러옵니다.
-            dayNormalReuse = new List<DialogueGroup>();
-            for (int i = 0; ; i++)
-            {
-                var asset = Resources.Load<TextAsset>($"DayEvents/Random/NormalReuse_{i}");
-                if (asset == null)
-                    break;
-                else
-                {
-                    var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
-                    dayNormalReuse.Add(dialog);
-                }
-            }
-
-            // 랜덤 친밀도 이벤트들을 불러옵니다.
-            dayStoryNeutral = new List<DialogueGroup>();
-            for (int i = 0; ; i++)
-            {
-                var asset = Resources.Load<TextAsset>($"DayEvents/Random/Story_{i}");
-                if (asset == null)
-                    break;
-                else
-                {
-                    var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
-                    dayStoryNeutral.Add(dialog);
-                }
-            }
+            // 랜덤 이벤트들을 불러옵니다.
+            LoadRandomBag();
 
             // 인간 스토리 (1차) 를 불러옵니다.
             storyHuman1 = new Dictionary<int, List<DialogueGroup>>();
@@ -116,24 +77,56 @@ namespace Ingame
                     }
                 }
             }
+        }
 
-            // 동물 스토리 (2차) 를 불러옵니다.
-            storyPig2 = new Dictionary<int, List<DialogueGroup>>();
-            for (int i = 0; i < 5; i++)
+        public void LoadRandomBag()
+        {
+            if (Data.DayCount > 0)
+                return;
+            if (Data.RandomQueue.Count > 0)
+                return;
+
+            for(int i = 0; i < 30; i++)
             {
-                for (int j = 0; ; j++)
+                var bag = new List<DialogueGroup>();
+                for(int j = 0; ; j++)
                 {
-                    var asset = Resources.Load<TextAsset>($"DayEvents/Pig2/{i}_{j}");
-                    if (asset == null)
-                        break;
-                    else
+                    var asset = Resources.Load<TextAsset>($"DayEvents/Random/{i}_{j}");
+                    if(asset == null)
                     {
-                        if (!storyPig2.ContainsKey(i))
-                            storyPig2.Add(i, new List<DialogueGroup>());
-                        var dialog = JsonMapper.ToObject<DialogueGroup>(asset.text);
-                        storyPig2[i].Add(dialog);
+                        if (j == 0)
+                            i = ((i + 10) / 10) * 10 - 1; // 10*n+a에서, 다음 반복 때 10*(n+1)이 되도록 합니다.
+                        else if (i / 10 == 1)
+                        {
+                            var shuffleQueue = new Queue<DialogueGroup>();
+                            while(bag.Count > 0)
+                            {
+                                int rnd = Random.Range(0, bag.Count);
+                                shuffleQueue.Enqueue(bag[rnd]);
+                                bag.RemoveAt(rnd);
+                            }
+                            while (shuffleQueue.Count > 0)
+                                Data.RandomQueue.Enqueue(shuffleQueue.Dequeue());
+                        }
+                        else
+                            Data.RandomQueue.Enqueue(bag);
+                        break;
                     }
+                    else
+                        bag.Add(JsonMapper.ToObject<DialogueGroup>(asset.text));
                 }
+            }
+        }
+
+        public void LoadRandomGameoverBag()
+        {
+            Data.RandomQueue.Clear();
+            for(int i = 0; ; i++)
+            {
+                var asset = Resources.Load<TextAsset>($"DayEvents/GameOver/Phase1_WrongSelect_Bag{i}");
+                if (asset == null)
+                    break;
+                Data.RandomQueue.Enqueue(JsonMapper.ToObject<DialogueGroup>(asset.text));
             }
         }
 
@@ -164,7 +157,6 @@ namespace Ingame
                 await new WaitForSeconds(0.5f);
             }
 
-            CheckQueue();
             for(int i = Data.DayCount; ; i++)
             {
                 // 우선 일수를 늘립니다.
@@ -177,12 +169,12 @@ namespace Ingame
                 var befPhase = Data.StoryPhase;
 
                 // 조건에 따라 다이얼로그를 실행합니다.
-                SoundManager.Instance.PlayBgm("Choice");
                 if(Data.StoryPhase == 0)
                 {
-                    if (Data.RandomGeneralBag.Count < 1)
+                    SoundManager.Instance.PlayBgm("Choice");
+                    if (Data.RandomQueue.Count < 1)
                     {
-                        ShowGameOver("DayEvents/GameOver/General_Sold");
+                        ShowGameOver("DayEvents/GameOver/General_Sold", true);
                         break;
                     }
                     if (Data.DayCount == Data.Phase1StoryDay)
@@ -193,96 +185,83 @@ namespace Ingame
                             Data.CurrentStoryType = Data.StoryTypeQueue.Dequeue();
                             bool selectRes = false;
                             for (int j = 0; j < stories.Count; j++)
-                                selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 ? true : false);
+                                selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 && !Data.IsHumanStackFull && !Data.IsPigStackFull ? true : false);
 
-                            if (isHumanStackFull)
+                            if (Data.IsHumanStackFull)
                             {
                                 if (selectRes)
-                                    SetPhase2(1);
+                                    await SetPhase2(1);
                                 else
-                                    SetPhase1GameOver();
+                                    await SetPhase1GameOver(1);
                             }
-                            if (isPigStackFull)
+                            if (Data.IsPigStackFull)
                             {
                                 if (selectRes)
-                                    SetPhase2(2);
+                                    await SetPhase2(2);
                                 else
-                                    SetPhase1GameOver();
+                                    await SetPhase1GameOver(2);
                             }
                         }
                         else
-                            await RunDayDialogue(GetDayRandomEvent(50), true, true);
+                            await RunDayRandomEvent();
                         Data.Phase1StoryDay += Random.Range(3, 5);
                     }
                     else
-                        await RunDayDialogue(GetDayRandomEvent(50), true, true);
+                        await RunDayRandomEvent();
                 }
-                else if(Data.StoryPhase == 1)
+                else if(Data.StoryPhase == 1 || Data.StoryPhase == 2)
                 {
-                    Data.CurrentStoryType = 1;
-                    Debug.Log("Succesfully entered human phase 2.");
-                    ShowGameOver("DayEvents/GameOver/Phase2_PlaytestEnd");
-                    break;
-                }
-                else if(Data.StoryPhase == 2)
-                {
-                    Data.CurrentStoryType = 2;
-                    ShowGameOver("DayEvents/GameOver/Phase2_PlaytestEnd");
-                    break;
-                    //if(Data.StoryQueue.Count < 1)
-                    //{
-                    //    // Pig Ending. Will move to ending cutscene.
-                    //    SceneChanger.Instance.ChangeScene("ResultScene");
-                    //    break;
-                    //}
-                    //else
-                    //{
-                    //    var stories = Data.StoryQueue.Dequeue();
-                    //    bool selectRes = false;
-                    //    for (int j = 0; j < stories.Count; j++)
-                    //    {
-                    //        selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 ? true : false);
-                    //        if (selectRes)
-                    //            break;
-                    //    }
+                    Data.CurrentStoryType = Data.StoryPhase;
 
-                    //    // Trigger가 True이면 게임 오버가 되어 씬을 이동합니다.
-                    //    if (selectRes)
-                    //    {
-                    //        ShowGameOver($"DayEvents/GameOver/Phase2_Pig{storyPig2.Count - Data.StoryQueue.Count}");
-                    //        break;
-                    //    }
-                    //}
+                    var stories = Data.StoryQueue.Dequeue();
+                    bool selectRes = false;
+                    for (int j = 0; j < stories.Count; j++)
+                    {
+                        selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 ? true : false);
+                        if (Data.StoryQueue.Count < 1 && j == stories.Count - 1)
+                        {
+                            ShowGameOver($"DayEvents/{(Data.StoryPhase == 1 ? "Human" : "Pig")}2/Ending{(selectRes ? "1" : "2")}", true);
+                            GameManager.Instance.DeleteFile("save");
+                            return;
+                        }
+                        else if (selectRes)
+                        {
+                            ShowGameOver($"DayEvents/GameOver/{stories[j].ToGameOver}", j == stories.Count - 1 ? true : false);
+                            return;
+                        }
+                    }
                 }
                 else if(Data.StoryPhase == -1)
                 {
+                    SoundManager.Instance.PlayBgm("Pig, Us (Twisted ver.)");
                     Data.CurrentStoryType = -1;
                     Data.BlendRandomNormal = false;
-                    if(Data.DayCount > Data.PhaseChangedDate + 12)
+                    if (Data.RandomQueue.Count < 1)
                     {
-                        ShowGameOver("DayEvents/GameOver/Phase1_WrongSelect");
+                        ShowGameOver("DayEvents/GameOver/Phase1_WrongSelect", true);
                         break;
                     }
                     else
-                        await RunDayDialogue(GetDayRandomEvent(0), true, true);
+                        await RunDayRandomEvent();
                 }
                 else if(Data.StoryPhase == -9)
                 {
+                    SoundManager.Instance.PlayBgm("Death");
                     Data.CurrentStoryType = -1;
-                    ShowGameOver("DayEvents/GameOver/General_Death");
+                    ShowGameOver("DayEvents/GameOver/General_Death", true);
                     break;
                 }
                 else if(Data.StoryPhase == -10)
                 {
+                    SoundManager.Instance.PlayBgm("Death");
                     Data.CurrentStoryType = -1;
-                    ShowGameOver("DayEvents/GameOver/General_Sold");
+                    ShowGameOver("DayEvents/GameOver/General_Sold", true);
                     break;
                 }
                 else
                     return;
-                CheckQueue();
 
-                // 값 변화를 비교하고 변경 사항을 적용합니다.
+                // 값 변화를 비교하고 변경 사항을 적용합니다. (Only for Phase 1)
                 if ((HumanFavority / 3) > befHumanProg && HumanFavority < 18)
                 {
                     for (int j = befHumanProg; j < HumanFavority / 3; j++)
@@ -294,7 +273,7 @@ namespace Ingame
                         Data.StoryTypeQueue.Enqueue(1);
                     }
                 }
-                if ((PigFavority / 3) > befPigProg && PigFavority < 18 && !isHumanStackFull)
+                if ((PigFavority / 3) > befPigProg && PigFavority < 18 && !Data.IsHumanStackFull)
                 {
                     for (int j = befPigProg; j < PigFavority / 3; j++)
                     {
@@ -306,9 +285,9 @@ namespace Ingame
                     }
                 }
                 if (HumanFavority >= 15)
-                    isHumanStackFull = true;
+                    Data.IsHumanStackFull = true;
                 if (PigFavority >= 15)
-                    isPigStackFull = true;
+                    Data.IsPigStackFull = true;
                 if (Food <= 0 || Health <= 0)
                     Data.StoryPhase = -9;
                 if (Food >= 100 || Health >= 100)
@@ -321,78 +300,73 @@ namespace Ingame
             }
         }
 
-        public DialogueGroup GetDayRandomEvent(int storyPerc)
+        public async Task RunDayRandomEvent()
         {
-            int rnd = Random.Range(0, 100);
-            if (rnd < storyPerc)
-                return Data.RandomStoryBag.Dequeue();
+            var dialog = Data.RandomQueue.Dequeue();
+            if (dialog is DialogueGroup)
+                await RunDayDialogue(dialog as DialogueGroup, true, true);
+            else if (dialog is List<DialogueGroup>)
+            {
+                var cnt = (dialog as List<DialogueGroup>).Count;
+                for (int i = 0; i < cnt; i++)
+                    await RunDayDialogue((dialog as List<DialogueGroup>)[i], i == 0 ? true : false, i == cnt - 1 ? true : false);
+            }
             else
-                return Data.RandomGeneralBag.Dequeue();
-            
+                Debug.LogError("올바르지 않은 다이얼로그 큐 타입입니다.");
         }
 
-        public void CheckQueue()
+        public async Task SetPhase2(int type)
         {
-            if(Data.RandomGeneralBag.Count < 1)
+            var transDiag = new List<DialogueGroup>();
+            string dialPath = $"DayEvents/Transition/";
+            for(int i = 0; ; i++)
             {
-                if(Data.RandomNormal.Count > 0)
-                {
-                    var shuffler = new List<DialogueGroup>();
-                    foreach (var item in dayNormalReuse)
-                        shuffler.Add(item);
-                    if(Data.BlendRandomNormal)
-                    {
-                        int normIdx = Random.Range(0, Data.RandomNormal.Count);
-                        shuffler.Add(Data.RandomNormal[normIdx]);
-                        Data.RandomNormal.RemoveAt(normIdx);
-                    }
-                    while (shuffler.Count > 0)
-                    {
-                        int idx = Random.Range(0, shuffler.Count);
-                        Data.RandomGeneralBag.Enqueue(shuffler[idx]);
-                        shuffler.RemoveAt(idx);
-                    }
-                }
+                var asset = Resources.Load<TextAsset>(dialPath + $"{(type == 1 ? "Human_" : "Pig_")}{i}");
+                if (asset == null)
+                    break;
+                transDiag.Add(JsonMapper.ToObject<DialogueGroup>(asset.text));
             }
-            if(Data.RandomStoryBag.Count < 1)
-            {
-                var shuffler = new List<DialogueGroup>();
-                foreach (var item in dayStoryNeutral)
-                    shuffler.Add(item);
-                while(shuffler.Count > 0)
-                {
-                    int idx = Random.Range(0, shuffler.Count);
-                    Data.RandomStoryBag.Enqueue(shuffler[idx]);
-                    shuffler.RemoveAt(idx);
-                }
-            }
-        }
+            for (int i = 0; i < transDiag.Count; i++)
+                await RunDayDialogue(transDiag[i], false, i == transDiag.Count - 1 ? true : false);
 
-        public void SetPhase2(int type)
-        {
             Data.StoryQueue.Clear();
-
             Data.StoryPhase = type;
-            if(type == 2)
+            for(int i = 0; ; i++)
             {
-                foreach (KeyValuePair<int, List<DialogueGroup>> day in storyPig2)
-                    Data.StoryQueue.Enqueue(day.Value);
+                var dialogList = new List<DialogueGroup>();
+                for(int j = 0; ; j++)
+                {
+                    var asset = Resources.Load<TextAsset>($"DayEvents/{(type == 1 ? "Human" : "Pig")}2/{i}_{j}");
+                    if (asset == null)
+                        break;
+                    dialogList.Add(JsonMapper.ToObject<DialogueGroup>(asset.text));
+                }
+                if (dialogList.Count < 1)
+                    break;
+                else
+                    Data.StoryQueue.Enqueue(dialogList);
             }
+
+            GameManager.Instance.SavePhase2();
         }
 
-        public void SetPhase1GameOver()
+        public async Task SetPhase1GameOver(int type)
         {
             Data.StoryPhase = -1;
-            Data.BlendRandomNormal = false;
-            Data.RandomGeneralBag.Clear();
-            CheckQueue();
+            var dialog = new DialogueGroup();
+            if(type == 1)
+                dialog = JsonMapper.ToObject<DialogueGroup>(Resources.Load<TextAsset>("DayEvents/GameOver/Phase1_Human").text);
+            else
+                dialog = JsonMapper.ToObject<DialogueGroup>(Resources.Load<TextAsset>("DayEvents/GameOver/Phase1_Pig").text);
+            await RunDayDialogue(dialog, false, true);
+            LoadRandomGameoverBag();
         }
 
-        public async void ShowGameOver(string dialogPath)
+        public async void ShowGameOver(string dialogPath, bool appear)
         {
             var dialog = JsonMapper.ToObject<DialogueGroup>(Resources.Load<TextAsset>(dialogPath).text);
             if(dialog != null)
-                await RunDayDialogue(dialog, true, true);
+                await RunDayDialogue(dialog, appear, true);
             SceneChanger.Instance.ChangeScene("ResultScene");
         }
 
@@ -433,7 +407,7 @@ namespace Ingame
             {
                 var dialog = dialogGroup[i];
                 if (dialog.Type == 0)
-                    await DialogueManager.Instance.ShowDialogue(dialog.Talker, dialog.Context);
+                    await DialogueManager.Instance.ShowDialogue(dialog.Talker, dialog.Context, dialog.Unskippable);
                 else if (dialog.Type == 1) // 대전제: 선택은 한 차례만 한다.
                 {
                     var res = await DialogueManager.Instance.ShowInteraction(new[] { dialog.Selects[0].Context, dialog.Selects[1].Context });
@@ -459,7 +433,7 @@ namespace Ingame
                     {
                         var afterDialog = dialog.Selects[res][j];
                         if (afterDialog.Type == 0)
-                            await DialogueManager.Instance.ShowDialogue(afterDialog.Talker, afterDialog.Context);
+                            await DialogueManager.Instance.ShowDialogue(afterDialog.Talker, afterDialog.Context, afterDialog.Unskippable);
                         else if (afterDialog.Type == 2)
                             DialogueManager.Instance.ShowImage(afterDialog.ImageKey);
                         else if (afterDialog.Type == 3)

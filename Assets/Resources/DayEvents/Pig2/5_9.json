@@ -1,0 +1,33 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_21"},
+        {"Type":0, "Talker":"오웰", "Context":"하늘을 한 번도 본 적이 없지만, 하늘이 준 사명이 나를 여기까지 이끈 것 같구나."},
+        {"Type":0, "Talker":"오웰", "Context":"여기까지 오는데 너무 많은 희생을 치렀지. 이 끝만을 바라보며 애써 무시해왔는데..."},
+        {"Type":0, "Talker":"오웰", "Context":"결국 내 차례는 마지막에 있었던 거야. 빨리 가라. 네가 저들을 계속 이끌어가야 한다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"오웰을 가로막고 달려나간다", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"아니요! 저들에게 필요한 건 당신입니다! 죄책감과 항상 마주보고 서있던 것은 접니다!", "Unskippable":true},
+                        {"Type":0, "Talker":"나", "Context":"저는 온몸을 바쳐 마지막 위협을 막고 오늘을 위해 스러져간 이들에게 용서를 구할 겁니다.", "Unskippable":true},
+                        {"Type":0, "Talker":"나", "Context":"한치의 의심없는 오롯이 저만의 선택입니다. 원하던 미래에 잘 도착하셨습니다.... <i>스승님.</i>", "Unskippable":true}
+                    ]
+                },
+                {
+                    "Context":".....자유를 위해... 스승님...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"오웰은 연신 돌아보는 나를 의식하지 않으려는 듯 앞만 보고 달려 노쇠한 몸뚱이를 녀석에게 부딪힙니다."},
+                        {"Type":0, "Talker":"<i>공기총</i>", "Context":"<color=#303030>탕!</color>"},
+                        {"Type":0, "Talker":"오웰", "Context":"<i>꾸에엑!!!</i>"},
+                        {"Type":0, "Talker":"", "Context":"뒤에서 총소리와 비명이 들리지만 나는 더이상 뒤돌아볼 수 없습니다.", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"그게 내가 받은 책임이자 사명이고 내가 선택한 길이니까요.", "Unskippable":true}
+                    ]
+                }
+            ]
+        }
+    ]
+}

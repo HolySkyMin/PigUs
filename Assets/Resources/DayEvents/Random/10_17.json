@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"누가 똥을 여기다 싸논거야? 우리 안이 온통 똥냄새입니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"청소 좀 해야겠군", "VariableDelta":[-10, 0, 1, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"우리는 쾌적해졌지만 과도한 똥냄새에 토하고 말았습니다."},
+                        {"Type":0, "Talker":"", "Context":"잠시 뒤 주인이 들어와 놀라며 만족해합니다. 우렁각시가 이런 느낌일까요?"}
+                    ]
+                },
+                {
+                    "Context":"지푸라기로 코를 막는다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"화장실을 만들던가 해야지 원.."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

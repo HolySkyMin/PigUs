@@ -1,0 +1,7 @@
+{
+    "Dialogues":
+    [
+        {"Type":3, "BgmKey":"For the Freedom"},
+        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ...", "Unskippable":true}
+    ]
+}

@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_0_5"},
+	    {"Type":2, "ImageKey":"story_pig2_4"},
         {"Type":0, "Talker":"오웰", "Context":"인간들은 이 대학살장의 번영을 기리기 위해 정기적으로 '고사'라는 일종의 제사를 지내지."},
         {"Type":0, "Talker":"오웰", "Context":"제사상에는 항상 한 마리의 돼지가 희생되어 산적으로, 수육으로, 머리째로 올라간다."},
         {"Type":0, "Talker":"오웰", "Context":"하지만 이를 위해 돼지를 데리러 올 때가 유일하게 돼지가 축사 정문으로 나가는 때이지."},
@@ -10,13 +10,13 @@
             "Selects":
             [
                 {
-                    "Context":"잠깐, 그러면 그 잡혀가는 돼지는 어떻게 되는 겁니까?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"잠깐, 그러면 그 잡혀가는 돼지는 어떻게 되는 겁니까?", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"오웰", "Context":"대의를 위해 작은 희생은 불가피하다. 그 어떤 대업도 피없이 이루어진 적이 없었고, 그렇기 때문에 가치 있었던 거야."}
                     ]
                 },
                 {
-                    "Context":"잠깐, 그 잡혀가는 역할을 저더러 하라는 말입니까?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"잠깐, 그 잡혀가는 역할을 저더러 하라는 말입니까?", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"오웰", "Context":"아니아니.. 말은 끝까지 들어야지. 어차피 누군가의 희생은 불가피하다."},
                         {"Type":0, "Talker":"오웰", "Context":"대의를 위해 피를 흘리려는 자가 없다면 절대 성공할 수 없다는 말이다."}

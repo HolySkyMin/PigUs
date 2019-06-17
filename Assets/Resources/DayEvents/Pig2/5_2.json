@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_16"},
+        {"Type":0, "Talker":"주인", "Context":"아이구~ 이 못난 돼지시키들~ 아, 내 돈줄이니까 그렇게 말하면 안되지이~ 흐흐흐."},
+        {"Type":0, "Talker":"주인", "Context":"너네 말이야 어? 오늘이 말이야 너네를 위한 날인데 근데 왜 이렇게 조용한거야!"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"(계속 조용히 있어야해)", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"주인", "Context":"어어? 뭔가 이상한데..? 끄윽! 니네 단체로 콜레라라도 걸렸냐?"},
+                        {"Type":0, "Talker":"주인", "Context":"후~ 내가 취했나. 너네 진짜 어디 아프냐? 그럼 내다 못파는데."}
+                    ]
+                },
+                {
+                    "Context":"크게 짖자!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"돼지들", "Context":"<i>꾸에에에엑!! 꿀꿀!! 컹컹컹!</i>"},
+                        {"Type":0, "Talker":"주인", "Context":"오맛? 얘네 갑자기 왜 이런대에~ 끄윽!"},
+                        {"Type":0, "Talker":"주인", "Context":"너네 진짜 이상하다 오느으을... 어디 아픈거 아냐? 그럼 내다 못파는데."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,25 +1,25 @@
 {
     "Dialogues":
     [
+        {"Type":3, "BgmKey":"Girl"},
 	    {"Type":2, "ImageKey":"story_human1_3_1"},
-        {"Type":0, "Talker":"", "Context":"우리 앞을 걸어다니던 해피가 나에게 다가옵니다."},
-        {"Type":0, "Talker":"해피", "Context":"이봐 삼겹살! 저기 골치아픈 친구가 하나 있는데, 너가 좀 얘기해보는게 어때?"},
+        {"Type":0, "Talker":"", "Context":"늦은 밤 우리 밖에서 시끄러운 소리가 들립니다. 소녀의 목소리가 우리 안에 울립니다."},
+        {"Type":0, "Talker":"소녀", "Context":"삼겹살!! 어딨어? 삼겹살~!!"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"좋아요", "VariableDelta":[0, 0, 0, 0],
+                    "Context":"소녀에게 다가간다", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"해피", "Context":"저기 있는 친구가 삼일 째 밥을 먹질 않고 있어."},
-                        {"Type":0, "Talker":"해피", "Context":"주인님은 이런 상황을 아주 싫어하시지. 가서 얘기 좀 해보라구."}
+                        {"Type":0, "Talker":"", "Context":"소녀가 나를 발견하고 손짓합니다. 소녀에게로 천천히 다가갑니다."}
                     ]
                 },
                 {
-                    "Context":"그러죠 뭐...", "VariableDelta":[0, 0, 0, 0],
+                    "Context":"무시하고 누워 있는다", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"해피", "Context":"저기 있는 친구가 삼일 째 밥을 먹질 않고 있어."},
-                        {"Type":0, "Talker":"해피", "Context":"주인님은 이런 상황을 아주 싫어하시지. 가서 얘기 좀 해보라구."}
+                        {"Type":0, "Talker":"", "Context":"소녀는 곧 나를 발견하고 나를 향해 계속 소리칩니다."},
+                        {"Type":0, "Talker":"", "Context":"졸린 몸을 이끌고 소녀에게로 다가갑니다."}
                     ]
                 }
             ]

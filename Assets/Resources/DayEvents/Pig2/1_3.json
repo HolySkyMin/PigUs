@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_1_1"},
+	    {"Type":2, "ImageKey":"story_pig2_6"},
         {"Type":0, "Talker":"A38", "Context":"그래 맞아. 세상을 바로 세우기 위해서는 목숨을 바쳐서라도 다른 이들을 지키는 히어로가 필요하지."},
         {"Type":0, "Talker":"A38", "Context":"드디어 내가 할 일을 찾은 거야. 나의 존재를 증명할 수 있게 되었어!"},
         {"Type":0, "Talker":"A38", "Context":"그런데 어떻게 하면 고통받는 동지들을 구할 수 있지.."},
@@ -10,14 +10,14 @@
             "Selects":
             [
                 {
-                    "Context":"들어봐. 내게 계획이 있어.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"들어봐. 내게 계획이 있어.", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"A38", "Context":"아니 칭구, 그게 무슨 말이지?"},
                         {"Type":0, "Talker":"", "Context":"'고사, 리모콘, 탈출...' 계획의 전말을 들은 A38의 눈이 반짝입니다."}
                     ]
                 },
                 {
-                    "Context":"너는 혁명의 신호탄이 될거야.", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"너는 혁명의 신호탄이 될거야.", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"A38", "Context":"아니 칭구, 그게 무슨 말이지?"},
                         {"Type":0, "Talker":"", "Context":"'고사, 리모콘, 탈출...' 계획의 전말을 들은 A38의 눈이 반짝입니다."}

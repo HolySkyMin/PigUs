@@ -1,21 +1,22 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_1_1"},
-        {"Type":0, "Talker":"A38", "Context":"이봐 칭구, 왜 그렇게 요새 표정이 비장한 거야. 곧 뭐라도 저지를 것처럼."},
+        {"Type":3, "BgmKey":"Join"},
+	    {"Type":2, "ImageKey":"story_pig2_5"},
+        {"Type":0, "Talker":"A38", "Context":"헤이! 구구~, 왜 그렇게 요새 표정이 비장한 거야. 곧 뭐라도 저지를 것처럼."},
         {"Type":0, "Talker":"A38", "Context":"내 추리에 따르면.... 너 누구한테 고백하려고 그러지?! 다 보인다구~"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"칭구야 넌 이 삶에 만족해?", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"칭구야 넌 이 삶에 만족해?", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"A38", "Context":"뭐..? 갑자기..? 너 진짜 무슨 일이 있긴 한가 보구나..?"}
                     ]
                 },
                 {
-                    "Context":"에이~ 하고 싶어도.. 이런 우리 속에서 뭔 의미가 있겠니..", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
+                    "Context":"우리 안에서 그런 건 아무 의미 없어..", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"A38", "Context":"흠.. 역시 그런 고민이었군! 하긴 틀린 말은 아니지."}
                     ]

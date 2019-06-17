@@ -1,0 +1,34 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_18"},
+        {"Type":0, "Talker":"오웰", "Context":"자, 제군들. 모두가 한 마음으로 기다려온 시간이다."},
+        {"Type":0, "Talker":"오웰", "Context":"벗어나는 거다. 지긋지긋한 우리에게서."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"자유를 위해!!!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"우리의 문을 활짝 열고 돼지들이 쏟아져 나옵니다. 이제 더 이상 우릴 가로막을 것은 없겠지요."},
+                        {"Type":0, "Talker":"", "Context":"오웰과 나는 무리의 선봉에서 축사 밖을 향합니다."},
+                        {"Type":0, "Talker":"", "Context":"아! 축사 밖의 밝은 빛이 우리를! 아! 염원하... 잠깐, 지금은 밤일 텐데요?!"},
+                        {"Type":0, "Talker":"", "Context":"압도적인 수의 돼지떼의 앞을 손전등을 든 소녀가 가로막습니다."},
+                        {"Type":0, "Talker":"", "Context":"모두가 얼어붙은 그 순간 소녀가 내게 말을 겁니다."}
+                    ]
+                },
+                {
+                    "Context":"핍박받는 동물을 위해!!!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"우리의 문을 활짝 열고 돼지들이 쏟아져 나옵니다. 이제 더 이상 우릴 가로막을 것은 없겠지요."},
+                        {"Type":0, "Talker":"", "Context":"오웰과 나는 무리의 선봉에서 축사 밖을 향합니다."},
+                        {"Type":0, "Talker":"", "Context":"아! 축사 밖의 밝은 빛이 우리를! 아! 염원하... 잠깐, 지금은 밤일 텐데요?!"},
+                        {"Type":0, "Talker":"", "Context":"압도적인 수의 돼지떼의 앞을 손전등을 든 소녀가 가로막습니다."},
+                        {"Type":0, "Talker":"", "Context":"모두가 얼어붙은 그 순간 소녀가 내게 말을 겁니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

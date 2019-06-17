@@ -1,9 +1,9 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_0_2"},
-        {"Type":0, "Talker":"소녀", "Context":"어?! 이 꿀꿀이가 나랑 친해지고 싶나보네! 히히 귀여워라~"},
-        {"Type":0, "Talker":"소녀", "Context":"어머! 너 해피랑 조금 어울리던 꿀꿀이 아니었니? 요새는 같이 있는 거 못본거 같네~ 여기 당근 좀 먹어볼래?"},
+	    {"Type":2, "ImageKey":"story_pig2_2"},
+        {"Type":0, "Talker":"소녀", "Context":"어?! 안녕! 삼겹살아!! 상추를 좀 가져왔는데 먹어볼래?"},
+        {"Type":0, "Talker":"소녀", "Context":"원래 삼겹살은 쌈으로 먹는게 맛있는 거라구~"},
         {
             "Type":1, 
             "Selects":
@@ -11,7 +11,7 @@
                 {
                     "Context":"손을 덥썩 문다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"소녀", "Context":"아악!!! 꿀꿀아 왜그래 대체!!ㅠㅠ"},
+                        {"Type":0, "Talker":"소녀", "Context":"아악!!! 삼겹살아 대체 왜그래!!ㅠㅠ"},
                         {"Type":0, "Talker":"", "Context":"소녀가 피를 뚝뚝 흘리며 축사 밖으로 나갑니다."}
                     ]
                 },

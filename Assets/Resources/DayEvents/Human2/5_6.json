@@ -1,0 +1,39 @@
+{
+    "ToGameOver":"Phase2_Human6",
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_22"},
+        {"Type":0, "Talker":"오웰", "Context":"보아하니 더 달릴 힘도 없는 것 같은데. 이제 어쩔 셈이지?"},
+        {"Type":0, "Talker":"오웰", "Context":"저 여자애 말고 너도 우리를 가로막는 건가? 동족을? 형제들을?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"너흴 형제라고 생각한 적 없다.. 나는.. 내 가족을 지킬거야..", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"오웰", "Context":"빨리 처리해야 한다! 지체할 시간이 없어!!"},
+                        {"Type":0, "Talker":"", "Context":"돼지들이 내 몸뚱아리를 들이 받고 물어 뜯습니다. 살을 파고드는 고통에도 이대로 쓰러질 수는 없습니다."},
+                        {"Type":0, "Talker":"", "Context":"나는 나를 가족으로 여겨주는 사람을 지킬 것입니다. 그러나 이들의 자유를 향한 열망 또한 못지 않습니다."},
+                        {"Type":0, "Talker":"", "Context":"수에 밀려 결국 막다른 곳 까지 왔습니다. 그 때, 한 돼지가 소녀의 다리를 뭅니다."},
+                        {"Type":0, "Talker":"소녀", "Context":"<i>아악!!!</i>"},
+                        {"Type":0, "Talker":"", "Context":"외마디 비명과 함께 소녀가 주저앉습니다."}
+                    ]
+                },
+                {
+                    "Context":"제안을... 하지...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"나", "Context":"너희들 중에 이 대문을 나가 어디로 가야하는지 알고 있는 돼지 있어?", "Unskippable":true},
+                        {"Type":0, "Talker":"나", "Context":"난 알고 있어. 저 오웰도 모르는 길을 내가 <i>알고 있다고!</i> 난 나갔다 왔으니까. <i>그 아름다운 세계를</i> 보고 왔으니까.", "Unskippable":true},
+                        {"Type":0, "Talker":"나", "Context":"우리는 너희가 나가는 걸 막지 않을 거야. 아니, 빨리 나가버려. 더 이상.. 이 평화를.. 깨지 말아줘..", "Unskippable":true},
+                        {"Type":0, "Talker":"나", "Context":"가족들을 진정시키고 내가 곧 따라갈게. 약속해."},
+                        {"Type":0, "Talker":"오웰", "Context":"흠... 마음만 같아서는 너같은 배신자.. 절멸시켜야 하지만 더이상 지체하다간 불필요하게 피를 보겠군."},
+                        {"Type":0, "Talker":"오웰", "Context":"네 놈 따위가 알려주는 길 따위 믿을 수 없다만, 일단 당장 멀리가는 게 중요하니.."},
+                        {"Type":0, "Talker":"오웰", "Context":"분하지만 일단 그 제안.. 받아들이지.."},
+                        {"Type":0, "Talker":"", "Context":"오웰과 돼지들이 급하게 마당을 나섭니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

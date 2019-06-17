@@ -1,13 +1,14 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_4_6"},
+	    {"Type":2, "ImageKey":"story_4_4"},
         {"Type":0, "Talker":"", "Context":"하지만 이내 차에 탄지 얼마 안되어, 꽃돼지도 죽음의 냄새를 맡아버렸습니다."},
         {"Type":0, "Talker":"", "Context":"지금까지 본 적 없는 가장 어두운 표정에 사시나무 떨듯이 꽃돼지가 떱니다."},
         {"Type":0, "Talker":"", "Context":"하지만 차는 푸른 하늘에 먼지를 날리며, 도살장을 향해 출발해버렸습니다."},
         {"Type":0, "Talker":"<i>돼지들</i>", "Context":"... ... ..."},
         {"Type":0, "Talker":"", "Context":"순식간에 일어난 일에, 정적만이 우리를 감쌉니다."},
         {"Type":0, "Talker":"<i>돼지들</i>", "Context":"... ... ..."},
+        {"Type":2, "ImageKey":"story_4_5"},
         {"Type":0, "Talker":"???", "Context":"<i>이런 제기랄!!</i> 더 이상 못 참겠어!!!"},
         {"Type":0, "Talker":"", "Context":"누군가가 괴성을 지르며 문으로 달려듭니다.\n\n어어?! 근육돼지입니다."},
         {"Type":0, "Talker":"", "Context":"다시 보니 농장 주인이 빨리 떠나는 바람에 문이 살짝 열려 있습니다! 근육돼지는 힘으로 돌진해 문을 열려고 합니다."},
@@ -16,7 +17,7 @@
         {"Type":0, "Talker":"해피", "Context":"당장 저 돼지놈을 막아!"},
         {"Type":0, "Talker":"", "Context":"질세라 오웰도 소리지릅니다."},
         {"Type":0, "Talker":"오웰", "Context":"근육이를 도와줘!!"},
-        {"Type":0, "Talker":"", "Context":"일촉즉발의 순간, 내가 진정 해야 할 일은 무엇인지 생각한 뒤에 나는..."},
+        {"Type":0, "Talker":"", "Context":"<i>누구의 말을 들어야 하는 걸까요?\n심장이 너무나도 빨리 뜁니다...!!</i>", "Unskippable":true},
         {
             "Type":1, 
             "Selects":
@@ -24,33 +25,24 @@
                 {
                     "Context":"근육돼지를 넘어뜨린다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
                     "AfterDialogues":[
-                        {"Type":2, "ImageKey":"story_4_human1"},
-                        {"Type":0, "Talker":"", "Context":"해피는 넘어진 근육돼지의 목덜미를 강하게 물어뜯었습니다."},
-                        {"Type":0, "Talker":"", "Context":"근육돼지는 몸부림치지만 이내 소란을 듣고 다시 돌아온 주인의 총에 맞아 쓰러집니다."},
-                        {"Type":0, "Talker":"", "Context":"우리 안에 피가 흥건합니다."},
-                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ..."},
-                        {"Type":2, "ImageKey":"story_4_human2_human"},
-                        {"Type":0, "Talker":"", "Context":"일련의 소동이 대강 정리된 뒤, 해피가 찾아왔습니다."},
-                        {"Type":0, "Talker":"해피", "Context":"자네 덕분에 농장의 큰 혼란을 막을 수 있었네."},
-                        {"Type":0, "Talker":"해피", "Context":"우리가 조금 지저분해지긴 했지만, 돼지는 우리 안에 있을 때 제일 안전하다고."},
-                        {"Type":0, "Talker":"해피", "Context":"어쩌면 이제 자네가 모범돼지의 역할을 맡아도 될 것 같군."},
-                        {"Type":0, "Talker":"", "Context":"... ... ..."},
-                        {"Type":0, "Talker":"", "Context":"그날 주인집에서는 의도치 않게 돼지고기 만찬이 벌어졌다고 합니다."}
+                        {"Type":0, "Talker":"나", "Context":"이얏!!"},
+                        {"Type":0, "Talker":"", "Context":"나는 온몸으로 달려오는 근육돼지를 막았습니다. 온 몸이 부서지는 것 같습니다."},
+                        {"Type":0, "Talker":"", "Context":"너무 큰 충격에 나는 기절해버렸습니다."},
+                        {"Type":0, "Talker":"", "Context":"정신을 차리지 못하는 중, 해피가 크게 컹컹 거리는 소리, 근육돼지가 몸부림치며 꽥꽥거리는 소리..."},
+                        {"Type":0, "Talker":"", "Context":"그리고 그 모든걸 종식시키는 총소리가 어렴풋이 들립니다..."},
+                        {"Type":0, "Talker":"", "Context":"<i>그날 주인집에서는 의도치 않게 돼지고기 만찬이 벌어졌습니다.</i>"}
+                        
                     ]
                 },
                 {
                     "Context":"달려오는 해피를 넘어뜨린다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":2, "ImageKey":"story_4_pig1"},
+                        {"Type":0, "Talker":"나", "Context":"이얏!!"},
+                        {"Type":0, "Talker":"", "Context":"나는 온몸으로 달려오는 해피를 막았습니다. 온 몸이 부서지는 것 같습니다."},
+                        {"Type":0, "Talker":"", "Context":"너무 큰 충격에 나는 기절해버렸습니다."},
                         {"Type":0, "Talker":"", "Context":"해피가 넘어진 사이 근육돼지는 우리를 빠져나가 숲을 향해 달렸습니다."},
                         {"Type":0, "Talker":"", "Context":"이를 늦게 발견한 주인은 차에서 그를 향해 총을 쏘지만 맞추기엔 너무 멀어졌습니다."},
-                        {"Type":0, "Talker":"", "Context":"달려나가는 근육돼지의 모습을 보며 우리 안의 돼지들은 모두 말이 없었습니다."},
-                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ..."},
-                        {"Type":2, "ImageKey":"story_4_pig2_human"},
-                        {"Type":0, "Talker":"", "Context":"일련의 소동이 대강 정리된 뒤, 해피가 찾아왔습니다."},
-                        {"Type":0, "Talker":"해피", "Context":"<i>미쳤군.</i> 너도 똑같은 멍청한 돼지들 중 하나였다니."},
-                        {"Type":0, "Talker":"해피", "Context":"마음 같아선 자네도 물어죽이고 싶지만 보는 주인님 눈이 있으니 참지. 다신 마주치지 말자구."},
-                        {"Type":0, "Talker":"", "Context":"해피는 바로 눈을 돌려 떠났습니다."}
+                        {"Type":0, "Talker":"", "Context":"달려나가는 근육돼지의 모습을 보며 우리 안의 돼지들은 모두 말이 없었습니다."}
                     ]
                 }
             ]

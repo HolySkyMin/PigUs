@@ -1,0 +1,26 @@
+{
+    "Dialogues":
+    [
+        {"Type":3, "BgmKey":"Aunt in Dream"},
+	    {"Type":2, "ImageKey":"story_pig2_14"},
+        {"Type":0, "Talker":"이모", "Context":"우리 가여운 구구... 요새 하루도 편히 잠드는 날이 없구나."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"으... 으... 이모... 보고 싶었어요....", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"그래, 우리 아가. 힘들 땐 힘들다고 말해도, 안겨도 돼. 혼자가 아니야."}
+                    ]
+                },
+                {
+                    "Context":"으... 이모.. 자도 잔 것 같지가 않고, 먹어도 먹은 것 같지가 않아요..", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"그래, 우리 아가. 얼마나 힘들었을까. 감당하기 힘든 날의 연속이지..."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

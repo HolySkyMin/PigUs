@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human1_2_3"},
+	    {"Type":2, "ImageKey":"story_human1_2_2"},
         {"Type":0, "Talker":"주인집 소녀", "Context":"자, 이건 내가 만든 쿠키야! 내가 좋아하는 너니까 <i>특별하게</i> 주는거야~ 입벌려 아~~"},
         {
             "Type":1, 

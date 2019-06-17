@@ -1,24 +1,24 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human1_3_4"},
-        {"Type":0, "Talker":"단식돼지", "Context":"넌 너가 특별한 존재라도 된 줄 아나본데, 인간들에겐 너도 똑같은 예비고기일 뿐이야."},
-        {"Type":0, "Talker":"단식돼지", "Context":"그렇게 열심히 해봐야 너가 저 귀여운 강아지 정도 될 수나 있을 것 같아?"},
+	    {"Type":2, "ImageKey":"story_human1_3_2"},
+        {"Type":0, "Talker":"", "Context":"저 멀리서 주인이 소녀를 찾는 소리가 납니다."},
+        {"Type":0, "Talker":"", "Context":"소녀는 잠시 겁에 질린 눈빛을 하다가 나를 보고 짧은 미소를 보이며 주머니에서 쿠키를 건넵니다."},
+        {"Type":0, "Talker":"소녀", "Context":"다음에 또 올게 삼겹살. 고마워. 잘자."},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"시끄러워 (강제로 밥을 먹인다)", "VariableDelta":[0, 0, 1, 0],
+                    "Context":"꿀꿀..!\n(안녕 잘지내..!)", "VariableDelta":[6, 6, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"단식돼지는 저항할 힘도 없이 밥을 입에 머금은 채 기절했습니다."}
+                        {"Type":0, "Talker":"", "Context":"소녀는 머리를 한번 쓰다듬어 주고 집으로 달려갑니다."}
                     ]
                 },
                 {
-                    "Context":"...먹는 척이라도 해줘", "VariableDelta":[0, 0, 0, 0],
+                    "Context":"꿀꿀!\n(고마워 친구)", "VariableDelta":[6, 6, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"단식돼지", "Context":"그래. 끝까지 모르겠다는 거지?"},
-                        {"Type":0, "Talker":"", "Context":"단식돼지는 사료를 입에 머금고 돼지들 틈으로 사라졌습니다."}
+                        {"Type":0, "Talker":"", "Context":"소녀는 머리를 한번 쓰다듬어 주고 집으로 달려갑니다."}
                     ]
                 }
             ]

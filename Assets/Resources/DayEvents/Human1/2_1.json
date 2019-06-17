@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human1_2_2"},
+	    {"Type":2, "ImageKey":"story_human1_2_1"},
         {"Type":0, "Talker":"주인집 소녀", "Context":"삼겹살 춤춰봐 춤!! 그럼 내가 맛있는 거 갖다줄게! 아빠 이거 <i>봐봐!!</i>"},
         {
             "Type":1, 

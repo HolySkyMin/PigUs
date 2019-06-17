@@ -14,11 +14,14 @@ public class SaveData
     public bool SkipTutorial;
     public bool BlendRandomNormal;
     public bool IsGameOver;
+    public bool IsHumanStackFull;
+    public bool IsPigStackFull;
     public int[] Variables;
     public List<SelectionLog> DayLog;
     public List<DialogueGroup> RandomNormal;
     public Queue<DialogueGroup> RandomGeneralBag, RandomStoryBag;
     public Queue<List<DialogueGroup>> StoryQueue;
+    public Queue RandomQueue;
     public Queue<int> StoryTypeQueue;
 
     public SaveData()
@@ -29,6 +32,7 @@ public class SaveData
         RandomGeneralBag = new Queue<DialogueGroup>();
         RandomStoryBag = new Queue<DialogueGroup>();
         StoryQueue = new Queue<List<DialogueGroup>>();
+        RandomQueue = new Queue();
         StoryTypeQueue = new Queue<int>();
     }
 }

@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":3, "BgmKey":"Girl"},
 	    {"Type":2, "ImageKey":"story_human1_1_1"},
         {"Type":0, "Talker":"", "Context":"주인집 강아지가 꼬리를 흔들며 다가옵니다."},
         {"Type":0, "Talker":"해피", "Context":"너가 <i>삼겹살</i>..인가 뭔가 하는 그놈이냐?"},

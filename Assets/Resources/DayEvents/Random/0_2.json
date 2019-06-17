@@ -1,0 +1,29 @@
+{
+    "Dialogues":
+    [
+        {"Type":2, "ImageKey":"character_a38"},
+        {"Type":0, "Talker":"A38", "Context":"~!@#오웰이라는 돼지도 있고&^@#$%$#\n주인집에는 딸이랑 개가 한마리 있는~@$#@\n%@#개 이름은 해피!@#$#^$^", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"A38이는 그 이후로 혼자서 10분동안이나 이야기를 했습니다... 친절한건 고맙지만 조금 힘들어지기 시작합니다."},
+        {"Type":0, "Talker":"", "Context":"어떻게 하면 대화를 기분 안상하게 마무리지을 수 있을까요?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"...오 그렇구나! 근데 배고프다 ㅠ", "VariableDelta":[5, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"헉! 그럼 밥을 먹어야 해!\n\n꽃돼지야~ 너 숨겨둔 간식 좀 있지??"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지? 꽃돼지는 또 누구죠?"}
+                    ]
+                },
+                {
+                    "Context":"윽... 배가 좀 아픈데...", "VariableDelta":[0, 5, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"헉! 그럼 약을 먹어야 해!\n\n꽃돼지야~ 너 숨겨둔 약좀 가져다주라!!"},
+                        {"Type":0, "Talker":"", "Context":"꽃돼지? 꽃돼지는 또 누구죠?"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_15"},
+        {"Type":0, "Talker":"오웰", "Context":"이 날만을... 얼마나 기다려왔던가... 이 날이 오기까지... 얼마나 고생했던가..."},
+        {"Type":0, "Talker":"오웰", "Context":"반드시 성공시켜서.. 앞서 간 수많은 자들에게 한 점 부끄럼 없기를..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"이모... 꽃돼지...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"우리를 거쳐간 많은 이들이 떠오릅니다."},
+                        {"Type":0, "Talker":"", "Context":"우리 밖 저편에서는 고사가 한창입니다. 은은한 향 냄새에 그들과는 다른 이유로 경건해집니다."},
+                        {"Type":0, "Talker":"", "Context":"제사를 지낸 뒤 술이 거나하게 취한 우리의 원수가 다가옵니다."}
+                    ]
+                },
+                {
+                    "Context":"근육돼지... A38...", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"우리를 거쳐간 많은 이들이 떠오릅니다."},
+                        {"Type":0, "Talker":"", "Context":"우리 밖 저편에서는 고사가 한창입니다. 은은한 향 냄새에 그들과는 다른 이유로 경건해집니다."},
+                        {"Type":0, "Talker":"", "Context":"제사를 지낸 뒤 술이 거나하게 취한 우리의 원수가 다가옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

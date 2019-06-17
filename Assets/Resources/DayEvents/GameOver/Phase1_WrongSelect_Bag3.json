@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"다른 돼지들이 사료를 먹고 있네요. 나도 좀 주면 좋을 텐데."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"사료를 달라고 부탁한다", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"한 돼지에게 다가가 부탁했지만, 그 돼지는 들은 체도 하지 않았습니다."},
+                        {"Type":0, "Talker":"", "Context":"다음 돼지도, 그 다음 돼지도 마찬가지였습니다."},
+                        {"Type":0, "Talker":"", "Context":"결국 사료를 얻어먹지 못 하고 나올 수밖에 없었습니다."}
+                    ]
+                },
+                {
+                    "Context":"무작정 끼어들어 먹는다", "VariableDelta":[5, -5, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"돼지들 사이에 들어가 사료를 한 입 물었습니다."},
+                        {"Type":0, "Talker":"", "Context":"그 때, 양 옆의 돼지들이 몸을 밀쳐댑니다. 점점 움직일 수 있는 공간이 좁아집니다."},
+                        {"Type":0, "Talker":"", "Context":"마침내 배부를 때까지 사료를 먹고 나서, 온 힘을 다해 빠져나왔습니다. 숨이 차고 머리가 아파 옵니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "Dialogues":
+    [
+        {"Type":3, "BgmKey":"Picnic"},
+	    {"Type":2, "ImageKey":"story_human2_1.1"},
+        {"Type":0, "Talker":"해피", "Context":"그렇게 근육돼지에게 시달려 놓고도 정면으로 부딪힐 생각을 하다니..."},
+        {"Type":0, "Talker":"해피", "Context":"도와준 건 고맙지만 네가 너무 크게 다쳐서 맘이 아프네. 대체 무슨 생각으로 뛰어든 거야?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"복수죠. 그 녀석은 자유로울 자격이 없어요.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"하하하! 맞는 말이야. 그 녀석이 돼지들을 때려 상처 낼 때마다 주인님은 언짢아하셨지."},
+                        {"Type":0, "Talker":"해피", "Context":"다 자업자득이야. 자기들끼리 힘을 합쳐도 모자랄 때에 분란만 조장하고 있다니."},
+                        {"Type":0, "Talker":"해피", "Context":"돼지들은 이래서 안 돼. 넌 확실히 걔네와 다른 게 맞아."}
+                    ]
+                },
+                {
+                    "Context":"놓치면 해피가 곤란해지잖아요.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"오.. 이건 좀 감동인걸.. 살다살다 내 편을 들어주는 돼지가 나올 줄이야.."},
+                        {"Type":0, "Talker":"해피", "Context":"넌 더 진화한 돼지 같구나. 역시 내 눈은 틀리지 않았어. 넌 확실히 걔네와 다른 게 맞아."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

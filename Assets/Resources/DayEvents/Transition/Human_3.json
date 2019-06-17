@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"tutorial_ingame_3"},
+        {"Type":0, "Talker":"이모", "Context":"아이쿠! 시간이 이렇게 되어버렸네! 이젠 너를 보내줄 때가 된 것 같아. 너를 기다리는 자도 있고"},
+        {"Type":0, "Talker":"이모", "Context":"언제 다시 보게 될 지는 모르겠지만... 안녕 구구..."},
+        {"Type":2, "ImageKey":"tutorial_ingame_2"},
+        {"Type":0, "Talker":"", "Context":"이모는 다시 안개 속으로 점점 희미하게 사라졌습니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"이모!! 이모!!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ...", "Unskippable":true},
+                        {"Type":0, "Talker":"소녀", "Context":"...... 눈 뜬고야 삼겹살??"},
+                        {"Type":0, "Talker":"", "Context":"헛!! 이모는 온데간데 없고 눈 앞에는 소녀가 커진 눈으로 처다보고 있습니다."}
+                    ]
+                },
+                {
+                    "Context":"이모!! 이모!!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ...", "Unskippable":true},
+                        {"Type":0, "Talker":"소녀", "Context":"...... 눈 뜬고야 삼겹살??"},
+                        {"Type":0, "Talker":"", "Context":"헛!! 이모는 온데간데 없고 눈 앞에는 소녀가 커진 눈으로 처다보고 있습니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

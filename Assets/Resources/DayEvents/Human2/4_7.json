@@ -1,0 +1,28 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_12.1"},
+        {"Type":0, "Talker":"A38", "Context":"아니.. 어떻게 그렇게 끔찍한 이름으로 부를 수가 있겠어..!!"},
+        {"Type":0, "Talker":"A38", "Context":"그리고 사실.. 나도.. 오웰과 뜻을 같이하고 있어..."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"아니 대체 그 계획이 뭔데?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"탈출이지. 우리도 결국 자유롭기 위해서 싸우고 있는 거라고! 너와 그리 다른 걸 추구하는 게 아냐!"}
+                    ]
+                },
+                {
+                    "Context":"오웰은 너무 위험해.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"A38", "Context":"맞아.. 내 추리력으로도 그는 분명 위험해. 필요 이상으로 폭력적이고 선동적이지."},
+                        {"Type":0, "Talker":"A38", "Context":"그런데 말이야. 우리는 그를 <i>따를 수밖에 없어.</i>"},
+                        {"Type":0, "Talker":"A38", "Context":"결국 그 밖에 우리가 원하는 결과를 가져다 줄 수 있는 돼지가 없으니까. 아무도 함께 가려고 하지 않으니까."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

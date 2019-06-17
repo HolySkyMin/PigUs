@@ -1,0 +1,29 @@
+{
+    "ToGameOver":"Phase2_Pig3",
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_pig2_10"},
+        {"Type":0, "Talker":"해피", "Context":"아니 이게 누구야. 지난번에 나를 가로막았던 멍청하기 짝이 없는 뚱보로군."},
+        {"Type":0, "Talker":"해피", "Context":"다신 보지 말자고 말했을 텐데. 왜 또 그 쳐먹을 줄만 아는 주둥아리로 나를 부르는 거지?"},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"그땐 제가 경솔했어요. 죄송합니다.", "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"하! <i>여전히 멍청하군.</i> 내가 그런 뻔한 수에 속을 거 같아? 요새 오웰이랑 어울려다니는 거 모를 줄 알아?"},
+                        {"Type":0, "Talker":"해피", "Context":"나도 여기 산전수전 다 겪고 올라온거야. 킥킥킥, 넌 자꾸 거슬리니 특별 대우를 해줘야겠군."}
+                    ]
+                },
+                {
+                    "Context":"비상통제 리모콘 요새 본 적 있냐?", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"해피", "Context":"또 무슨 수작이냐. 저기 잘 있겠..."},
+                        {"Type":0, "Talker":"해피", "Context":"<i>아니?!!!</i> 리모콘 어디갔어?!!! 너네 짓이냐? 대체 어떻게 없어진거지?"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

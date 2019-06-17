@@ -1,0 +1,25 @@
+{
+    "Dialogues":
+    [
+        {"Type":0, "Talker":"", "Context":"주인이 유기농 사료를 들어 먹이통에 뿌립니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"먹는다", "VariableDelta":[5, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"사료를 먹으러 먹이통으로 갑니다. 어떤 돼지가 이미 사료를 먹고 있군요."},
+                        {"Type":0, "Talker":"", "Context":"옆에서 사료를 먹으려고 하니 그 돼지가 별안간 자리를 뜹니다. 아직 다 먹지도 않은 것 같은데 말이죠."}
+                    ]
+                },
+                {
+                    "Context":"먹지 않는다", "VariableDelta":[-5, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"한동안 자리에서 움직이지 않으니, 그제서야 다른 돼지들이 사료를 먹으러 먹이통으로 몰려갑니다."}
+                    ]
+                }
+            ]
+        }
+    ]
+}

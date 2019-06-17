@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"story_human2_19"},
+        {"Type":0, "Talker":"오웰", "Context":"자, 제군들. 모두가 한 마음으로 기다려온 시간이다."},
+        {"Type":0, "Talker":"오웰", "Context":"벗어나는 거다. 지긋지긋한 우리에게서."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"하! 나가는 길은 알고 가는지 모르겠네!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"돼지들은 오웰을 따라 우리 밖을 나섭니다."},
+                        {"Type":0, "Talker":"", "Context":"해피는 비틀거리면서도 날렵하게 주인이 사라진 방향으로 뛰어갑니다. 그런 해피를 쫓다가 무리에 휩쓸립니다."},
+                        {"Type":0, "Talker":"", "Context":"어느새 축사 문 바로 앞까지 간 돼지들이 갑자기 멈춰섭니다. 무슨 일이죠..?"},
+                        {"Type":0, "Talker":"", "Context":"무언가 분홍색 실루엣이 축사 문 앞에서 서있습니다!"}
+                    ]
+                },
+                {
+                    "Context":"...... 소녀! 소녀는 어딨지??", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"돼지들은 오웰을 따라 우리 밖을 나섭니다."},
+                        {"Type":0, "Talker":"", "Context":"해피는 비틀거리면서도 날렵하게 주인이 사라진 방향으로 뛰어갑니다. 그런 해피를 쫓다가 무리에 휩쓸립니다."},
+                        {"Type":0, "Talker":"", "Context":"어느새 축사 문 바로 앞까지 간 돼지들이 갑자기 멈춰섭니다. 무슨 일이죠..?"},
+                        {"Type":0, "Talker":"", "Context":"무언가 분홍색 실루엣이 축사 문 앞에서 서있습니다!"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

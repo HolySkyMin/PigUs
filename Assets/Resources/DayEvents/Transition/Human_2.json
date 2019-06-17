@@ -1,0 +1,32 @@
+{
+    "Dialogues":
+    [
+	    {"Type":2, "ImageKey":"tutorial_ingame_3"},
+        {"Type":0, "Talker":"", "Context":"이모가 내 머리를 쓰다듬어줍니다. 오랜만에 듣는 칭찬에 기분이 좋아집니다."},
+        {"Type":0, "Talker":"", "Context":"어라, 근데 기분만 좋아진 게 아니라, 모든 배고픔과 아픔이 사라져버린 느낌입니다."},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"이 느낌은...? 정말 뭐죠?", "VariableDelta":[6, 6, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"ㅎㅎ 놀랐니 우리 구구?"},
+                        {"Type":0, "Talker":"이모", "Context":"넌 이제 오늘 매일매일 뭘 해야 도살되거나 팔려가지 않을지 고민하지 않아도 된단다.", "Unskippable":true},
+                        {"Type":0, "Talker":"이모", "Context":"하지만 그렇다고 삶이 편하고 아름다워지는것만은 아니야.", "Unskippable":true},
+                        {"Type":0, "Talker":"이모", "Context":"너가 결심한 마음, 너가 누구가 될 건지\n그걸 꼭 명심하며 살아가렴.\n네가 무엇이 되는지는 네가 <color=blue>선택</color>하는 거야.", "Unskippable":true}
+                    ]
+                },
+                {
+                    "Context":"에이 착각이겠지!", "VariableDelta":[6, 6, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"이모", "Context":"착각이 아니란다 구구."},
+                        {"Type":0, "Talker":"이모", "Context":"넌 이제 오늘 매일매일 뭘 해야 도살되거나 팔려가지 않을지 고민하지 않아도 된단다.", "Unskippable":true},
+                        {"Type":0, "Talker":"이모", "Context":"하지만 그렇다고 삶이 편하고 아름다워지는것만은 아니야.", "Unskippable":true},
+                        {"Type":0, "Talker":"이모", "Context":"너가 결심한 마음, 너가 누구가 될 건지\n그걸 꼭 명심하며 살아가렴.\n네가 무엇이 되는지는 네가 <color=blue>선택</color>하는 거야.", "Unskippable":true}
+                    ]
+                }
+            ]
+        }
+    ]
+}
