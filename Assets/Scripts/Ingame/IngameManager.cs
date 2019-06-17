@@ -414,7 +414,10 @@ namespace Ingame
                     selectRes = dialog.Selects[res].IsTrigger;
                     for (int j = 0; j < Data.Variables.Length; j++)
                     {
-                        Data.Variables[j] += dialog.Selects[res].VariableDelta[j];
+                        if(j < 2)
+                            Data.Variables[j] += (int)(dialog.Selects[res].VariableDelta[j] * 1.5f);
+                        else
+                            Data.Variables[j] += dialog.Selects[res].VariableDelta[j];
                         if (Data.Variables[j] > 100)
                             Data.Variables[j] = 100;
                         if (Data.Variables[j] < 0)

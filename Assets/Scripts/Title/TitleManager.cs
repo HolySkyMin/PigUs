@@ -38,5 +38,13 @@ namespace Title
                 GameManager.Instance.LoadToData();
             SceneChanger.Instance.ChangeScene("DayScene");
         }
+
+        public void ToggleFullscreen()
+        {
+            if (Screen.fullScreen)
+                Screen.SetResolution(1600, 900, false);
+            else
+                Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
+        }
     }
 }
