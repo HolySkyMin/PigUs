@@ -10,14 +10,14 @@
                 {
                     "Context":"그럼 나는 바다포도 먹어볼게!", "VariableDelta":[10, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"<color=#D0D0D0><i>아그작! ...... 오도도독!</i></color>"},
+                        {"Type":0, "Talker":"", "Context":"<color=#808080><i>아그작! ...... 오도도독!</i></color>"},
                         {"Type":0, "Talker":"", "Context":"이젠 입이 아니라 귀로도 먹어봐요!"}
                     ]
                 },
                 {
                     "Context":"오오 조용히 잘 들어줄게!", "VariableDelta":[-10, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"<color=#D0D0D0><i>아그작! 쩝쩝쩝쩝...</i></color>"},
+                        {"Type":0, "Talker":"", "Context":"<color=#808080><i>아그작! 쩝쩝쩝쩝...</i></color>"},
                         {"Type":0, "Talker":"", "Context":"으아... 소리만 듣고 있으려니 너무 배고파요ㅠ"}
                     ]
                 }

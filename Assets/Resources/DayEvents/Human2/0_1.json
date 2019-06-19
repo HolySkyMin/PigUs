@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"character_happydog"},
+	    {"Type":2, "ImageKey":"story_human2_1"},
         {"Type":0, "Talker":"소녀", "Context":"히잉.. 걱정했는데 기운을 차린 거 같아서 다행이야 삼겹살아ㅠㅠㅠ 근데 아직 많이 아파보이네 ㅠ 히"},
         {"Type":0, "Talker":"소녀", "Context":"일단 다 나을 때까지 우리 말고, 해피랑 같이 마당에서 지내자!"},
         {

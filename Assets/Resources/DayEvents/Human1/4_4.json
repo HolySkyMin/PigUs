@@ -26,7 +26,7 @@
                     "Context":"근육돼지를 넘어뜨린다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0], "IsTrigger":true,
                     "AfterDialogues":[
                         {"Type":0, "Talker":"나", "Context":"이얏!!"},
-                        {"Type":0, "Talker":"", "Context":"나는 온몸으로 달려오는 근육돼지를 막았습니다. 온 몸이 부서지는 것 같습니다."},
+                        {"Type":0, "Talker":"", "Context":"나는 온 몸으로 달려오는 근육돼지를 막았습니다. 온 몸이 부서지는 것 같습니다."},
                         {"Type":0, "Talker":"", "Context":"너무 큰 충격에 나는 기절해버렸습니다."},
                         {"Type":0, "Talker":"", "Context":"정신을 차리지 못하는 중, 해피가 크게 컹컹 거리는 소리, 근육돼지가 몸부림치며 꽥꽥거리는 소리..."},
                         {"Type":0, "Talker":"", "Context":"그리고 그 모든걸 종식시키는 총소리가 어렴풋이 들립니다..."},
@@ -38,7 +38,7 @@
                     "Context":"달려오는 해피를 넘어뜨린다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"나", "Context":"이얏!!"},
-                        {"Type":0, "Talker":"", "Context":"나는 온몸으로 달려오는 해피를 막았습니다. 온 몸이 부서지는 것 같습니다."},
+                        {"Type":0, "Talker":"", "Context":"나는 온 몸으로 달려오는 해피를 막았습니다. 온 몸이 부서지는 것 같습니다."},
                         {"Type":0, "Talker":"", "Context":"너무 큰 충격에 나는 기절해버렸습니다."},
                         {"Type":0, "Talker":"", "Context":"해피가 넘어진 사이 근육돼지는 우리를 빠져나가 숲을 향해 달렸습니다."},
                         {"Type":0, "Talker":"", "Context":"이를 늦게 발견한 주인은 차에서 그를 향해 총을 쏘지만 맞추기엔 너무 멀어졌습니다."},

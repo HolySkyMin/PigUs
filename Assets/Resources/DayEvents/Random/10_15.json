@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"우리 안이 시끌시끌합니다. 돼지들끼리 싸움이 난 듯 하네요!"},
         {
             "Type":1, 

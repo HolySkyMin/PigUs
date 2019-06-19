@@ -2,7 +2,7 @@
     "Dialogues":
     [
 	    {"Type":2, "ImageKey":"tutorial_ingame_3"},
-        {"Type":0, "Talker":"이모", "Context":"아이쿠! 시간이 이렇게 되어버렸네! 이젠 너를 보내줄 때가 된 것 같아. 너를 기다리는 자도 있고"},
+        {"Type":0, "Talker":"이모", "Context":"아이쿠! 시간이 이렇게 되어버렸네! 이젠 너를 보내줄 때가 된 것 같아. 너를 기다리는 자도 있고."},
         {"Type":0, "Talker":"이모", "Context":"언제 다시 보게 될 지는 모르겠지만... 안녕 구구..."},
         {"Type":2, "ImageKey":"tutorial_ingame_2"},
         {"Type":0, "Talker":"", "Context":"이모는 다시 안개 속으로 점점 희미하게 사라졌습니다."},

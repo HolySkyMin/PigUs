@@ -55,6 +55,7 @@ namespace Ingame
             yield return new WaitUntil(() => DialogueManager.Instance.Receiver.ReceivedClick);
             DialogueManager.Instance.Receiver.ReceivedClick = false;
             EndIndicator.SetActive(false);
+            UnskipIndicator.SetActive(false);
         }
     }
 }

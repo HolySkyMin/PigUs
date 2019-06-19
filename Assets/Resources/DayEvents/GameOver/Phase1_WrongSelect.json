@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"하루하루를 지내면서 자라나는 감정은 외로움이었습니다."},
         {"Type":0, "Talker":"", "Context":"다른 돼지들을 보고, 그들의 반응을 볼 때마다, 내가 모두에게 버림받았다는 사실을 다시 한 번 깨닫습니다."},
         {"Type":0, "Talker":"", "Context":"그 사이에서 보내는 정말 단순한 생활들은 하나같이 고통의 시간이었습니다."},

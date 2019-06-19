@@ -13,6 +13,6 @@
         {"Type":0, "Talker":"", "Context":"곧 주변이 어두워지고, 소나기가 내리기 시작합니다. 나는 온 몸에 힘이 빠져 털썩 주저앉습니다."},
         {"Type":0, "Talker":"나", "Context":"<color=#303030>아.. 도와주세요.. 아무도.. 없나요...</color>"},
         {"Type":0, "Talker":"", "Context":"감정의 응어리가 빠져나와 빗물에 씻겨 내려갑니다. 정신이 혼미해집니다."},
-        {"Type":0, "Talker":"", "Context":"<i>지금 나는, 내 자신이 <color=#404040>완벽하게 자유롭고 또한</color> <color=#808080>완벽하게 혼자임을 느낍니다.</color><i>", "Unskippable":true}
+        {"Type":0, "Talker":"", "Context":"<i>지금 나는, 내 자신이 <color=#808080>완벽하게 자유롭고 또한</color> <color=#D0D0D0>완벽하게 혼자임을 느낍니다.</color><i>", "Unskippable":true}
     ]
 }

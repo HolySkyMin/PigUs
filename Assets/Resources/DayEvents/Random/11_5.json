@@ -16,7 +16,7 @@
                     ]
                 },
                 {
-                    "Context":"아~ 방금 출발했어요~!", "VariableDelta":[-10, 0, 0, 0],
+                    "Context":"됐어. 난 여유롭게 먹는게 좋아.", "VariableDelta":[-10, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"나", "Context":"어? 사료가 다 어디갔지?"},
                         {"Type":0, "Talker":"꽃돼지", "Context":"아까 대회에 다 썼지롱! ^.^"},

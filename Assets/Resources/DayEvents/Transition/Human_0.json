@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":3, "BgmKey":"Aunt in Dream"},
 	    {"Type":2, "ImageKey":"tutorial_ingame_1"},
         {"Type":0, "Talker":"", "Context":"... ... ... 온 세상이 어둡습니다."},
         {"Type":0, "Talker":"", "Context":"눈을 뜨고 있는건지, 감고 있는건지도 구분 안되는 어둠 속."},

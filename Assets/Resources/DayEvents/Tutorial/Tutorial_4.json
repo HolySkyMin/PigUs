@@ -9,14 +9,14 @@
             "Selects":
             [
                 {
-                    "Context":"배가 너무 고파요..", "VariableDelta":[10, 0, 0, 0],
+                    "Context":"배가 너무 고파요..", "VariableDelta":[5, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"에구...ㅠㅠ 갑자기 어미랑 떨어지느라 제대로 먹지도 못했겠구나."},
                         {"Type":0, "Talker":"이모", "Context":"우선 여기 남은 사료를 먹으렴. 잘 먹어야 선택도 잘 하지~"}
                     ]
                 },
                 {
-                    "Context":"식은 땀이 흘러요..", "VariableDelta":[0, 10, 0, 0],
+                    "Context":"식은 땀이 흘러요..", "VariableDelta":[0, 5, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"이모", "Context":"에구...ㅠㅠ 아무래도 많이 놀랬나 보구나... 우리 돼지들은 체온 조절이 힘들어서 항상 조심해야 해."},
                         {"Type":0, "Talker":"이모", "Context":"여기 일단 시원한 물 좀 마셔보렴."}

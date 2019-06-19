@@ -1,0 +1,60 @@
+{
+    "Dialogues":
+    [
+        {"Type":3, "BgmKey":"Pig, Us (Twisted ver.)"},
+        {"Type":2, "ImageKey":"gameover_animalize_1"},
+        {"Type":0, "Talker":"", "Context":"어.. 뭔가 돼지들이 이상하게 움직이는 것 같군요. 이게 무슨 일이죠?"},
+        {"Type":0, "Talker":"", "Context":"무언가 계획적으로 바쁘게 움직이는 것 같은데... 에이... 잠이나 더 잘래요."},
+        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"돼지들은 밤마다 모여서 토론을 <i>꿀...</i> 것 같았습<i>꿀...</i> 니다."},
+        {"Type":0, "Talker":"", "Context":"비 내리는 오늘도 <i>꿀..</i> 그런것 같네요! 하지만 무슨 상관인가요 <i>꿀!</i>"},
+        {"Type":0, "Talker":"", "Context":"꿀꿀한 날씨... 꿀잠이나 자야겠어요 <i>꿀꿀</i>. 역시 밤에는 잠이나 잘 자는게 최고지요 <i>꿀!</i>"},
+        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"햇빛이 좋은 오늘, <i>꿀꿀</i> 하는게 좋아보입<i>꿀꿀.</i> <i>꿀꿀</i> 은 어떻게 꿀꿀?"},
+        {"Type":0, "Talker":"", "Context":"...역시 <i>꿀꿀</i> 이지! 나쁜 선택이 <i>꿀꿀</i> 아니네<i>꿀꿀~</i>"},
+        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...", "Unskippable":true},
+        {"Type":2, "ImageKey":"gameover_animalize_2"},
+        {"Type":0, "Talker":"<i>꿀꿀</i> 돼지", "Context":"구구야...! <i>꿀꿀</i> 하는 <i>꿀</i> 어때^ㅗ^ <i>꿀꿀꿀</i> 너도 <i>꿀</i> 우리와 함께 <i>꿀꿀 꿀꿀꿀</i> 어떠니?^ㅗ^", "Unskippable":true},
+        {"Type":0, "Talker":"<i>꿀</i>", "Context":"<i>꿀꿀꿀.. 꿀꿀;</i>", "Unskippable":true},
+        {"Type":0, "Talker":"<i>꿀꿀</i> 돼지", "Context":"<i>꿀꿀꿀꿀... 꿀꿀...</i> 하는구나ㅠ<i>꾸꿀ㄲ꿀꿀... 꿀꿀...</i>", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"<i>꿀꿀? 꿀꿀꿀????</i>", "Unskippable":true},
+        {
+            "Type":1, 
+            "Selects":
+            [
+                {
+                    "Context":"꿀꿀!!!!", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"<i>꿀꾸리꿀꿀 꿀꿀.\n꿀꿀꿀... 꿀꿀.</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"\n\n<i>꿀꿀꿀 꿀꾸리꿀꿀꿀</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>돼지 A99번은 더 이상 생각을 멈추고 우리에 완전히 몸을 맡겼습니다.</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>그는 대체 무슨 생각을 하고 있는 걸까요? 생각을 하고 있긴 할까요?</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>... 어쩌면 A99는 <color=blue>우리에 너무 오래 있었는 지도</color> 모르겠습니다.</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>다시 처음으로 되돌아간다면 조금은 나은 돼지가 될 수 있지 않을까요?</i>", "Unskippable":true},
+                        {"Type":2, "ImageKey":"gameover_animalize_3"},
+                        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...\n", "Unskippable":true},
+                        {"Type":2, "ImageKey":"gameover_animalize_4"},
+                        {"Type":0, "Talker":"", "Context":"... ... ... .", "Unskippable":true}
+                    ]
+                },
+                {
+                    "Context":"꿀꿀꿀.", "VariableDelta":[0, 0, 0, 0],
+                    "AfterDialogues":[
+                        {"Type":0, "Talker":"", "Context":"<i>꿀꾸리꿀꿀 꿀꿀. 꿀꿀꿀... 꿀꿀. 꿀꿀꿀 꿀꾸리꿀꿀꿀</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>돼지 A99번은 더 이상 생각을 멈추고 우리에 완전히 몸을 맡겼습니다.</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>그는 대체 무슨 생각을 하고 있는 걸까요? 생각을 하고 있긴 할까요?</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>... 어쩌면 A99는 <color=blue>우리에 너무 오래 있었는 지도</color> 모르겠습니다.</i>", "Unskippable":true},
+                        {"Type":0, "Talker":"", "Context":"<i>다시 처음으로 되돌아간다면 조금은 나은 돼지가 될 수 있지 않을까요?</i>", "Unskippable":true},
+                        {"Type":2, "ImageKey":"gameover_animalize_3"},
+                        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...\n... ... ... ... ... ...\n", "Unskippable":true},
+                        {"Type":2, "ImageKey":"gameover_animalize_4"},
+                        {"Type":0, "Talker":"", "Context":"... ... ... .", "Unskippable":true}
+                    ]
+                }
+            ]
+        }
+    ]
+}

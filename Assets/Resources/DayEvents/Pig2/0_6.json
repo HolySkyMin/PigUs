@@ -2,7 +2,7 @@
     "ToGameOver":"Phase2_Pig1",
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_pig2_0_3"},
+	    {"Type":2, "ImageKey":"story_pig2_4"},
         {"Type":0, "Talker":"오웰", "Context":"네 역할은 작전을 성공시킬 충성스러운 혁명 전사를 만드는 것이다."},
         {"Type":0, "Talker":"오웰", "Context":"며칠 후에 고사를 위해 돼지를 잡으러 오면 건강한 척 날뛰게 해라."},
         {"Type":0, "Talker":"오웰", "Context":"인간은 반드시 길조라 여기며 그 돼지를 잡아갈 터이니. 반드시 충분히 믿을 수 있을 때 작전을 설명하고 실행에 옳길 수 있도록."},

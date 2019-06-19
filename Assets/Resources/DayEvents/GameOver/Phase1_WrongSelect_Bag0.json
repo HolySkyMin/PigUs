@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"주인이 유기농 사료를 들어 먹이통에 뿌립니다."},
         {
             "Type":1, 

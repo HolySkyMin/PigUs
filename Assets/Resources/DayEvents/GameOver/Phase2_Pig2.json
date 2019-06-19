@@ -1,49 +1,24 @@
 {
     "Dialogues":
     [
-        {"Type":2, "ImageKey":"story_pig2_gameover2_1"},
-        {"Type":0, "Talker":"", "Context":"그 다음 날은 인간들의 고사가 진행되는 날이었습니다. 주인이 우리로 들어옵니다."},
-        {"Type":0, "Talker":"주인", "Context":"그래, 오늘은 오랜만에 토실토실한 놈으로 해 볼까!"},
-        {"Type":0, "Talker":"", "Context":"하지만, 원래 달려 나가야 했던 A38은 머뭇거립니다."},
-        {"Type":0, "Talker":"나", "Context":"어서, 칭구야. 너는 혁명의 신호탄이 될 수 있다고!"},
-        {"Type":0, "Talker":"A38", "Context":"하지만... 하지만...... 나도.. 살고 싶은걸..."},
-        {"Type":0, "Talker":"", "Context":"A38은 계속 주저했고, 결국 주인은 다른 돼지를 잡아 우리를 나섭니다."},
-        {"Type":0, "Talker":"오웰", "Context":"... 이게...... <i>이게 뭐 하는 짓인가...?</i>"},
-        {"Type":0, "Talker":"A38", "Context":"뭐 하는 짓이긴! 성공할지 실패할지도 모르는 일에 <i>내 목숨을</i> 홰까닥 바치라고?"},
-        {"Type":0, "Talker":"오웰", "Context":"참 나......\n\n<i>멍청이,</i> 이게 대체 어떻게 된 일이지?"},
-        {"Type":0, "Talker":"나", "Context":"아...... 그... 그게......"},
-        {"Type":0, "Talker":"오웰", "Context":"나는, <i>분명히,</i> 믿을 만한 혁명 전사를 데리고 오라고 했을 텐데?"},
-        {"Type":0, "Talker":"오웰", "Context":"저런 놈을 데리고 온 너의 의중은 뭐지? 나의 혁명에 반동하는 건가?"},
-        {"Type":0, "Talker":"나", "Context":"아니, 절, 절대로 그렇지 않ㅡㅡ"},
-        {"Type":0, "Talker":"오웰", "Context":"<i>닥쳐라.</i> 너는 이미 훌륭한 반동이자 분탕종자야. 너같은 뿔딱은 내가 직접 처리해야겠군."},
-        {"Type":0, "Talker":"", "Context":"오웰이 앞발톱을 드러내며 달려옵니다."},
-        {
-            "Type":1, 
-            "Selects":
-            [
-                {
-                    "Context":"앞발을 들어 막는다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
-                    "AfterDialogues":[
-                        {"Type":2, "ImageKey":"story_pig2_gameover2_2"},
-                        {"Type":0, "Talker":"", "Context":"황급히 앞발을 들어 막아봤지만, 오웰의 힘은 상상 이상으로 강력했습니다."},
-                        {"Type":0, "Talker":"", "Context":"오웰은 곧장 나를 눕힌 뒤, 날카로운 앞발톱으로 나를 찌릅니다."},
-                        {"Type":0, "Talker":"오웰", "Context":"이 <i>망할! 개! 뿔딱같은! 젠장할! 개자식! 감히! 나를! 배신해!!!!</i>"},
-                        {"Type":0, "Talker":"", "Context":"오웰은 만족할 만큼 나를 찌른 다음에야 겨우 돌아갔습니다."},
-                        {"Type":0, "Talker":"", "Context":"나는 아무 것도 하지 못하고, 눈이 흐려지는 것을 느끼며, 그 때의 그 <color=blue>선택</color>을 후회할 수 밖에 없었습니다."}
-                    ]
-                },
-                {
-                    "Context":"뒤돌아 도망친다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
-                    "AfterDialogues":[
-                        {"Type":2, "ImageKey":"story_pig2_gameover2_3"},
-                        {"Type":0, "Talker":"", "Context":"황급히 뒤돌아 달렸지만, 오웰의 달리기는 상상 이상을 빨랐습니다."},
-                        {"Type":0, "Talker":"", "Context":"오웰은 곧장 나를 눕힌 뒤, 날카로운 앞발톱으로 나를 찌릅니다."},
-                        {"Type":0, "Talker":"오웰", "Context":"이 <i>망할! 개! 뿔딱같은! 젠장할! 개자식! 감히! 나를! 배신해!!!!</i>"},
-                        {"Type":0, "Talker":"", "Context":"오웰은 만족할 만큼 나를 찌른 다음에야 겨우 돌아갔습니다."},
-                        {"Type":0, "Talker":"", "Context":"나는 아무 것도 하지 못하고, 눈이 흐려지는 것을 느끼며, 그 때의 그 <color=blue>선택</color>을 후회할 수 밖에 없었습니다."}
-                    ]
-                }
-            ]
-        }
+        {"Type":2, "ImageKey":"story_pig2_gameover2"},
+        {"Type":0, "Talker":"", "Context":"다음 날, 예상한 대로 인간은 고사 지낼 돼지를 고르기 위해 우리로 들어왔습니다."},
+        {"Type":0, "Talker":"", "Context":"그런데, A38이 조용합니다. 가만 보니, A38은 잔뜩 긴장한 것 같습니다."},
+        {"Type":0, "Talker":"", "Context":"잡을 돼지를 고르러 온 인간을 향한 그의 몸짓엔 주저함이 가득합니다."},
+        {"Type":0, "Talker":"나", "Context":"<color=#707070>아니야. 넌 할 수 있어.</color>"},
+        {"Type":0, "Talker":"", "Context":"인간은 미심쩍은 표정을 지으며 A38을 데리고 갑니다."},
+        {"Type":0, "Talker":"", "Context":"잠시 뒤, 여전히 주저하던 A38은 마침내 인간을 들이받고 리모콘을 덥썩 물었습니다."},
+        {"Type":0, "Talker":"", "Context":"그러나 덜덜 떨고 있던 A38을 주시하던 그 자는 이를 금세 알아챘습니다."},
+        {"Type":0, "Talker":"나", "Context":"아아..."},
+        {"Type":0, "Talker":"", "Context":"A38은 무의식중에 고통스레 울부짖으며 끌려나갑니다. 리모콘은 그 자리에 그대로 놓여 있습니다."},
+        {"Type":0, "Talker":"", "Context":"동지들의 표정이 어두워집니다. 그리고 그 감정은 어두움을 넘어 증오로 가득히 채워집니다."},
+        {"Type":0, "Talker":"", "Context":"그 가운데 오웰이 외쳤습니다."},
+        {"Type":0, "Talker":"오웰", "Context":"멍청하게 계획을 성공시켜, A38을 잃게 하고, 수많은 동족을 계속 죽음으로 내 몰 <i>저 대역죄인을 죽여라!!!</i>", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"흥분한 돼지들이 나에게 다가와, 나를 물어뜯고 짓밟습니다. 그럼에도 나는 아무런 저항도 할 수 없었습니다."},
+        {"Type":0, "Talker":"", "Context":"이름도 없이 죽는 죄없는 A38의 천진난만한 모습이 눈 앞에 아른거립니다."},
+        {"Type":0, "Talker":"", "Context":"점점 눈 앞이 흐려집니다. 아른거리던 A38의 모습마저도 잘 보이지 않습니다."},
+        {"Type":0, "Talker":"", "Context":"... ... ... ... ... ...", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"이내 곧, 농장에서는 큰 돼지 울음소리가 울려퍼집니다. 하나는 도축장에서, <i>하나는 우리 안에서.</i>", "Unskippable":true},
+        {"Type":0, "Talker":"", "Context":"그 소리에는 이 농장을 탈출하고 싶어하는 욕망이 가득 담겨있는 것 같습니다.", "Unskippable":true}
     ]
 }

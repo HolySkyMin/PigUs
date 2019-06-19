@@ -16,15 +16,15 @@
                         {"Type":0, "Talker":"꽃돼지", "Context":"히히 역시 예쁘다 ^.^"},
                         {"Type":0, "Talker":"", "Context":"머리에 꽃을 꽂으니 기분이 조금 이상하지만 좋습니다."},
                         {"Type":0, "Talker":"", "Context":"잠시 후에 꽃돼지에게 다시 국화를 돌려줬습니다."},
-                        {"Type":0, "Talker":"", "Context":"그런데 문득 궁금해집니다. 어디에서 저렇게 예쁜 꼿이 난걸까요?"}
+                        {"Type":0, "Talker":"", "Context":"그런데 문득 궁금해집니다. 어디에서 저렇게 예쁜 꽃이 난걸까요?"}
                     ]
                 },
                 {
                     "Context":"거절한다", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"꽃돼지", "Context":"히잉 왜 ㅠㅠ ...알았어 ㅠㅠ"},
-                        {"Type":0, "Talker":"", "Context":"꽃돼지가 조금 실망한 것 같았지만, 거절은 잘 한 것 같습니다."},
-                        {"Type":0, "Talker":"", "Context":"그런데 문득 궁금해집니다. 어디에서 저렇게 예쁜 꼿이 난걸까요?"}
+                        {"Type":0, "Talker":"", "Context":"꽃돼지가 조금 실망한 것 같았지만, 거절은 잘한 것 같습니다."},
+                        {"Type":0, "Talker":"", "Context":"그런데 문득 궁금해집니다. 어디에서 저렇게 예쁜 꽃이 난걸까요?"}
                     ]
                 }
             ]

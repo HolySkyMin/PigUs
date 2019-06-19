@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"낮잠이 몰려옵니다. 잘 보니 이 바닥도 눕기에는 되게 좋아보이네요."},
         {
             "Type":1, 

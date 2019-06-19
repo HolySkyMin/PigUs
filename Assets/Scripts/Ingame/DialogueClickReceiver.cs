@@ -15,5 +15,11 @@ namespace Ingame
             if(AllowedToReceive)
                 ReceivedClick = true;
         }
+
+        private void Update()
+        {
+            if (AllowedToReceive && Input.GetKeyDown(KeyCode.Space))
+                ReceivedClick = true;
+        }
     }
 }

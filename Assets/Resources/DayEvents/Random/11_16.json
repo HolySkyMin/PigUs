@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"비바람이 불어 지붕이 떨어졌습니다. 한 친구가 날아간 지붕 밑에 깔려 끙끙대고 있네요."},
         {
             "Type":1, 

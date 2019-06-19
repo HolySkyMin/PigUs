@@ -11,7 +11,7 @@
                 {
                     "Context":"오웰 성대모사를 한다", "VariableDelta":[0, 0, 1, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"나", "Context":"멍멍컹컹!! 나는 하룻강아지 해피라네!!"},
+                        {"Type":0, "Talker":"나", "Context":"꿀꿀!! 나는 난동꾼 돼지 오웰이라네!!"},
                         {"Type":0, "Talker":"", "Context":"근육돼지는 잘못 시켰다는 표정입니다."}
                     ]
                 },

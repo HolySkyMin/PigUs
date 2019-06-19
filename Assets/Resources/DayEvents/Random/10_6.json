@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"random_10_6"},
         {"Type":0, "Talker":"근육돼지", "Context":"이봐 애송이, 내가 오늘 좀 배가 고픈데 사료 좀 빌려줄 수 있을까? 쓰고 바로 줄게."},
         {
             "Type":1, 

@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"다른 돼지들이 사료를 먹고 있네요. 나도 좀 주면 좋을 텐데."},
         {
             "Type":1, 

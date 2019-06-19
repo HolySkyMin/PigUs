@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"내가 자던 바로 그 자리에 화려한 버섯이 자라기 시작했습니다. 먹어도 되는 걸까요?"},
         {
             "Type":1, 

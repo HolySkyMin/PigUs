@@ -1,7 +1,7 @@
 {
     "Dialogues":
     [
-        {"Type":2, "ImageKey":"character_flowerpig"},
+        {"Type":2, "ImageKey":"random_10_3"},
         {"Type":0, "Talker":"꽃돼지", "Context":"비둘기가 말해줬는데, 요즘은 날씬한것보다는 그...뭐더라... 맞다! '근육돼지'가 인기래!"},
         {"Type":0, "Talker":"꽃돼지", "Context":"나도 그래서 운동 좀 하려는데 같이 할래?? ^.^"},
         {

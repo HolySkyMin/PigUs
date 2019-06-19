@@ -14,7 +14,7 @@
                     ]
                 },
                 {
-                    "Context":"그래, 누가 이기나 보자", "VariableDelta":[0, -10, 0, 0],
+                    "Context":"그래, 나는 더러운 돼지다!!", "VariableDelta":[0, -10, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"긁적긁적 벅벅벅벅.. 피부가 너무 가려워 철장에 대고 비벼봅니다. 이제라도 청소를 해야하나요..."}
                     ]

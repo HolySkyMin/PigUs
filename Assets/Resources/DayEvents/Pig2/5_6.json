@@ -13,14 +13,14 @@
                     "Context":"꿀꿀꿀꿀!!\n(빨리 안 비켜?)", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"소녀", "Context":"하하하 나도 참.. 무슨 돼지한테 하소연이람..."},
-                        {"Type":0, "Talker":"나", "Context":"<color=#303030>아, 그래... 얘는 내 말을 알아들을 수 없지..</color>"}
+                        {"Type":0, "Talker":"나", "Context":"<color=#707070>아, 그래... 얘는 내 말을 알아들을 수 없지..</color>"}
                     ]
                 },
                 {
                     "Context":"꿀꿀꿀꿀...\n(더이상 다치게 하고 싶지 않아..)", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"소녀", "Context":"하하하 나도 참.. 무슨 돼지한테 하소연이람..."},
-                        {"Type":0, "Talker":"나", "Context":"<color=#303030>아, 그래... 얘는 내 말을 알아들을 수 없지..</color>"}
+                        {"Type":0, "Talker":"나", "Context":"<color=#707070>아, 그래... 얘는 내 말을 알아들을 수 없지..</color>"}
                     ]
                 }
             ]

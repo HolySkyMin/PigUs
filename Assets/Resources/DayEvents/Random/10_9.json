@@ -14,7 +14,7 @@
                     ]
                 },
                 {
-                    "Context":"그래, 누가 이기나 보자", "VariableDelta":[-10, 0, 0, 0],
+                    "Context":"흙을 쌓아서 물을 막아야 해!!", "VariableDelta":[-10, 0, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"휴! 쾌적한 우리를 사수했어요! 그런데 너무 열심히 했나.. 배에서 꼬르륵 소리가!"}
                     ]

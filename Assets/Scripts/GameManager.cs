@@ -7,8 +7,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    public static bool SaveFileExists { get { return File.Exists($"{Application.dataPath}/save"); } }
-    public static bool Phase2Exists { get { return File.Exists($"{Application.dataPath}/save_phase2"); } }
+    public static bool SaveFileExists { get { return File.Exists($"{Application.persistentDataPath}/save"); } }
+    public static bool Phase2Exists { get { return File.Exists($"{Application.persistentDataPath}/save_phase2"); } }
 
     public SaveData Save;
 
@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     public void CreateData(bool skipTutorial)
     {
+        DeleteFile("save_phase2");
         Save = new SaveData() { SkipTutorial = skipTutorial };
         Save.Phase1StoryDay = Random.Range(3, 5);
         SaveToFile();
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadToData()
     {
-        var stream = new FileStream($"{Application.dataPath}/save", FileMode.Open);
+        var stream = new FileStream($"{Application.persistentDataPath}/save", FileMode.Open);
         var formatter = new BinaryFormatter();
         Save = formatter.Deserialize(stream) as SaveData;
         stream.Close();
@@ -40,7 +41,7 @@ public class GameManager : MonoBehaviour
 
     public void SaveToFile()
     {
-        var stream = new FileStream($"{Application.dataPath}/save", FileMode.Create);
+        var stream = new FileStream($"{Application.persistentDataPath}/save", FileMode.Create);
         var formatter = new BinaryFormatter();
         formatter.Serialize(stream, Save);
         stream.Close();
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadPhase2()
     {
-        var stream = new FileStream($"{Application.dataPath}/save_phase2", FileMode.Open);
+        var stream = new FileStream($"{Application.persistentDataPath}/save_phase2", FileMode.Open);
         var formatter = new BinaryFormatter();
         Save = formatter.Deserialize(stream) as SaveData;
         stream.Close();
@@ -56,7 +57,7 @@ public class GameManager : MonoBehaviour
 
     public void SavePhase2()
     {
-        var stream = new FileStream($"{Application.dataPath}/save_phase2", FileMode.Create);
+        var stream = new FileStream($"{Application.persistentDataPath}/save_phase2", FileMode.Create);
         var formatter = new BinaryFormatter();
         formatter.Serialize(stream, Save);
         stream.Close();
@@ -64,6 +65,6 @@ public class GameManager : MonoBehaviour
 
     public void DeleteFile(string filename)
     {
-        File.Delete(filename);
+        File.Delete($"{Application.persistentDataPath}/{filename}");
     }
 }

@@ -2,6 +2,7 @@
     "ToGameOver":"Phase2_Human3",
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"story_human2_10"},
         {"Type":0, "Talker":"돼지들", "Context":"빨리 더 얘기해줘..!"},
         {
             "Type":1, 

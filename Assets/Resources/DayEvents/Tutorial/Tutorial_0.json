@@ -9,7 +9,7 @@
             "Selects":
             [
                 {
-                    "Context":"있는 힘껏 부딪힌다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, -10, 0, 0],
+                    "Context":"있는 힘껏 부딪힌다", "VariableType":[0, 1, 0, 0], "VariableDelta":[0, -5, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"<i>꽝!</i>...... 광!.... <i>광</i>..."},
                         {"Type":0, "Talker":"", "Context":"소리가 축사 안에 메아리쳐 울립니다. 부딪힌 머리가 지끈거립니다."}

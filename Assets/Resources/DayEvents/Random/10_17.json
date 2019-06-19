@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"누가 똥을 여기다 싸논거야? 우리 안이 온통 똥냄새입니다."},
         {
             "Type":1, 

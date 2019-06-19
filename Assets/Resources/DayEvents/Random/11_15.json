@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"늦은 밤 한 돼지가 시끄럽게 중얼거리며 우리에 머리를 쾅쾅 박고 있습니다."},
         {"Type":0, "Talker":"어떤 돼지", "Context":"여기서 이렇게 살아봐야 의미없어...의미없어.."},
         {"Type":0, "Talker":"", "Context":"어... 근데 지금은 잘 시간인데요."},

@@ -36,4 +36,10 @@ public class SoundManager : MonoBehaviour
         SePlayer.PlayOneShot(Resources.Load<AudioClip>($"Sounds/{audioKey}"));
         //SePlayer.PlayOneShot((AudioClip)(await Resources.LoadAsync($"Sounds/{audioKey}")));
     }
+
+    public void StopBgm()
+    {
+        BgmPlayer.Stop();
+        PlayingBgm = "";
+    }
 }

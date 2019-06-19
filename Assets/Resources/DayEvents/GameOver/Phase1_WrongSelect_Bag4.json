@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"잠이 들려는 찰나 어디선가 이야기 소리가 들려옵니다."},
         {
             "Type":1, 

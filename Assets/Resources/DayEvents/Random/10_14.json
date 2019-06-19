@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"우리 안에 말벌이 들어왔습니다! 친구들이 야단법석입니다!"},
         {
             "Type":1, 

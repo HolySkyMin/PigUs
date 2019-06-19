@@ -164,25 +164,27 @@ namespace Ingame
                 Data.CurrentStoryType = 0;
 
                 // 이후의 값과 비교하기 위해 현재 값들을 저장해 둡니다.
-                var befHumanProg = HumanFavority / 3;
-                var befPigProg = PigFavority / 3;
+                var befHumanProg = HumanFavority / 2;
+                var befPigProg = PigFavority / 2;
                 var befPhase = Data.StoryPhase;
 
                 // 조건에 따라 다이얼로그를 실행합니다.
                 if(Data.StoryPhase == 0)
                 {
-                    SoundManager.Instance.PlayBgm("Choice");
                     if (Data.RandomQueue.Count < 1)
                     {
-                        ShowGameOver("DayEvents/GameOver/General_Sold", true);
+                        ShowGameOver("DayEvents/GameOver/General_Animalize", true);
+                        Data.IsGameOver = true;
                         break;
                     }
+                    SoundManager.Instance.PlayBgm("Choice");
                     if (Data.DayCount == Data.Phase1StoryDay)
                     {
                         if(Data.StoryQueue.Count > 0)
                         {
                             var stories = Data.StoryQueue.Dequeue();
                             Data.CurrentStoryType = Data.StoryTypeQueue.Dequeue();
+                            Data.Phase1Progress[Data.CurrentStoryType - 1]++;
                             bool selectRes = false;
                             for (int j = 0; j < stories.Count; j++)
                                 selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 && !Data.IsHumanStackFull && !Data.IsPigStackFull ? true : false);
@@ -221,12 +223,12 @@ namespace Ingame
                         if (Data.StoryQueue.Count < 1 && j == stories.Count - 1)
                         {
                             ShowGameOver($"DayEvents/{(Data.StoryPhase == 1 ? "Human" : "Pig")}2/Ending{(selectRes ? "1" : "2")}", true);
-                            GameManager.Instance.DeleteFile("save");
                             return;
                         }
                         else if (selectRes)
                         {
                             ShowGameOver($"DayEvents/GameOver/{stories[j].ToGameOver}", j == stories.Count - 1 ? true : false);
+                            Data.IsGameOver = true;
                             return;
                         }
                     }
@@ -239,6 +241,7 @@ namespace Ingame
                     if (Data.RandomQueue.Count < 1)
                     {
                         ShowGameOver("DayEvents/GameOver/Phase1_WrongSelect", true);
+                        Data.IsGameOver = true;
                         break;
                     }
                     else
@@ -249,6 +252,7 @@ namespace Ingame
                     SoundManager.Instance.PlayBgm("Death");
                     Data.CurrentStoryType = -1;
                     ShowGameOver("DayEvents/GameOver/General_Death", true);
+                    Data.IsGameOver = true;
                     break;
                 }
                 else if(Data.StoryPhase == -10)
@@ -256,15 +260,16 @@ namespace Ingame
                     SoundManager.Instance.PlayBgm("Death");
                     Data.CurrentStoryType = -1;
                     ShowGameOver("DayEvents/GameOver/General_Sold", true);
+                    Data.IsGameOver = true;
                     break;
                 }
                 else
                     return;
 
                 // 값 변화를 비교하고 변경 사항을 적용합니다. (Only for Phase 1)
-                if ((HumanFavority / 3) > befHumanProg && HumanFavority < 18)
+                if ((HumanFavority / 2) > befHumanProg && HumanFavority < 12)
                 {
-                    for (int j = befHumanProg; j < HumanFavority / 3; j++)
+                    for (int j = befHumanProg; j < HumanFavority / 2; j++)
                     {
                         var stories = new List<DialogueGroup>();
                         for (int k = 0; k < storyHuman1[j].Count; k++)
@@ -273,9 +278,9 @@ namespace Ingame
                         Data.StoryTypeQueue.Enqueue(1);
                     }
                 }
-                if ((PigFavority / 3) > befPigProg && PigFavority < 18 && !Data.IsHumanStackFull)
+                if ((PigFavority / 2) > befPigProg && PigFavority < 12)
                 {
-                    for (int j = befPigProg; j < PigFavority / 3; j++)
+                    for (int j = befPigProg; j < PigFavority / 2; j++)
                     {
                         var stories = new List<DialogueGroup>();
                         for (int k = 0; k < storyPig1[j].Count; k++)
@@ -284,10 +289,6 @@ namespace Ingame
                         Data.StoryTypeQueue.Enqueue(2);
                     }
                 }
-                if (HumanFavority >= 15)
-                    Data.IsHumanStackFull = true;
-                if (PigFavority >= 15)
-                    Data.IsPigStackFull = true;
                 if (Food <= 0 || Health <= 0)
                     Data.StoryPhase = -9;
                 if (Food >= 100 || Health >= 100)
@@ -367,7 +368,10 @@ namespace Ingame
             var dialog = JsonMapper.ToObject<DialogueGroup>(Resources.Load<TextAsset>(dialogPath).text);
             if(dialog != null)
                 await RunDayDialogue(dialog, appear, true);
-            SceneChanger.Instance.ChangeScene("ResultScene");
+            if (dialogPath == "DayEvents/GameOver/General_Animalize")
+                Application.Quit();
+            else
+                SceneChanger.Instance.ChangeScene("ResultScene");
         }
 
         private void Update()
@@ -456,6 +460,11 @@ namespace Ingame
             if(playDisappear)
                 await DialogAnimation.Disappear();
             return selectRes;
+        }
+
+        public void ReturnToTitle()
+        {
+            SceneChanger.Instance.ChangeScene("TitleScene");
         }
     }
 }

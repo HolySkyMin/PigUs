@@ -1,6 +1,7 @@
 {
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"random_10_13"},
         {"Type":0, "Talker":"", "Context":"왜소한 돼지가 비틀대며 다가옵니다."},
         {"Type":0, "Talker":"왜소한 돼지", "Context":"근육 돼지들한테 밀려서 삼일 째 밥을 못먹고 있어.. 혹시 밥 좀 나눠줄 수 있을까?"},
         {
