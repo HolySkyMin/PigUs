@@ -17,7 +17,7 @@
                 {
                     "Context":"저 아저씨는 도대체 뭘까...", "VariableType":[0, 0, 0, 1], "VariableDelta":[0, 0, 0, 1],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"그의 떠난 빈자리를 한참 처다보며 생각했습니다."}
+                        {"Type":0, "Talker":"", "Context":"그의 떠난 빈자리를 한참 쳐다보며 생각했습니다."}
                     ]
                 }
             ]
