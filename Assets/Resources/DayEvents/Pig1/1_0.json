@@ -13,7 +13,7 @@
                 {
                     "Context":"아저씨! 좀 진정해요!", "VariableType":[0, 0, 0, 0], "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"오웰이 나를 못마땅하게 처다보다, 이내 '쳇-' 하며 돌아섭니다."}
+                        {"Type":0, "Talker":"", "Context":"오웰이 나를 못마땅하게 쳐다보다, 이내 '쳇-' 하며 돌아섭니다."}
                     ]
                 },
                 {
@@ -21,7 +21,7 @@
                     "AfterDialogues":[
                         {"Type":2, "ImageKey":"story_pig1_1_1"},
                         {"Type":0, "Talker":"해피", "Context":"쓰읍... 두고봐라.."},
-                        {"Type":0, "Talker":"", "Context":"머리수가 불어나니 해피가 눈을 부릅뜨고 물러납니다."}
+                        {"Type":0, "Talker":"", "Context":"머릿수가 불어나니 해피가 눈을 부릅뜨고 물러납니다."}
                     ]
                 }
             ]
