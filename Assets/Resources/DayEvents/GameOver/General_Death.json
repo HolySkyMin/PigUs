@@ -1,6 +1,8 @@
 {
+    "EndingIndex":1,
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"눈을 뜨기 힘든 것이 느껴집니다. 정신 역시 어질어질합니다."},
         {"Type":0, "Talker":"", "Context":"배가 고팠던 탓이었을까요? 그게 아니면 몸이 안 좋았던 탓이었을까요?"},
         {"Type":0, "Talker":"", "Context":"그 이유가 뭐가 되었든, 지금 이 상태로는 오늘을 무사히 보내기조차 힘들 것 같습니다."},

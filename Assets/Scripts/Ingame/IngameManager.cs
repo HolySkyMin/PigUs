@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,8 @@ namespace Ingame
     public class IngameManager : MonoBehaviour
     {
         public static IngameManager Instance { get; private set; }
+        public static int MasterGameNum { get; set; }
+        public static int LastGameNum { get; set; }
 
         public int Food { get { return Data.Variables[0]; } set { Data.Variables[0] = value; } }
         public int Health { get { return Data.Variables[1]; } set { Data.Variables[1] = value; } }
@@ -24,10 +27,18 @@ namespace Ingame
 
         private List<DialogueGroup> dayStoryNeutral, dayNormalReuse;
         private Dictionary<int, List<DialogueGroup>> dayEvents, storyHuman1, storyPig1;
+        private CancellationTokenSource masterCanceler = new CancellationTokenSource();
 
         private void Awake()
         {
             Instance = this;
+
+            int gnum;
+            do { gnum = Random.Range(100000000, 1000000000); }
+            while (gnum == LastGameNum);
+            MasterGameNum = gnum;
+            LastGameNum = MasterGameNum;
+            Debug.Log("Entered ingame #" + MasterGameNum);
 
             LoadData();
             Initialize();
@@ -147,18 +158,31 @@ namespace Ingame
 
         public async void UpdateRoutine()
         {
+            int mynum = MasterGameNum;
+
             // 조건에 맞을 시 튜토리얼을 실행합니다.
             if (Data.DayCount == 0 && !Data.SkipTutorial)
             {
                 SoundManager.Instance.PlayBgm("Tutorial");
                 await RunTutorial();
+                if (mynum != MasterGameNum)
+                {
+                    Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                    return;
+                }
                 Data.SkipTutorial = true;
                 SaveData();
                 await new WaitForSeconds(0.5f);
             }
 
-            for(int i = Data.DayCount; ; i++)
+            for (int i = Data.DayCount; ; i++)
             {
+                if (mynum != MasterGameNum)
+                {
+                    Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                    return;
+                }
+
                 // 우선 일수를 늘립니다.
                 Data.DayCount++;
                 Data.CurrentStoryType = 0;
@@ -169,7 +193,7 @@ namespace Ingame
                 var befPhase = Data.StoryPhase;
 
                 // 조건에 따라 다이얼로그를 실행합니다.
-                if(Data.StoryPhase == 0)
+                if (Data.StoryPhase == 0)
                 {
                     if (Data.RandomQueue.Count < 1)
                     {
@@ -180,14 +204,21 @@ namespace Ingame
                     SoundManager.Instance.PlayBgm("Choice");
                     if (Data.DayCount == Data.Phase1StoryDay)
                     {
-                        if(Data.StoryQueue.Count > 0)
+                        if (Data.StoryQueue.Count > 0)
                         {
                             var stories = Data.StoryQueue.Dequeue();
                             Data.CurrentStoryType = Data.StoryTypeQueue.Dequeue();
                             Data.Phase1Progress[Data.CurrentStoryType - 1]++;
                             bool selectRes = false;
                             for (int j = 0; j < stories.Count; j++)
+                            {
                                 selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 && !Data.IsHumanStackFull && !Data.IsPigStackFull ? true : false);
+                                if (mynum != MasterGameNum)
+                                {
+                                    Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                                    return;
+                                }
+                            }
 
                             if (Data.IsHumanStackFull)
                             {
@@ -205,13 +236,27 @@ namespace Ingame
                             }
                         }
                         else
+                        {
+                            if (mynum != MasterGameNum)
+                            {
+                                Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                                return;
+                            }
                             await RunDayRandomEvent();
+                        }
                         Data.Phase1StoryDay += Random.Range(3, 5);
                     }
                     else
+                    {
+                        if (mynum != MasterGameNum)
+                        {
+                            Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                            return;
+                        }
                         await RunDayRandomEvent();
+                    }
                 }
-                else if(Data.StoryPhase == 1 || Data.StoryPhase == 2)
+                else if (Data.StoryPhase == 1 || Data.StoryPhase == 2)
                 {
                     Data.CurrentStoryType = Data.StoryPhase;
 
@@ -220,6 +265,11 @@ namespace Ingame
                     for (int j = 0; j < stories.Count; j++)
                     {
                         selectRes = await RunDayDialogue(stories[j], j == 0 ? true : false, j == stories.Count - 1 ? true : false);
+                        if (mynum != MasterGameNum)
+                        {
+                            Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                            return;
+                        }
                         if (Data.StoryQueue.Count < 1 && j == stories.Count - 1)
                         {
                             ShowGameOver($"DayEvents/{(Data.StoryPhase == 1 ? "Human" : "Pig")}2/Ending{(selectRes ? "1" : "2")}", true);
@@ -233,7 +283,7 @@ namespace Ingame
                         }
                     }
                 }
-                else if(Data.StoryPhase == -1)
+                else if (Data.StoryPhase == -1)
                 {
                     SoundManager.Instance.PlayBgm("Pig, Us (Twisted ver.)");
                     Data.CurrentStoryType = -1;
@@ -245,9 +295,16 @@ namespace Ingame
                         break;
                     }
                     else
+                    {
+                        if (mynum != MasterGameNum)
+                        {
+                            Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                            return;
+                        }
                         await RunDayRandomEvent();
+                    }
                 }
-                else if(Data.StoryPhase == -9)
+                else if (Data.StoryPhase == -9)
                 {
                     SoundManager.Instance.PlayBgm("Death");
                     Data.CurrentStoryType = -1;
@@ -255,7 +312,7 @@ namespace Ingame
                     Data.IsGameOver = true;
                     break;
                 }
-                else if(Data.StoryPhase == -10)
+                else if (Data.StoryPhase == -10)
                 {
                     SoundManager.Instance.PlayBgm("Death");
                     Data.CurrentStoryType = -1;
@@ -265,6 +322,12 @@ namespace Ingame
                 }
                 else
                     return;
+
+                if (mynum != MasterGameNum)
+                {
+                    Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
+                    return;
+                }
 
                 // 값 변화를 비교하고 변경 사항을 적용합니다. (Only for Phase 1)
                 if ((HumanFavority / 2) > befHumanProg && HumanFavority < 12)
@@ -299,18 +362,29 @@ namespace Ingame
                 // 마지막으로 현재 상태를 저장합니다.
                 SaveData();
             }
+            Debug.Log("Succesfully escaped async root method of ingame #" + mynum);
         }
 
         public async Task RunDayRandomEvent()
         {
+            int mynum = MasterGameNum;
+
             var dialog = Data.RandomQueue.Dequeue();
             if (dialog is DialogueGroup)
+            {
+                if (mynum != MasterGameNum)
+                    return;
                 await RunDayDialogue(dialog as DialogueGroup, true, true);
+            }
             else if (dialog is List<DialogueGroup>)
             {
                 var cnt = (dialog as List<DialogueGroup>).Count;
                 for (int i = 0; i < cnt; i++)
+                {
+                    if (mynum != MasterGameNum)
+                        return;
                     await RunDayDialogue((dialog as List<DialogueGroup>)[i], i == 0 ? true : false, i == cnt - 1 ? true : false);
+                }
             }
             else
                 Debug.LogError("올바르지 않은 다이얼로그 큐 타입입니다.");
@@ -318,6 +392,8 @@ namespace Ingame
 
         public async Task SetPhase2(int type)
         {
+            int mynum = MasterGameNum;
+
             var transDiag = new List<DialogueGroup>();
             string dialPath = $"DayEvents/Transition/";
             for(int i = 0; ; i++)
@@ -328,7 +404,14 @@ namespace Ingame
                 transDiag.Add(JsonMapper.ToObject<DialogueGroup>(asset.text));
             }
             for (int i = 0; i < transDiag.Count; i++)
+            {
+                if (mynum != MasterGameNum)
+                    return;
                 await RunDayDialogue(transDiag[i], false, i == transDiag.Count - 1 ? true : false);
+            }
+
+            if (mynum != MasterGameNum)
+                return;
 
             Data.StoryQueue.Clear();
             Data.StoryPhase = type;
@@ -365,13 +448,24 @@ namespace Ingame
 
         public async void ShowGameOver(string dialogPath, bool appear)
         {
+            int mynum = MasterGameNum;
+
             var dialog = JsonMapper.ToObject<DialogueGroup>(Resources.Load<TextAsset>(dialogPath).text);
             if(dialog != null)
                 await RunDayDialogue(dialog, appear, true);
+
+            if (mynum != MasterGameNum)
+                return;
+
+            GameManager.Instance.Config.EndingChecklist[dialog.EndingIndex] = true;
+            GameManager.Instance.SaveConfig();
             if (dialogPath == "DayEvents/GameOver/General_Animalize")
                 Application.Quit();
             else
+            {
+                MasterGameNum = 0;
                 SceneChanger.Instance.ChangeScene("ResultScene");
+            }
         }
 
         private void Update()
@@ -383,6 +477,8 @@ namespace Ingame
 
         public async Task RunTutorial()
         {
+            int mynum = MasterGameNum;
+
             // 튜토리얼을 불러옵니다.
             var tutorial = new List<DialogueGroup>();
             for(int i = 0; ; i++)
@@ -398,17 +494,25 @@ namespace Ingame
             }
 
             // 튜토리얼을 플레이합니다.
-            for(int i = 0; i < tutorial.Count; i++)
+            for (int i = 0; i < tutorial.Count; i++)
+            {
+                if (mynum != MasterGameNum)
+                    return;
                 await RunDayDialogue(tutorial[i], i > 0 ? false : true, i < tutorial.Count - 1 ? false : true, false);
+            }
         }
 
         public async Task<bool> RunDayDialogue(DialogueGroup dialogGroup, bool playAppear, bool playDisappear, bool writeLog = true)
         {
-            if(playAppear)
+            int mynum = MasterGameNum;
+
+            if (playAppear)
                 await DialogAnimation.Appear();
             bool selectRes = false;
             for(int i = 0; i < dialogGroup.Length; i++)
             {
+                if (mynum != MasterGameNum)
+                    return false;
                 var dialog = dialogGroup[i];
                 if (dialog.Type == 0)
                     await DialogueManager.Instance.ShowDialogue(dialog.Talker, dialog.Context, dialog.Unskippable);
@@ -464,6 +568,7 @@ namespace Ingame
 
         public void ReturnToTitle()
         {
+            MasterGameNum = 0;
             SceneChanger.Instance.ChangeScene("TitleScene");
         }
     }

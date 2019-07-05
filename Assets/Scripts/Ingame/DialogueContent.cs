@@ -9,6 +9,7 @@ public class DialogueGroup
     public int Length { get { return Dialogues.Length; } }
 
     public string ToGameOver;
+    public int EndingIndex;
     public DialogueContent[] Dialogues;
 
     public DialogueContent this[int index]

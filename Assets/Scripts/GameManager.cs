@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static bool Phase2Exists { get { return File.Exists($"{Application.persistentDataPath}/save_phase2"); } }
 
     public SaveData Save;
+    public GameConfig Config;
 
     private void Awake()
     {
@@ -21,6 +22,40 @@ public class GameManager : MonoBehaviour
         }
         else
             Destroy(gameObject);
+
+        LoadConfig();
+    }
+
+    public void CreateConfig()
+    {
+        Config = new GameConfig();
+        SaveConfig();
+    }
+
+    public void LoadConfig()
+    {
+        if (!File.Exists($"{Application.persistentDataPath}/config"))
+            CreateConfig();
+        else
+        {
+            var stream = new FileStream($"{Application.persistentDataPath}/config", FileMode.Open);
+            var formatter = new BinaryFormatter();
+            Config = formatter.Deserialize(stream) as GameConfig;
+            stream.Close();
+        }
+    }
+
+    public void SaveConfig()
+    {
+        var stream = new FileStream($"{Application.persistentDataPath}/config", FileMode.Create);
+        var formatter = new BinaryFormatter();
+        formatter.Serialize(stream, Config);
+        stream.Close();
+
+        if (Config.AllowFullscreen)
+            Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
+        else
+            Screen.SetResolution(1600, 900, false);
     }
 
     public void CreateData(bool skipTutorial)

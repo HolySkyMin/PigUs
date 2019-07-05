@@ -1,7 +1,8 @@
 {
+    "EndingIndex":3,
     "Dialogues":
     [
-        {"Type":3, "BgmKey":"Pig, Us (Twisted ver.)"},
+        {"Type":3, "BgmKey":"Choice (Twisted ver.)"},
         {"Type":2, "ImageKey":"gameover_animalize_1"},
         {"Type":0, "Talker":"", "Context":"어.. 뭔가 돼지들이 이상하게 움직이는 것 같군요. 이게 무슨 일이죠?"},
         {"Type":0, "Talker":"", "Context":"무언가 계획적으로 바쁘게 움직이는 것 같은데... 에이... 잠이나 더 잘래요."},

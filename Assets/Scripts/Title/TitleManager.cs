@@ -26,7 +26,7 @@ namespace Title
 
         public void StartGame()
         {
-            GameManager.Instance.CreateData(TutorialSkipper.isOn);
+            GameManager.Instance.CreateData(GameManager.Instance.Config.SkipTutorial);
             SceneChanger.Instance.ChangeScene("DayScene");
         }
 
@@ -45,6 +45,16 @@ namespace Title
                 Screen.SetResolution(1600, 900, false);
             else
                 Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
+        }
+
+        public void MoveScene(string sceneName)
+        {
+            SceneChanger.Instance.ChangeScene(sceneName);
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
         }
     }
 }

@@ -1,9 +1,10 @@
 {
+    "EndingIndex":13,
     "Dialogues":
     [
         {"Type":2, "ImageKey":"story_pig2_gameover3"},
         {"Type":0, "Talker":"", "Context":"날이 밝아오고. 이른 아침부터 농장에는 트럭 엔진 소리가 지천을 흔듭니다."},
-        {"Type":0, "Talker":"", "Context":"해피와 인간 녀석은 늘 그랬듯, 능숙하게 돼지들을 몰아 트럭에 태읍니다."},
+        {"Type":0, "Talker":"", "Context":"해피와 인간 녀석은 늘 그랬듯, 능숙하게 돼지들을 몰아 트럭에 태웁니다."},
         {"Type":0, "Talker":"", "Context":"해피가 돼지를 고르면 인간 녀석이 전기 충격으로 함께 트럭으로 유도하는 식이죠."},
         {"Type":0, "Talker":"", "Context":"많은 혁명파 동지들이 트럭에 태워집니다. 오웰도 어처구니 없는 허탈한 표정으로 트럭에 올라탑니다."},
         {"Type":0, "Talker":"나", "Context":"<i>아아악!!!</i>"},

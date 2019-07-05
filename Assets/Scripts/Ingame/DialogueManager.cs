@@ -36,10 +36,14 @@ namespace Ingame
 
         public async Task<int> ShowInteraction(string[] sels)
         {
+            int mynum = IngameManager.MasterGameNum;
+
             Receiver.AllowedToReceive = false;
             Interactor.gameObject.SetActive(true);
             Interactor.Show(sels);
-            await new WaitUntil(() => Interactor.HasResult);
+            await new WaitUntil(() => (Interactor.HasResult || mynum != IngameManager.MasterGameNum));
+            if (mynum != IngameManager.MasterGameNum)
+                return 0;
             Interactor.gameObject.SetActive(false);
             return Interactor.Result;
         }

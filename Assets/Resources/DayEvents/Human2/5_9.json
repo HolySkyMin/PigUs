@@ -1,7 +1,8 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human2_25"},
+        {"Type":2, "ImageKey":"story_human2_25"},
+        {"Type":0, "Talker":"", "Context":"... 그리고 나서 얼마 뒤, 나는 다시 그들과 마주봤습니다."},
         {"Type":0, "Talker":"오웰", "Context":".... 그래, 맞아. 난 비겁했어. 잔인했고. 목적을 위해 희생은 필연적이라고 믿었지."},
         {"Type":0, "Talker":"오웰", "Context":"그런데 말이다. 너만 저 지긋지긋한 우리가 진절머리 난 게 아니야."},
         {"Type":0, "Talker":"오웰", "Context":"여기 있는 모두가 각자의 이유로 저기서 벗어나고자 했다. 너도 그렇잖아?"},

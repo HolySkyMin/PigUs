@@ -1,6 +1,8 @@
 {
+    "EndingIndex":2,
     "Dialogues":
     [
+        {"Type":2, "ImageKey":"character_basicpig"},
         {"Type":0, "Talker":"", "Context":"주인이 하얀 옷을 입은 사람과 함께 우리 안으로 들어와 주변을 둘러 봅니다. 무언가를 찾는 걸까요?"},
         {"Type":0, "Talker":"", "Context":"여러 번 두리번거리던 주인의 시선이 이윽고 나를 향합니다."},
         {"Type":0, "Talker":"하얀 옷의 사람", "Context":"음... 사장님. 저 돼지는 지금까지 본 돼지 중에서는 가장 우량한 놈이로군요."},

@@ -1,7 +1,8 @@
 {
     "Dialogues":
     [
-	    {"Type":2, "ImageKey":"story_human2_12.1"},
+        {"Type":2, "ImageKey":"story_human2_12.1"},
+        {"Type":0, "Talker":"", "Context":"... 그리고 잠시 뒤, A38이 옆에 다가옵니다."},
         {"Type":0, "Talker":"A38", "Context":"흑... 흑..ㅠㅠ 구구야.. 괜찮아?!! 정신 차릴 수 있겠어?ㅠㅠ 구구야!"},
         {
             "Type":1, 

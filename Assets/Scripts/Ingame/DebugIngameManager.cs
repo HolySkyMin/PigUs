@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -58,7 +59,7 @@ namespace Ingame
             var dirs = dirInfo.GetDirectories();
 
             Debug.Log("Starting integrity test...");
-            int errCnt = 0, fileCnt = 0;
+            int errCnt = 0, fileCnt = 0, lnCnt = 0;
             for(int i = 0; i < dirs.Length; i++)
             {
                 var files = dirs[i].GetFiles();
@@ -68,12 +69,17 @@ namespace Ingame
                         continue;
                     var realname = files[j].Name.Substring(0, files[j].Name.Length - 5);
                     var asset = Resources.Load<TextAsset>($"DayEvents/{dirs[i].Name}/{realname}");
-                    try { JsonMapper.ToObject<DialogueGroup>(asset.text); }
+                    try
+                    {
+                        JsonMapper.ToObject<DialogueGroup>(asset.text);
+                        var lines = asset.text.Split(new[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+                        lnCnt += lines.Length;
+                    }
                     catch { Debug.LogWarning($"- Error occured at {dirs[i].Name}/{realname}"); errCnt++; }
                     fileCnt++;
                 }
             }
-            Debug.Log($"Integrity test finished. {fileCnt} files, {errCnt} error(s).");
+            Debug.Log($"Integrity test finished. {fileCnt} files with {lnCnt} lines, {errCnt} error(s).");
         }
 
         public async Task<bool> RunDayDialogue(DialogueGroup dialogGroup, bool playAppear, bool playDisappear)
