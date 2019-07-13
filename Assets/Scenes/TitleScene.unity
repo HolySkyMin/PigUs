@@ -3614,7 +3614,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -5806,7 +5806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31be388875a567a4ca6c105cfaabdedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SettingPanel: {fileID: 2067450742}
+  FullscreenPanel: {fileID: 1118715149}
   CPSslider: {fileID: 112011561}
   SkipToggle: {fileID: 689811251}
   FullscreenToggle: {fileID: 1607861129}

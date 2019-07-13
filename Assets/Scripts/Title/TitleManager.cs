@@ -27,7 +27,10 @@ namespace Title
         public void StartGame()
         {
             GameManager.Instance.CreateData(GameManager.Instance.Config.SkipTutorial);
-            SceneChanger.Instance.ChangeScene("DayScene");
+            if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXPlayer)
+                SceneChanger.Instance.ChangeScene("DayScene");
+            else
+                SceneChanger.Instance.ChangeScene("MDayScene");
         }
 
         public void LoadGame()
@@ -36,7 +39,10 @@ namespace Title
                 GameManager.Instance.LoadPhase2();
             else
                 GameManager.Instance.LoadToData();
-            SceneChanger.Instance.ChangeScene("DayScene");
+            if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXPlayer)
+                SceneChanger.Instance.ChangeScene("DayScene");
+            else
+                SceneChanger.Instance.ChangeScene("MDayScene");
         }
 
         public void ToggleFullscreen()

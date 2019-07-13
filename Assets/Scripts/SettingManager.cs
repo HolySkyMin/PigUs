@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class SettingManager : MonoBehaviour
 {
-    public GameObject SettingPanel;
+    public GameObject FullscreenPanel;
     public Slider CPSslider;
     public Toggle SkipToggle, FullscreenToggle;
     public Text CPStext;
@@ -15,6 +15,9 @@ public class SettingManager : MonoBehaviour
         CPSslider.value = GameManager.Instance.Config.CPS;
         SkipToggle.isOn = GameManager.Instance.Config.SkipTutorial;
         FullscreenToggle.isOn = GameManager.Instance.Config.AllowFullscreen;
+
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
+            FullscreenPanel.SetActive(false);
         CPSChanging();
     }
 

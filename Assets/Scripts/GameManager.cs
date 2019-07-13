@@ -52,10 +52,13 @@ public class GameManager : MonoBehaviour
         formatter.Serialize(stream, Config);
         stream.Close();
 
-        if (Config.AllowFullscreen)
-            Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
-        else
-            Screen.SetResolution(1600, 900, false);
+        if(Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.OSXPlayer)
+        {
+            if (Config.AllowFullscreen)
+                Screen.SetResolution(Screen.currentResolution.width, Screen.currentResolution.height, true);
+            else
+                Screen.SetResolution(1600, 900, false);
+        }
     }
 
     public void CreateData(bool skipTutorial)

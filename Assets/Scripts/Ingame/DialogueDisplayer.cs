@@ -62,6 +62,8 @@ namespace Ingame
                     }
                 }
             }
+            if (mynum != IngameManager.MasterGameNum)
+                yield break;
             EndIndicator.SetActive(true);
             yield return new WaitUntil(() => (DialogueManager.Instance.Receiver.ReceivedClick || mynum != IngameManager.MasterGameNum));
             if (mynum != IngameManager.MasterGameNum)
