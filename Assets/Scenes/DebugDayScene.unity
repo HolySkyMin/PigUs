@@ -2204,6 +2204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038203310}
+  - component: {fileID: 1038203311}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -2225,6 +2226,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038203311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038203309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eabda7d40e57024098a1844e2bda5f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Save:
+    DayCount: 0
+    StoryPhase: 0
+    CurrentStoryType: 0
+    PhaseChangedDate: 0
+    Phase1StoryDay: 0
+    Phase1Progress: 0000000000000000
+    SkipTutorial: 0
+    BlendRandomNormal: 0
+    IsGameOver: 0
+    Variables: 32000000320000000000000000000000
+    DayLog: []
+    RandomNormal: []
+  Config:
+    CPS: 59
+    SkipTutorial: 0
+    AllowFullscreen: 0
 --- !u!1 &1048932148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,7 +2771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543f5bd225e018b4c956906ddbd57b64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TargetGraphic: {fileID: 1186183675}
+  StoryType: 0
 --- !u!114 &1186183675
 MonoBehaviour:
   m_ObjectHideFlags: 0

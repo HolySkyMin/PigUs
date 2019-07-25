@@ -2,7 +2,8 @@
     "Dialogues":
     [
 	    {"Type":2, "ImageKey":"story_human1_2_2"},
-        {"Type":0, "Talker":"주인집 소녀", "Context":"자, 이건 내가 만든 쿠키야! 내가 좋아하는 너니까 <i>특별하게</i> 주는거야~ 입벌려 아~~"},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"자, 이건 내가 만든 쿠키야! 네 생각이 나서 <i>특. 별. 맞. 춤. 제. 작</i> 했다구~!"},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"분명 너한테도 좋을 거야! 자 아~ 해봐, 아~~!"},
         {
             "Type":1, 
             "Selects":
@@ -11,15 +12,16 @@
                     "Context":"쿠키를 받아먹는다", "VariableDelta":[6, 6, 0, 0],
                     "AfterDialogues":[
                         {"Type":0, "Talker":"", "Context":"이제껏 먹어보지 못한 달콤함이 입안을 감싸옵니다. 사료와는 비교도 되지 않는 맛입니다."},
-                        {"Type":0, "Talker":"", "Context":"어쩐지 기분이 좋아지고 몸이 가벼워진 느낌이 듭니다."}
+                        {"Type":0, "Talker":"", "Context":"기분이 좋아지고 몸이 가벼워진 느낌입니다.\n\n<color=#808080><i>(포만감과 건강이 초기화됩니다.)</i></color>"}
                     ]
                 },
                 {
                     "Context":"입을 굳게 다문다", "VariableDelta":[6, 6, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"소녀는 강제로 입을 벌려 쿠키를 집어넣습니다."},
+                        {"Type":0, "Talker":"소녀", "Context":"힝... 새벽같이 일어나서 만들었는데ㅠㅠㅠ 너 미워!ㅠㅠ"},
+                        {"Type":0, "Talker":"", "Context":"소녀가 울먹입니다. 나는 당황한 나머지 소녀가 들고 있는 쿠키를 한 입 베어 물었습니다."},
                         {"Type":0, "Talker":"", "Context":"이제껏 먹어보지 못한 달콤함이 입안을 감싸옵니다. 사료와는 비교도 되지 않는 맛입니다."},
-                        {"Type":0, "Talker":"", "Context":"어쩐지 기분이 좋아지고 몸이 가벼워진 느낌이 듭니다."}
+                        {"Type":0, "Talker":"", "Context":"기분이 좋아지고 몸이 가벼워진 느낌입니다.\n\n<color=#808080><i>(포만감과 건강이 초기화됩니다.)</i></color>"}
                     ]
                 }
             ]

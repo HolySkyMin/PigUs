@@ -59,6 +59,11 @@ namespace Result
             SceneChanger.Instance.ChangeScene("DayScene");
         }
 
+        public void GoToMemorial()
+        {
+            SceneChanger.Instance.ChangeScene("MemorialScene");
+        }
+
         public void GoToTitle()
         {
             SceneChanger.Instance.ChangeScene("TitleScene");

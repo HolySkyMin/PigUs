@@ -2,22 +2,27 @@
     "Dialogues":
     [
 	    {"Type":2, "ImageKey":"story_human1_0_2"},
-        {"Type":0, "Talker":"", "Context":"주인집 소녀가 나뭇가지를 들이밀며 얘기합니다."},
-        {"Type":0, "Talker":"주인집 소녀", "Context":"이거 진짜 맛있는 건데, 한 번 먹어볼래? 넌 돼지니까 아무거나 다 먹을 수 있지??"},
+        {"Type":0, "Talker":"", "Context":"주인집 소녀가 쥐고 있던 나무막대를 들이밀며 얘기합니다."},
+        {"Type":0, "Talker":"주인집 소녀", "Context":"흠... 이거 줘도 되려나? 돼지야! 이거 진짜 맛있는 건데, 한 번 먹어볼래? 넌 돼지니까 아무거나 잘 먹을 수 있지??"},
         {
             "Type":1, 
             "Selects":
             [
                 {
-                    "Context":"나뭇가지를 먹는다", "VariableDelta":[0, -3, 1, 0],
+                    "Context":"나무막대를 먹는다", "VariableDelta":[0, 0, 1, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"맛도 이상하고 속도 좋지 않지만 소녀는 정말 기분 좋아 보입니다."}
+                        {"Type":0, "Talker":"주인집 소녀", "Context":"어때? 빼@로, 맛있지 않아?"},
+                        {"Type":0, "Talker":"", "Context":"오잉? 이 달달한 맛은 뭐죠? 이런 맛은 처음이에요!"},
+                        {"Type":0, "Talker":"", "Context":"아주 행복해지는 맛입니다. 소녀의 표정도 덩달아 환해집니다."}
                     ]
                 },
                 {
-                    "Context":"고개를 돌린다", "VariableDelta":[0, -3, 0, 0],
+                    "Context":"고개를 돌린다", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"소녀는 억지로 나뭇가지를 입안에 쑤셔 넣습니다. 당황한 나머지 그대로 삼켜버렸습니다."}
+                        {"Type":0, "Talker":"주인집 소녀", "Context":"아니 그래도 한 번만 먹어봐~"},
+                        {"Type":0, "Talker":"", "Context":"킁킁킁... <i>꿀꺽!</i> 으앗, 달콤한 냄새에 나도 모르게 그만 삼켜 버렸어요!"},
+                        {"Type":0, "Talker":"", "Context":"아주 행복해지는 맛ㅇ... 엉? 근데 이거 먹을 수 있는 거였어요?"},
+                        {"Type":0, "Talker":"주인집 소녀", "Context":"어때? 빼@로, 맛있지 않아?"}
                     ]
                 }
             ]

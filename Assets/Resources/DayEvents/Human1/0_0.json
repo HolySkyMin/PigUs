@@ -16,9 +16,9 @@
                     ]
                 },
                 {
-                    "Context":"(나뭇가지를 쳐낸다)", "VariableDelta":[0, 0, 0, 0],
+                    "Context":"(나무막대를 쳐낸다)", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"", "Context":"소녀는 조금 당황한 듯 보이지만, 이내 다시 나뭇가지를 주워 다가옵니다."}
+                        {"Type":0, "Talker":"", "Context":"소녀는 조금 당황한 듯 보이지만, 이내 다시 나무막대를 주워 다가옵니다."}
                     ]
                 }
             ]

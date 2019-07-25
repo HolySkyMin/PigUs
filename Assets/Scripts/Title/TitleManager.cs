@@ -7,8 +7,8 @@ namespace Title
 {
     public class TitleManager : MonoBehaviour
     {
-        public Button NewGameBtn, LoadGameBtn;
-        public Toggle TutorialSkipper, Phase1Skipper;
+        public Button NewGameBtn, LoadGameBtn, Phase2LoadBtn;
+        public Toggle TutorialSkipper;
 
         private void Start()
         {
@@ -17,9 +17,9 @@ namespace Title
             else
                 LoadGameBtn.interactable = false;
             if (GameManager.Phase2Exists)
-                Phase1Skipper.interactable = true;
+                Phase2LoadBtn.interactable = true;
             else
-                Phase1Skipper.interactable = false;
+                Phase2LoadBtn.interactable = false;
 
             SoundManager.Instance.PlayBgm("Pig, Us");
         }
@@ -33,9 +33,9 @@ namespace Title
                 SceneChanger.Instance.ChangeScene("MDayScene");
         }
 
-        public void LoadGame()
+        public void LoadGame(bool isPhase2)
         {
-            if (Phase1Skipper.isOn || !GameManager.SaveFileExists)
+            if (isPhase2)
                 GameManager.Instance.LoadPhase2();
             else
                 GameManager.Instance.LoadToData();

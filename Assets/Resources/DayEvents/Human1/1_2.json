@@ -2,8 +2,8 @@
     "Dialogues":
     [
 	    {"Type":2, "ImageKey":"story_human1_1_1"},
-        {"Type":0, "Talker":"해피", "Context":"시간이 지나면 알게 될거야. 결국 인간에게 잘 보이는 것이 진짜 잘 살 수 있는 길이라는 걸."},
-        {"Type":0, "Talker":"해피", "Context":"앞으로의 행동, 기대하겠다."},
+        {"Type":0, "Talker":"해피", "Context":"그 맛있던 빼@로는 별로 대단한 것도 아니라고. 시간이 지나면 알게 될거야.결국 인간에게 잘 보이는 것이 진짜 잘 살 수 있는 길이라는 걸."},
+        {"Type":0, "Talker":"해피", "Context":"결국 인간에게 잘 보이는 것이 진짜 잘 살 수 있는 길이라는 걸. 앞으로의 행동, 기대하겠다."},
         {
             "Type":1, 
             "Selects":
@@ -18,6 +18,8 @@
                 {
                     "Context":"네!", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
+                        {"Type":2, "ImageKey":"story_human1_1_2"},
+                        {"Type":0, "Talker":"", "Context":"해피는 단호한 모습으로 공을 주으러 떠납니다."} 
                     ]
                 }
             ]
