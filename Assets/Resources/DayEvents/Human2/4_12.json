@@ -10,8 +10,10 @@
         {"Type":0, "Talker":"", "Context":"한편 오웰 무리는 저편에서 비장하게 의식을 치르고 있습니다. 드디어 그 날이... 오고... 있... 는 걸... 까요..."},
         {"Type":0, "Talker":"", "Context":"... ... ...\n... ... ...\n... ... ...", "Unskippable":true},
         {"Type":3, "BgmKey":"Aunt in Dream"},
+        {"Type":2, "ImageKey":"tutorial_ingame_2"},
+        {"Type":0, "Talker":"나", "Context":"... ... ..으음 으으음... 여기는...? <i>이... 이모...?</i>"},
         {"Type":2, "ImageKey":"story_human2_16"},
-        {"Type":0, "Talker":"이모", "Context":"우리 가여운 아가... 요새 하루도 편히 잠드는 날이 없구나."},
+        {"Type":0, "Talker":"이모", "Context":"... 우리 가여운 아가... 요새 하루도 편히 잠드는 날이 없구나."},
         {
             "Type":1, 
             "Selects":
@@ -25,7 +27,7 @@
                 {
                     "Context":"으... 이모.. 자도 잔 것 같지가 않고, 먹어도 먹은 것 같지가 않아요..", "VariableDelta":[0, 0, 0, 0],
                     "AfterDialogues":[
-                        {"Type":0, "Talker":"나", "Context":"그래, 우리 아가. 얼마나 힘들었을까. 혼자라는 생각과 불안감에 그간 견디기 어려웠지?"}
+                        {"Type":0, "Talker":"이모", "Context":"그래, 우리 아가. 얼마나 힘들었을까. 혼자라는 생각과 불안감에 그간 견디기 어려웠지?"}
                     ]
                 }
             ]

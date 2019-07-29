@@ -2,8 +2,10 @@
     "Dialogues":
     [
         {"Type":3, "BgmKey":"Aunt in Dream"},
+        {"Type":2, "ImageKey":"tutorial_ingame_2"},
+        {"Type":0, "Talker":"나", "Context":"... ... ..으음 으으음... 여기는...? <i>이... 이모...?</i>"},
 	    {"Type":2, "ImageKey":"story_pig2_14"},
-        {"Type":0, "Talker":"이모", "Context":"우리 가여운 구구... 요새 하루도 편히 잠드는 날이 없구나."},
+        {"Type":0, "Talker":"이모", "Context":"... 우리 가여운 구구... 요새 하루도 편히 잠드는 날이 없구나."},
         {
             "Type":1, 
             "Selects":
