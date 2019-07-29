@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         else
             Destroy(gameObject);
 
+        Application.targetFrameRate = Screen.currentResolution.refreshRate;
         LoadConfig();
     }
 
