@@ -459,13 +459,13 @@ namespace Ingame
 
             GameManager.Instance.Config.EndingChecklist[dialog.EndingIndex] = true;
             GameManager.Instance.SaveConfig();
-            if (dialogPath == "DayEvents/GameOver/General_Animalize")
-                Application.Quit();
-            else
-            {
+            //if (dialogPath == "DayEvents/GameOver/General_Animalize")
+            //    Application.Quit();
+            //else
+            //{
                 MasterGameNum = 0;
                 SceneChanger.Instance.ChangeScene("ResultScene");
-            }
+            //}
         }
 
         private void Update()
